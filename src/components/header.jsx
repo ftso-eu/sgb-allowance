@@ -43,15 +43,15 @@ class header extends Component {
                 <div id="revokeAll">
                     <div className="container">
                         <img className="container" src={textBoxMedium} alt=""/>
-                        <div className="centered">ALL</div>
+                        <div className="centered">TOKENS</div>
                     </div>
                     <div className="container">
                         <img className="container" src={textBoxMedium} alt=""/>
-                        <div className="centered">ALL</div>
+                        <div className="centered">CONTRACTS</div>
                     </div>
                     <div className="container">
                         <img className="container" src={textBoxMedium} alt=""/>
-                        <div className="centered">ALL</div>
+                        <div className="centered">AMOUNT</div>
                     </div>
                     <div className="container" onClick={this.revokeAll}>
                         <img className="container" src={revokeFullSpecial} alt=""/>
