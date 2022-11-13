@@ -8,7 +8,7 @@ const { ERC20ABI, ERC721ABI } = require("./ABI.js");
 export function getQuery(chainId, address) {
     switch (chainId) {
         case 16:
-            return "https://coston-explorer.flare.network//api?module=account&action=txlist&address=" + address;
+            return "https://coston-explorer.flare.network/api?module=account&action=txlist&address=" + address;
         default:
             return "";
     }
