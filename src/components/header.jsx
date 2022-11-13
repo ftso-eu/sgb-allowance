@@ -59,7 +59,7 @@ class header extends Component {
                     </div>
                     <div className="container">
                         <img className="container" src={textBoxMedium} alt=""/>
-                        <div className="centered-white"><a onClick={() => { window.open("https://github.com/James-Sangalli/eth-allowance/issues") } }>Report issue</a></div>
+                        <div className="centered-white"><a onClick={() => { window.open("https://github.com/ftso-eu/sgb-allowance/issues") } }>Report issue</a></div>
                     </div>
                 </div>
             </div>
