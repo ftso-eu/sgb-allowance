@@ -7,20 +7,8 @@ const { ERC20ABI, ERC721ABI } = require("./ABI.js");
 
 export function getQuery(chainId, address) {
     switch (chainId) {
-        case 1:
-            return "https://api.etherscan.io/api?module=account&action=txlist&address=" + address;
-        case 3:
-            return "https://api-ropsten.etherscan.io/api?module=account&action=txlist&address=" + address;
-        case 4:
-            return "https://api-rinkeby.etherscan.io/api?module=account&action=txlist&address=" + address;
-        case 10:
-            return "https://api-optimistic.etherscan.io/api?module=account&action=txlist&address=" + address;
-        case 42:
-            return "https://api-kovan.etherscan.io/api?module=account&action=txlist&address=" + address;
-        case 56:
-            return "https://api.bscscan.com/api?module=account&action=txlist&address=" + address;
-        case 42161:
-            return "https://api.arbiscan.io/api?module=account&action=txlist&address=" + address;
+        case 16:
+            return "https://coston-explorer.flare.network//api?module=account&action=txlist&address=" + address;
         default:
             return "";
     }
@@ -28,20 +16,8 @@ export function getQuery(chainId, address) {
 
 export function getEtherScanPage(chainId) {
     switch (chainId) {
-        case 1:
-            return "https://etherscan.io/address/";
-        case 3:
-            return "https://ropsten.etherscan.io/address/";
-        case 4:
-            return "https://rinkeby.etherscan.io/address/";
-        case 10:
-            return "https://optimistic.etherscan.io/address/";
-        case 42:
-            return "https://kovan.etherscan.io/address/";
-        case 56:
-            return "https://bscscan.com/address/";
-        case 42161:
-            return "https://arbiscan.io/address/";
+        case 16:
+            return "https://coston-explorer.flare.network/address/";
         default:
             return "";
     }
