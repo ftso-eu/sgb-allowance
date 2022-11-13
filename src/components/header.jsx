@@ -20,38 +20,19 @@ class header extends Component {
                         <h2>SHOW AND REVOKE TOKEN ALLOWANCES</h2>
                     </div>
                 </div>
-                <div id="columns">
-                    <div id="headers">
-                        <div className="container">
-                            <div className="centered-white">CONTRACT</div>
-                        </div>
-                        <div className="container">
-                            <div className="centered-white">SPENDER</div>
-                        </div>
-                        <div className="container">
-                            <div className="centered-white">ALLOWANCE</div>
-                        </div>
-                        <div className="container">
-                            <div className="centered-white">ACTION</div>
-                        </div>
-                        <div className="container">
-                            <div className="centered-white">MISCELLANEOUS</div>
-                        </div>
-                    </div>
-                </div>
                 <h3 id="loading" hidden>Loading, please wait...</h3>
                 <div id="revokeAll">
                     <div className="container">
                         <img className="container" src={textBoxMedium} alt=""/>
-                        <div className="centered">TOKENS</div>
+                        <div className="centered">CONTRACT</div>
                     </div>
                     <div className="container">
                         <img className="container" src={textBoxMedium} alt=""/>
-                        <div className="centered">CONTRACTS</div>
+                        <div className="centered">SPENDER</div>
                     </div>
                     <div className="container">
                         <img className="container" src={textBoxMedium} alt=""/>
-                        <div className="centered">AMOUNT</div>
+                        <div className="centered">ALLOWANCE</div>
                     </div>
                     <div className="container" onClick={this.revokeAll}>
                         <img className="container" src={revokeFullSpecial} alt=""/>
