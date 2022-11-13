@@ -17,7 +17,7 @@ class header extends Component {
             <div>
                 <div  className="jumbotron">
                     <div id="titles">
-                        <h2>Find & revoke token allowances</h2>
+                        <h2>SHOW AND REVOKE TOKEN ALLOWANCES</h2>
                     </div>
                 </div>
                 <div id="columns">
