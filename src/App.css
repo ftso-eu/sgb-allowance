@@ -1,8 +1,8 @@
 #titles {
   text-align: center;
   color: white;
-  margin-top: 10%;
-  margin-left: 10%;
+  margin-top: 0%;
+  margin-left: 0%;
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -75,7 +75,7 @@ body {
 }
 
 .jumbotron{
-  background: url("./images/header-background.png") no-repeat center center;
+   background: #262626;
   -webkit-background-size: 100% 100%;
   -moz-background-size: 100% 100%;
   -o-background-size: 100% 100%;
