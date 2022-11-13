@@ -63,7 +63,7 @@ class allowance extends Component {
         } else {
             return <div className="container">
                 <img className="container" src={dappButtonV2} alt=""/>
-                <div className="centered-white"><a onClick={() => { window.open("https://github.com/James-Sangalli/eth-allowance/blob/master/src/helpers/dapps.js"); } }>Add dApp</a></div>
+                <div className="centered-white"><a onClick={() => { window.open("https://github.com/ftso-eu/sgb-allowance/blob/master/src/helpers/dapps.js"); } }>Add dApp</a></div>
             </div>;
         }
     }
