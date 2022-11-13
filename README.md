@@ -1,8 +1,11 @@
 # sgb-allowance
 Find & revoke token allowances.
 
-## How it works
-This tool works by searching all your transactions on the Ethereum blockchain to find the approval transactions; from there you are then able to revoke each one or even visit their dapp (if available).
+IMPORTANT: You will always see your allowance history, also after revoking them (i.e. setting the spend limit = 0).
 
-## Add your dapp to the list
+## How it works
+This tool works by searching all your transactions on the Flare blockchains to find the approval transactions; from there you are then able to revoke each one or even visit their dapp (if available).
+
+## Add a dapp to the list
 Fork this repo and add your dapp to the list [here](https://github.com/ftso-eu/sgb-allowance/blob/master/src/helpers/dapps.js) or submit an [issue](https://github.com/ftso-eu/sgb-allowance/issues).
+You can also use https://twitter.com/ftso_eu to speed up this process.
