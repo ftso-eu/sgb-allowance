@@ -1,3 +1,4 @@
 module.exports = {
-    "blazeswap coston": "https://test.blazeswap.xyz/"
+    "test.blazeswap.xyz": "https://test.blazeswap.xyz/";
+    "Test XRP": "https://test.blazeswap.xyz/"
 }
