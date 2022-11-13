@@ -3,6 +3,8 @@ Find & revoke token allowances.
 
 IMPORTANT: You will always see your allowance history, also after revoking them (i.e. setting the spend limit = 0).
 
+Web Dapp: https://sgb-allowance.ftso.eu 
+
 ## How it works
 This tool works by searching all your transactions on the Flare blockchains to find the approval transactions; from there you are then able to revoke each one or even visit their dapp (if available).
 
