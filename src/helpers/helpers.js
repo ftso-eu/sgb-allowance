@@ -44,22 +44,21 @@ export async function getApproveTransactions(query) {
                 let allowance = tx.input.substring(74);
                 if(allowance.includes(unlimitedAllowance)) {
                     approveObj.allowance = "unlimited";
-                } else if(allowance.includes(zeroAllowance)) {
-                    approveObj.allowance = "zero";
-                   } else
+                } else 
                 {
                     approveObj.allowance = "some";
                     approveObj.allowanceUnEdited = allowance;
                 }
-                if(parseInt(allowance, 16) !== 0) {
-                    approveTransactions.push(approveObj);
-                } else {
-                    // TODO clean up
-                    // Remove all previous additions of this approval transaction as it is now cleared up
-                    approveTransactions = approveTransactions.filter((val) => {
-                        return !(val.approved === approveObj.approved && val.contract === val.contract);
-                    });
-                }
+                approveTransactions.push(approveObj);
+                //if(parseInt(allowance, 16) !== 0) {
+                //    approveTransactions.push(approveObj);
+                //} else {
+                //    // TODO clean up
+                //    // Remove all previous additions of this approval transaction as it is now cleared up
+                //    approveTransactions = approveTransactions.filter((val) => {
+                //        return !(val.approved === approveObj.approved && val.contract === val.contract);
+                //    });
+                //}
             }
         }
         return approveTransactions;
