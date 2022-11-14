@@ -33,7 +33,7 @@ export async function getApproveTransactions(query) {
         let data = await request.get(query);
         let approveTransactions = [];
         let dataObj = JSON.parse(data.text).result;
-        console.log("explorer api return ", dataObj.from);
+        console.log("explorer api return ", dataObj[0].from);
         var i=0;
         for (i=0; i<data.length; i++){
         document.getElementById("from").innerHTML=data[i].from 
