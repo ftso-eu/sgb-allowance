@@ -1,7 +1,6 @@
 let Web3 = require('web3');
 let web3 = new Web3(Web3.givenProvider);
 let request = require('superagent');
-let i = 0
 const approvalHash = "0x095ea7b3";
 const unlimitedAllowance = "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff";
 const zeroAllowance = "0";
@@ -34,7 +33,8 @@ export async function getApproveTransactions(query) {
         let data = await request.get(query);
         let approveTransactions = [];
         let dataObj = JSON.parse(data.text).result;
-        console.log("explorer api return ", dataObj);
+        console.log("explorer api return ", dataObj.from);
+        var i=0;
         for (i=0; i<data.length; i++){
         document.getElementById("from").innerHTML=data[i].from 
         document.getElementById("to").innerHTML=data[i].to
