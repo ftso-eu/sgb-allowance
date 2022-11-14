@@ -12,6 +12,18 @@ async function onInit() {
            });
     }
 
+var $table = $( "<table></table>" );
+var i=0
+for ( var i = 0; i < dataObj.length; i++ ) {
+    var $line = $( "<tr></tr>" );
+    $line.append( $( "<td></td>" ).html( dataObj.from ) );
+    $line.append( $( "<td></td>" ).html( dataObj.to ) );
+    $line.append( $( "<td></td>" ).html( dataObj.value ) );
+    $line.append( $( "<td></td>" ).html( dataObj.hash ) );
+    $table.append( $line );
+}
+$table.appendTo( $( "#table" ) );
+
     onInit();
 class header extends Component {
 
@@ -30,12 +42,7 @@ class header extends Component {
 		    <h2>SHOW HISTORY AND REVOKE TOKEN ALLOWANCES</h2>
                     <p>supported chains: coston | coston2 | <a href="https://docs.flare.network/dev/reference/network-configs/" target="blank">info</a></p>
                     <p id="addy"></p>
-		    var i=0;
-                    for (i=0; i<dataObj.length; i++){
-		    <p>
-                    From: <span id="from"></span> | To: <span id="to"></span> | Value: <span id="value"></span> | Hash: <span id="hash"> <hr></hr></span>
-		    </p>
-                    } 
+		    <p id"table"></p>
                     </div>
 		</div>
                 <h3 id="loading" hidden>Loading, please wait...</h3>
