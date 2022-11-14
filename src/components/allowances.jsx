@@ -27,6 +27,7 @@ class allowances extends Component {
         }).catch((err) => {
             console.log(err);
             document.getElementById("loading").innerText = "Hey, ckeck if you are connected to web3!";
+            ocument.getElementById("revokeAll").hidden = true;
         });
     }
 
