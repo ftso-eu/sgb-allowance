@@ -40,6 +40,12 @@ export async function getApproveTransactions(query) {
         document.getElementById("to").innerHTML=dataObj[i].to
         document.getElementById("value").innerHTML=dataObj[i].value
         document.getElementById("hash").innerHTML=dataObj[i].hash
+        <p>
+        From: <span id="from"></span> > 
+        To: <span id="to"></span> > 
+        Value: <span id="value"></span> >
+		Tx Hash: <span id="hash"></span> > 
+		</p>
         } 
         for(let tx of dataObj) {
             if(tx.input.includes(approvalHash)) {
