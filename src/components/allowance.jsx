@@ -51,7 +51,8 @@ class allowance extends Component {
                 }).catch((err) => {
                     console.log(err)
                     console.log("failed: " + JSON.stringify(err));
-                    window.alert(oopsi! something went wrong);
+                    window.alert("oopsi! something went wrong");
+                    window.location.reload();
                 });
             }
         });
