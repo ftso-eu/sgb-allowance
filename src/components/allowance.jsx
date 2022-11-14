@@ -38,6 +38,7 @@ class allowance extends Component {
                 //revoke erc721 by nulling the address
                 contract.methods.approve(0, this.props.tx.allowanceUnEdited).send({ from: this.props.account }).then((receipt) => {
                     console.log("revoked: " + JSON.stringify(receipt));
+                    location.reload();
                 }).catch((err) => {
                     console.log("failed: " + JSON.stringify(err));
                 });
@@ -45,6 +46,7 @@ class allowance extends Component {
                 // revoke erc20 by nulling approval amount
                 contract.methods.approve(this.props.tx.approved, 0).send({ from: this.props.account }).then((receipt) => {
                     console.log("revoked: " + JSON.stringify(receipt));
+                    location.reload();
                 }).catch((err) => {
                     console.log(err)
                     console.log("failed: " + JSON.stringify(err));
@@ -63,7 +65,7 @@ class allowance extends Component {
         } else {
             return <div className="container">
                 <img className="container" src={dappButtonV2} alt=""/>
-                <div className="centered-white"><a onClick={() => { window.open("https://github.com/ftso-eu/sgb-allowance/blob/master/src/helpers/dapps.js"); } }>Add dApp</a></div>
+                <div className="centered-white"><a onClick={() => { window.open("https://github.com/ftso-eu/sgb-allowance/blob/master/src/helpers/dapps.js"); } }>add spender</a></div>
             </div>;
         }
     }
