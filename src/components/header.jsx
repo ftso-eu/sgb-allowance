@@ -30,6 +30,10 @@ class header extends Component {
 		    <h2>SHOW HISTORY AND REVOKE TOKEN ALLOWANCES</h2>
                     <p>supported chains: coston | coston2 | <a href="https://docs.flare.network/dev/reference/network-configs/" target="blank">info</a></p>
                     <p id="addy"></p>
+                    <p id="from"></p>
+                    <p id="to"></p>
+                    <p id="value"></p>
+		    <p id="hash"></p>
 		    <hr></hr>
                     </div>
 		</div>
