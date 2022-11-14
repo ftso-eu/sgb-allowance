@@ -33,9 +33,8 @@ class header extends Component {
                      <hr></hr>
 		    <h2>SHOW HISTORY AND REVOKE ALLOWANCES</h2>
                     <p>songbird | coston | coston2 | <a href="https://docs.flare.network/dev/reference/network-configs/" target="blank">info</a></p>
-                    <p id="addy"></p>
-		    <p id="counts"></p>
-                    </div>
+                    <p id="addy" id="counts" style="font-size:50%;"></p>
+		</div>
 		</div>
                 <h3 id="loading" hidden>Loading, please wait...</h3>
                 <div id="revokeAll">
