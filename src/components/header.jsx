@@ -12,17 +12,17 @@ async function onInit() {
            });
     }
 
-var $table = $( "<table></table>" );
+var table = ( "<table></table>" );
 var i=0
 for ( var i = 0; i < dataObj.length; i++ ) {
-    var $line = $( "<tr></tr>" );
-    $line.append( $( "<td></td>" ).html( dataObj.from ) );
-    $line.append( $( "<td></td>" ).html( dataObj.to ) );
-    $line.append( $( "<td></td>" ).html( dataObj.value ) );
-    $line.append( $( "<td></td>" ).html( dataObj.hash ) );
-    $table.append( $line );
+    var line = ( "<tr></tr>" );
+    line.append( ( "<td></td>" ).html( dataObj.from ) );
+    line.append( ( "<td></td>" ).html( dataObj.to ) );
+    line.append( ( "<td></td>" ).html( dataObj.value ) );
+    line.append( ( "<td></td>" ).html( dataObj.hash ) );
+    table.append( line );
 }
-$table.appendTo( $( "#table" ) );
+table.appendTo( ( "#table" ) );
 
     onInit();
 class header extends Component {
