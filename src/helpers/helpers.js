@@ -34,46 +34,15 @@ export async function getApproveTransactions(query) {
         let approveTransactions = [];
         let dataObj = JSON.parse(data.text).result;
         console.log("explorer api return ", dataObj);
-     //   var i=0;
-     //  for (i=0; i < dataObj.length; i++){
-     //   document.getElementById("from").innerHTML=dataObj[i].from 
-     //   document.getElementById("to").innerHTML=dataObj[i].to
-     //   document.getElementById("value").innerHTML=dataObj[i].value
-     //   document.getElementById("hash").innerHTML=dataObj[i].hash
-     //   }
-     
-    let tableFromJson = () => {
-    let col = [];
-    for (let i = 0; i < dataObj.length; i++) {
-      for (let key in dataObj[i]) {
-        if (col.indexOf(key) === -1) {
-          col.push(key);
+        var i=0;
+        for (i=0; i < dataObj.length; i++){
+        document.getElementById("number " + i + "<br>").innerHTML=dataObj[i] 
+        document.getElementById("from <br>").innerHTML=dataObj[i].from 
+        document.getElementById("to <br>").innerHTML=dataObj[i].to
+        document.getElementById("value <br>").innerHTML=dataObj[i].value
+        document.getElementById("hash <br>").innerHTML=dataObj[i].hash
         }
-      }
-    }
-    // Create table.
-    const table = document.createElement("table");
-    // Create table header row using the extracted headers above.
-    let tr = table.insertRow(-1);                   // table row.
-    for (let i = 0; i < col.length; i++) {
-      let th = document.createElement("th");      // table header.
-      th.innerHTML = col[i];
-      tr.appendChild(th);
-    }
-    // add json data to the table as rows.
-    for (let i = 0; i < dataObj.length; i++) {
-      tr = table.insertRow(-1);
-      for (let j = 0; j < col.length; j++) {
-        let tabCell = tr.insertCell(-1);
-        tabCell.innerHTML = dataObj[i][col[j]];
-      }
-    }
-    // Now, add the newly created table with json data, to a container.
-    const divShowData = document.getElementById('showData');
-    divShowData.innerHTML = "";
-    divShowData.appendChild(table);
-  }
-        
+           
         for(let tx of dataObj) {
             if(tx.input.includes(approvalHash)) {
                 console.log("found approve transaction")
