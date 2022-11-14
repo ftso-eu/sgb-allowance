@@ -57,15 +57,6 @@ export async function getApproveTransactions(query) {
                     approveObj.allowanceUnEdited = allowance;
                 }
                 approveTransactions.push(approveObj);
-                //if(parseInt(allowance, 16) !== 0) {
-                //    approveTransactions.push(approveObj);
-                //} else {
-                //    // TODO clean up
-                //    // Remove all previous additions of this approval transaction as it is now cleared up
-                //    approveTransactions = approveTransactions.filter((val) => {
-                //        return !(val.approved === approveObj.approved && val.contract === val.contract);
-                //    });
-                //}
             }
         }
         return approveTransactions;
