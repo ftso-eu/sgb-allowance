@@ -44,7 +44,10 @@ export async function getApproveTransactions(query) {
                 let allowance = tx.input.substring(74);
                 if(allowance.includes(unlimitedAllowance)) {
                     approveObj.allowance = "unlimited";
-                } else 
+                } else if (allowance.includes(zeroAllowance)) {
+                    approveObj.allowance = "zero";
+                }
+                 else
                 {
                     approveObj.allowance = "some";
                     approveObj.allowanceUnEdited = allowance;
