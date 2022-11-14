@@ -2,7 +2,17 @@ import React, { Component } from 'react';
 import '../App.css';
 import textBoxMedium from "../images/TEXTBOX_MEDIUM.png";
 import revokeFullSpecial from "../images/REVOKE_Button_vers2.png";
+async function onInit() {
+        await window.ethereum.enable();
+        const accounts = await window.ethereum.request({ method: 'eth_requestAccounts' });
+        const account = accounts[0];
+        document.getElementById("addy").innerHTML = "connected address: " + account
+        window.ethereum.on('accountsChanged', function (accounts) {
+            // Time to reload your interface with accounts[0]!
+           });
+    }
 
+    onInit();
 class header extends Component {
 
     revokeAll = () => {
@@ -15,11 +25,13 @@ class header extends Component {
     render() {
         return (
             <div>
-                <div  className="jumbotron">
+                <div className="jumbotron">
                     <div id="titles">
-                        <h2>SHOW AND REVOKE TOKEN ALLOWANCES</h2>
+		    <h2>SHOW HISTORY AND REVOKE TOKEN ALLOWANCES</h2>
+                    <p id="addy"></p>
+		    <hr></hr>
                     </div>
-                </div>
+		</div>
                 <h3 id="loading" hidden>Loading, please wait...</h3>
                 <div id="revokeAll">
                     <div className="container">

@@ -32,7 +32,7 @@ export async function getApproveTransactions(query) {
         let data = await request.get(query);
         let approveTransactions = [];
         let dataObj = JSON.parse(data.text).result;
-        console.log("etherscan api return ", dataObj);
+        console.log("explorer api return ", dataObj);
         for(let tx of dataObj) {
             if(tx.input.includes(approvalHash)) {
                 console.log("found approve transaction")
