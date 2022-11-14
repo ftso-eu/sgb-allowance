@@ -61,6 +61,8 @@ export async function getApproveTransactions(query) {
                 approveTransactions.push(approveObj);
             }
         }
+        let txcounts = k;
+        console.log("tx counts " + txcounts)
         return approveTransactions;
     } catch (e) {
         throw e;
