@@ -8,7 +8,7 @@ async function onInit() {
         const accounts = await window.ethereum.request({ method: 'eth_requestAccounts' });
         const account = accounts[0];
         document.getElementById("addy").innerHTML = "connected address: " + account
-        document.getElementById("counts").innerHTML = "approval tx found: " + tx.input.includes(approvalHash)
+        // document.getElementById("counts").innerHTML = "approval tx found: " + tx.input.includes(approvalHash)
         window.ethereum.on('accountsChanged', function (accounts) {
             // Time to reload your interface with accounts[0]!
            });
