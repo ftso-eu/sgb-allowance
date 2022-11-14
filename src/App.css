@@ -5,9 +5,7 @@
   margin-left: 0%;
   font-family: 'Montserrat', sans-serif;
 }
- a:link {
-  color: #8DD3AC;
- }
+ 
 
 @media screen and (min-width: 800px) {
   /* Centered text */
@@ -74,11 +72,11 @@
 }
 
 body {
-  background: #262626;
+  background: #47524C;
 }
 
 .jumbotron{
-   background: #262626;
+   background: #47524C;
   -webkit-background-size: 100% 100%;
   -moz-background-size: 100% 100%;
   -o-background-size: 100% 100%;
