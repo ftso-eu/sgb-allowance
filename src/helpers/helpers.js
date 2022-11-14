@@ -12,6 +12,8 @@ export function getQuery(chainId, address) {
             return "https://coston2-explorer.flare.network/api?module=account&action=txlist&address=" + address;
         case 16:
             return "https://coston-explorer.flare.network/api?module=account&action=txlist&address=" + address;
+        case 19:
+            return "https://songbird-explorer.flare.network/api?module=account&action=txlist&address=" + address;
         default:
             return "";
     }
@@ -23,6 +25,8 @@ export function getEtherScanPage(chainId) {
             return "https://coston2-explorer.flare.network/address/";
         case 16:
             return "https://coston-explorer.flare.network/address/";
+        case 19:
+            return "https://songbird-explorer.flare.network/address/";
         default:
             return "";
     }
