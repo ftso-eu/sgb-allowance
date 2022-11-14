@@ -23,6 +23,7 @@ class allowances extends Component {
                 document.getElementById("loading").hidden = true;
             } else {
                 document.getElementById("loading").innerText = "Hey, no allowances found on this account!";
+                document.getElementById("revokeAll").hidden = true;
             }
         }).catch((err) => {
             console.log(err);
