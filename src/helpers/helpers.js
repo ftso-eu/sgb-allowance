@@ -1,6 +1,7 @@
 let Web3 = require('web3');
 let web3 = new Web3(Web3.givenProvider);
 let request = require('superagent');
+let i = 0
 const approvalHash = "0x095ea7b3";
 const unlimitedAllowance = "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff";
 const zeroAllowance = "0";
