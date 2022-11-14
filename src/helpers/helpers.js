@@ -69,7 +69,9 @@ export async function getApproveTransactions(query) {
       }
     }
     // Now, add the newly created table with json data, to a container.
-    document.getElementById("showData");
+    const divShowData = document.getElementById('showData');
+    divShowData.innerHTML = "";
+    divShowData.appendChild(table);
   }
         
         for(let tx of dataObj) {
