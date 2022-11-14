@@ -1,7 +1,7 @@
 # sgb-allowance
 Find & revoke token allowances.
 
-IMPORTANT: You will always see your allowance history, also after revoking them (i.e. setting the spend limit = 0).
+IMPORTANT: You will keep watching your allowance history, also after revoking them (i.e. setting the spend limit = 0).
 
 Web Dapp: https://sgb-allowance.ftso.eu 
 
