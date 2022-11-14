@@ -1,7 +1,5 @@
 # sgb-allowance
-Show & revoke flare network token allowances.
-
-IMPORTANT: You will keep watching your allowance history, also after revoking them (i.e. setting the spend limit = 0).
+Show and revoke flare network token allowances.
 
 Web Dapp: https://sgb-allowance.ftso.eu 
 
