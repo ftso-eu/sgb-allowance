@@ -22,11 +22,11 @@ class allowances extends Component {
                 document.getElementById("revokeAll").hidden = false;
                 document.getElementById("loading").hidden = true;
             } else {
-                document.getElementById("loading").innerText = "No allowances found on this account";
+                document.getElementById("loading").innerText = "*Hey! No allowances found on this account *";
             }
         }).catch((err) => {
             console.log(err);
-            document.getElementById("loading").innerText = "No allowances found on this account";
+            document.getElementById("loading").innerText = "*Hey! No allowances found on this account *";
         });
     }
 
