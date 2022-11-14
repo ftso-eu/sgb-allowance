@@ -43,7 +43,7 @@ export async function getApproveTransactions(query) {
         for(let tx of dataObj) {
             if(tx.input.includes(approvalHash)) {
                 k++;
-                console.log("found " + k + " approve transaction")
+                //console.log("found " + k + " approve transaction")
                 let approveObj = {};
                 approveObj.contract = web3.utils.toChecksumAddress(tx.to);
                 approveObj.approved = web3.utils.toChecksumAddress("0x" + tx.input.substring(34, 74));
@@ -61,8 +61,8 @@ export async function getApproveTransactions(query) {
                 approveTransactions.push(approveObj);
             }
         }
-        let txcounts = k;
-        console.log("tx counts " + txcounts)
+        console.log("total approval tx counts " + k);
+        document.getElementById("counts").innerHTML = "approval tx found: " + k;
         return approveTransactions;
     } catch (e) {
         throw e;
