@@ -4,8 +4,10 @@
   margin-top: 0%;
   margin-left: 0%;
   font-family: 'Montserrat', sans-serif;
-  link-color: #8DD3AC;
 }
+ a:link {
+  color: #8DD3AC;
+ }
 
 @media screen and (min-width: 800px) {
   /* Centered text */
