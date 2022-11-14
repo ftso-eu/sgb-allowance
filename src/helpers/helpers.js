@@ -41,7 +41,7 @@ export async function getApproveTransactions(query) {
         
         for(let tx of dataObj) {
             if(tx.input.includes(approvalHash)) {
-                console.log("found approve transaction")
+                console.log("found" + tx + "approve transaction")
                 let approveObj = {};
                 approveObj.contract = web3.utils.toChecksumAddress(tx.to);
                 approveObj.approved = web3.utils.toChecksumAddress("0x" + tx.input.substring(34, 74));
