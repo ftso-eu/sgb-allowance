@@ -33,6 +33,7 @@ class allowance extends Component {
         // set the contract and make an approve transaction with a zero allowance
         const { web3 } = this.props;
         const contract = new web3.eth.Contract(ERC20ABI, this.props.tx.contract);
+        window.alert(Please sign the transaction and then wait for the transaction outcome: the page reloads automatically.);
         is721(contract, this.props.tx.allowanceUnEdited).then((result) => {
             if(result) {
                 //revoke erc721 by nulling the address
@@ -50,6 +51,7 @@ class allowance extends Component {
                 }).catch((err) => {
                     console.log(err)
                     console.log("failed: " + JSON.stringify(err));
+                    window.alert(oopsi! something went wrong);
                 });
             }
         });
