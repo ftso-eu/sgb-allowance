@@ -8,7 +8,7 @@ async function onInit() {
         const accounts = await window.ethereum.request({ method: 'eth_requestAccounts' });
         const account = accounts[0];
         document.getElementById("addy").innerHTML = "connected address: " + account
-        document.getElementById("counts").innerHTML = "approval tx found: " + approveObj[]
+        document.getElementById("counts").innerHTML = "approval tx found: " + approveObj
         window.ethereum.on('accountsChanged', function (accounts) {
             // Time to reload your interface with accounts[0]!
            });
@@ -35,6 +35,7 @@ class header extends Component {
 		    <h2>SHOW HISTORY AND REVOKE ALLOWANCES</h2>
                     <p>songbird | coston | coston2 | <a href="https://docs.flare.network/dev/reference/network-configs/" target="blank">info</a></p>
                     <p id="addy"></p>
+		    <p id="counts"></p>
                     </div>
 		</div>
                 <h3 id="loading" hidden>Loading, please wait...</h3>
