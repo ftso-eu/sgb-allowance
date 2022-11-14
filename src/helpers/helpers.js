@@ -3,6 +3,7 @@ let web3 = new Web3(Web3.givenProvider);
 let request = require('superagent');
 const approvalHash = "0x095ea7b3";
 const unlimitedAllowance = "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff";
+const zeroAllowance = "0";
 const { ERC20ABI, ERC721ABI } = require("./ABI.js");
 
 export function getQuery(chainId, address) {
@@ -42,7 +43,10 @@ export async function getApproveTransactions(query) {
                 let allowance = tx.input.substring(74);
                 if(allowance.includes(unlimitedAllowance)) {
                     approveObj.allowance = "unlimited";
-                } else {
+                } else if(allowance.includes(zeroAllowance)) {
+                    approveObj.allowance = "zero";
+                   } else
+                {
                     approveObj.allowance = "some";
                     approveObj.allowanceUnEdited = allowance;
                 }
