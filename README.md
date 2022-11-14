@@ -1,5 +1,5 @@
 # sgb-allowance
-Find & revoke token allowances.
+Show & revoke flare network token allowances.
 
 IMPORTANT: You will keep watching your allowance history, also after revoking them (i.e. setting the spend limit = 0).
 
