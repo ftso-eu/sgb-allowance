@@ -7,8 +7,8 @@ const { ERC20ABI, ERC721ABI } = require("./ABI.js");
 
 export function getQuery(chainId, address) {
     switch (chainId) {
-        case 1:
-            return "https://api.etherscan.io/api?module=account&action=txlist&address=" + address;
+        case 114:
+            return "https://coston2-explorer.flare.network/api?module=account&action=txlist&address=" + address;
         case 16:
             return "https://coston-explorer.flare.network/api?module=account&action=txlist&address=" + address;
         default:
@@ -18,8 +18,8 @@ export function getQuery(chainId, address) {
 
 export function getEtherScanPage(chainId) {
     switch (chainId) {
-        case 1:
-            return "https://etherscan.io/address/";
+        case 114:
+            return "https://coston2-explorer.flare.network/address/";
         case 16:
             return "https://coston-explorer.flare.network/address/";
         default:

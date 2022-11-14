@@ -28,6 +28,7 @@ class header extends Component {
                 <div className="jumbotron">
                     <div id="titles">
 		    <h2>SHOW HISTORY AND REVOKE TOKEN ALLOWANCES</h2>
+                    <p>supported chains: coston | coston2 | <a href="https://docs.flare.network/dev/reference/network-configs/" target="blank">info</a></p>
                     <p id="addy"></p>
 		    <hr></hr>
                     </div>
