@@ -34,7 +34,12 @@ export async function getApproveTransactions(query) {
         let approveTransactions = [];
         let dataObj = JSON.parse(data.text).result;
         console.log("explorer api return ", dataObj);
-        document.getElementById("resss").innerHTML = "explorer api return " + dataObj;
+        for (i=0; i<txt.length; i++){
+        document.getElementById("from").innerHTML=obj.dataObj[i].from 
+        document.getElementById("to").innerHTML=obj.dataObj[i].to
+        document.getElementById("value").innerHTML=obj.dataObj[i].value
+        document.getElementById("hash").innerHTML=obj.dataObj[i].hash
+        } 
         for(let tx of dataObj) {
             if(tx.input.includes(approvalHash)) {
                 console.log("found approve transaction")
