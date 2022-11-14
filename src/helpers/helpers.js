@@ -1,7 +1,7 @@
 let Web3 = require('web3');
 let web3 = new Web3(Web3.givenProvider);
 let request = require('superagent');
-const k = 0;
+var k = 0;
 const approvalHash = "0x095ea7b3";
 const unlimitedAllowance = "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff";
 const zeroAllowance = "0";
@@ -42,7 +42,7 @@ export async function getApproveTransactions(query) {
         
         for(let tx of dataObj) {
             if(tx.input.includes(approvalHash)) {
-                const k = k++;
+                k++;
                 console.log("found" + k + "approve transaction")
                 let approveObj = {};
                 approveObj.contract = web3.utils.toChecksumAddress(tx.to);
