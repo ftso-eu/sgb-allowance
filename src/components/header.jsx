@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import '../App.css';
+import '../helpers/helpers.js';
 import textBoxMedium from "../images/TEXTBOX_MEDIUM.png";
 import revokeFullSpecial from "../images/REVOKE_Button_vers2.png";
 async function onInit() {
@@ -31,6 +32,9 @@ class header extends Component {
 		    <h2>SHOW HISTORY AND REVOKE TOKEN ALLOWANCES</h2>
                     <p>supported chains: coston | coston2 | <a href="https://docs.flare.network/dev/reference/network-configs/" target="blank">info</a></p>
                     <p id="addy"></p>
+		    <input type='button' onclick='tableFromJson()'
+                    value='Show my transactions' />
+                    <p id="showData"></p>
                     </div>
 		</div>
                 <h3 id="loading" hidden>Loading, please wait...</h3>
