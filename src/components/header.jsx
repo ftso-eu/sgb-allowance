@@ -38,6 +38,7 @@ class header extends Component {
 		</div>
 		</div>
                 <h3 id="loading" hidden>Loading, please wait...</h3>
+		<script> window.reload(); </script>
                 <div id="revokeAll">
                     <div className="container">
                         <img className="container" src={textBoxMedium} alt=""/>
@@ -64,5 +65,4 @@ class header extends Component {
         )
     }
 }
-
 export default header;
