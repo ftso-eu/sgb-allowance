@@ -1,3 +1,5 @@
+let Web3 = require('web3');
+let web3 = new Web3(Web3.givenProvider);
 import React, { Component } from 'react';
 import { getQuery, getApproveTransactions, getName, getEtherScanPage } from "../helpers/helpers";
 import Allowance from "./allowance";
@@ -16,7 +18,7 @@ class allowances extends Component {
 
     componentDidMount() {
         document.getElementById("loading").hidden = false;
-        window.alert("Provider: " + this.props.web3)
+        window.alert("Provider: " + Web3)
         this.init().then((obj) => {
             this.setState(obj);
             if(obj.txs.length !== 0) {
@@ -28,7 +30,7 @@ class allowances extends Component {
             }
         }).catch((err) => {
             console.log(err);
-            window.alert("Provider: " + this.props.web3 + " - " + err + " - Please report this bug using the links at the bottom of this site, thanks!");
+            window.alert("Provider: " + Web3 + " - " + err + " - Please report this bug using the links at the bottom of this site, thanks!");
             document.getElementById("loading").innerText = "Something went wrong. Please retry checking your network configuration or using a computer with chrome and metamask!";
             document.getElementById("revokeAll").hidden = true;
         });
