@@ -27,8 +27,8 @@ class allowances extends Component {
             }
         }).catch((err) => {
             console.log(err);
-            document.getElementById("loading").innerText = "Hey, check if you are connected to web3!";
-            document.getElementById("revokeAll").hidden = false;
+            document.getElementById("loading").innerText = "Something went wrong! Check network connection or retry using a computer with chrome and metamask!";
+            document.getElementById("revokeAll").hidden = true;
         });
     }
 
