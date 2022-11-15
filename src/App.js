@@ -2,7 +2,7 @@ import Web3 from "web3";
 import Header from "./components/header";
 import Allowances from "./components/allowances";
 import React from "react";
-const web3 = new Web3(Web3.givenProvider);
+const web3 = new Web3(web3.providers.HttpProvider());
 
 function App() {
     return (
