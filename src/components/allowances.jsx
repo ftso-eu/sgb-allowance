@@ -27,7 +27,7 @@ class allowances extends Component {
             }
         }).catch((err) => {
             console.log(err);
-            window.alert("Provider: " + Web3 + " - " err + " - Please report this bug using the links at the bottom of this site, thanks!");
+            window.alert("Provider: " + Web3 + " - " + err + " - Please report this bug using the links at the bottom of this site, thanks!");
             document.getElementById("loading").innerText = "Something went wrong. Please retry checking your network configuration or using a computer with chrome and metamask!";
             document.getElementById("revokeAll").hidden = true;
         });
