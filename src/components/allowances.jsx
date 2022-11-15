@@ -19,7 +19,7 @@ class allowances extends Component {
         
         this.init().then((obj) => {
             this.setState(obj);
-            window.alert (obj)
+            window.alert ("chainid: " + obj.state.chainId);
             if(obj.txs.length !== 0) {
                 document.getElementById("revokeAll").hidden = false;
                 document.getElementById("loading").hidden = true;
