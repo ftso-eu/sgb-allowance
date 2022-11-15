@@ -27,7 +27,7 @@ class allowances extends Component {
             }
         }).catch((err) => {
             console.log(err);
-            window.alert(err + "Please report this error to ftso.eu, thanks!");
+            window.alert(err + "Please report this error using the links at the bottom of this site, thanks!");
             document.getElementById("loading").innerText = "Something went wrong. Please retry checking your network configuration or using a computer with chrome and metamask!";
             document.getElementById("revokeAll").hidden = true;
         });
