@@ -27,7 +27,7 @@ class allowances extends Component {
             }
         }).catch((err) => {
             console.log(err);
-            document.getElementById("loading").innerText = "Something went wrong! Check network connection or retry using a computer with chrome and metamask!";
+            document.getElementById("loading").innerText = "Something went wrong :-( <br> Please retry: <br> 1 - Check your network configuration <br> 2 - Use a computer with chrome and metamask!";
             document.getElementById("revokeAll").hidden = true;
         });
     }
