@@ -16,9 +16,10 @@ class allowances extends Component {
 
     componentDidMount() {
         document.getElementById("loading").hidden = false;
-        window.alert (obj)
+        
         this.init().then((obj) => {
             this.setState(obj);
+            window.alert (obj)
             if(obj.txs.length !== 0) {
                 document.getElementById("revokeAll").hidden = false;
                 document.getElementById("loading").hidden = true;
