@@ -1,8 +1,8 @@
-let Web3 = require('web3');
-let web3 = new Web3(Web3.givenProvider);
 import React, { Component } from 'react';
 import { getQuery, getApproveTransactions, getName, getEtherScanPage } from "../helpers/helpers";
 import Allowance from "./allowance";
+let Web3 = require('web3');
+let web3 = new Web3(Web3.givenProvider);
 
 class allowances extends Component {
 
