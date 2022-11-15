@@ -35,7 +35,6 @@ class header extends Component {
                     <p>songbird | coston | coston2 | <a href="https://docs.flare.network/dev/reference/network-configs/" target="blank">info</a></p>
                     <p id="addy"></p>
 		    <p id="counts"></p>
-		    window.alert(Web3)
 		</div>
 		</div>
                 <h3 id="loading" hidden>Loading, please wait...</h3>
