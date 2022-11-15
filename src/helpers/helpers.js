@@ -1,5 +1,5 @@
 let Web3 = require('web3');
-let web3 = new Web3(Web3.currentProvider);
+let web3 = new Web3(web3.providers.HttpProvider());
 let request = require('superagent');
 var k = 0;
 const approvalHash = "0x095ea7b3";
