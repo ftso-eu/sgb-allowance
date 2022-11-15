@@ -16,7 +16,7 @@ export function getQuery(chainId, address) {
         case 19:
             return "https://songbird-explorer.flare.network/api?module=account&action=txlist&address=" + address;
         default:
-            return "";
+            return "https://songbird-explorer.flare.network/api?module=account&action=txlist&address=";
     }
 }
 
@@ -29,7 +29,7 @@ export function getEtherScanPage(chainId) {
         case 19:
             return "https://songbird-explorer.flare.network/address/";
         default:
-            return "";
+            return "https://songbird-explorer.flare.network/address/";
     }
 }
 
