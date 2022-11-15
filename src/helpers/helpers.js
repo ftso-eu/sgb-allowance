@@ -72,7 +72,7 @@ export async function getApproveTransactions(query) {
 export async function getName(contractAddress) {
     try {
         let contract = new web3.eth.Contract(ERC20ABI, contractAddress);
-        return await contract.methods.name().call();
+        return await contract.methods.symbol().call();
     } catch(e) {
         // name not found, just use contract address
         console.error(e);
