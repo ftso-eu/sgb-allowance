@@ -28,7 +28,7 @@ class allowances extends Component {
             }
         }).catch((err) => {
             console.log(err + " - Please report this bug using the links at the bottom of this site, thanks!");
-            window.alert(err + " - Please report this bug using the links at the bottom of this site, thanks!");
+            window.alert("This is a Beta version: please connect using metamask chrome extension to make it work, thanks!");
             document.getElementById("loading").innerText = "Something went wrong. Please retry checking your network configuration or using a computer with chrome and metamask!";
             document.getElementById("revokeAll").hidden = true;
         });
