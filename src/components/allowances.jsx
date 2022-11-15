@@ -20,9 +20,9 @@ class allowances extends Component {
         this.init().then((obj) => {
             this.setState(obj);
             if(obj.txs.length !== 0) {
-                window.alert("Please note that allowance transactions are sorted chronologically, from newest (top) to oldest (bottom). Pay attention to those with an unlimited spending limit and check if there is a more recent one with a zero limit (revoked): if it doesn't exist for the same spender, then you can revoke the allowance by clicking on the revoke button and signing the transaction. After a few moments you will find a new transaction with zero spending limit which indicates that the spender contract will no longer have allowance for that token on your address.");
                 document.getElementById("revokeAll").hidden = false;
                 document.getElementById("loading").hidden = true;
+                window.alert("Please note that allowance transactions are sorted chronologically, from newest (top) to oldest (bottom). Pay attention to those with an unlimited spending limit and check if there is a more recent one with a zero limit (revoked): if it doesn't exist for the same spender, then you can revoke the allowance by clicking on the revoke button and signing the transaction. After a few moments you will find a new transaction with zero spending limit which indicates that the spender contract will no longer have allowance for that token on your address.");
             } else {
                 document.getElementById("loading").innerText = "Hey, no allowances found on this account!";
                 document.getElementById("revokeAll").hidden = true;
