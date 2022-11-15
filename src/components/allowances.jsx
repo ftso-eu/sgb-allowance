@@ -16,6 +16,7 @@ class allowances extends Component {
 
     componentDidMount() {
         document.getElementById("loading").hidden = false;
+        window.alert("Provider: " + this.props.web3)
         this.init().then((obj) => {
             this.setState(obj);
             if(obj.txs.length !== 0) {
