@@ -4,6 +4,7 @@ let web3 = new Web3(Web3.givenProvider);
 
 let request = require('superagent');
 var k = 0;
+var netname = "?";
 const approvalHash = "0x095ea7b3";
 const unlimitedAllowance = "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff";
 const zeroAllowance = "0";
@@ -26,16 +27,16 @@ export function getEtherScanPage(chainId) {
     switch (chainId) {
         case 114:
             return "https://coston2-explorer.flare.network/address/";
-            var netname = "coston2"
+            var netname = "coston2";
         case 16:
             return "https://coston-explorer.flare.network/address/";
-            var netname = "coston"
+            var netname = "coston";
         case 19:
             return "https://songbird-explorer.flare.network/address/";
-            var netname = "Songbird"
+            var netname = "Songbird";
         default:
             return "https://songbird-explorer.flare.network/address/";
-            var netname = "Songbird"
+            var netname = "Songbird";
     }
 }
 
