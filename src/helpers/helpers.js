@@ -26,16 +26,16 @@ export function getEtherScanPage(chainId) {
     switch (chainId) {
         case 114:
             return "https://coston2-explorer.flare.network/address/";
-            const netname = "coston2"
+            var netname = "coston2"
         case 16:
             return "https://coston-explorer.flare.network/address/";
-            const netname = "coston"
+            var netname = "coston"
         case 19:
             return "https://songbird-explorer.flare.network/address/";
-            const netname = "Songbird"
+            var netname = "Songbird"
         default:
             return "https://songbird-explorer.flare.network/address/";
-            const netname = "Songbird"
+            var netname = "Songbird"
     }
 }
 
