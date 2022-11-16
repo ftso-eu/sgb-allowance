@@ -2,16 +2,7 @@ let Web3 = require('web3');
 
 let web3 = new Web3(Web3.givenProvider);
 
-const detectNetwork = require('web3-detect-network');(async () => {
-const network = await detectNetwork(web3.currentProvider)
-console.log(network)
-/*
-{
-  "id": "4",
-  "type": "rinkeby"
-}
-*/
-})()
+web3.eth.net.getNetworkType().then(window.alert);
 
 let request = require('superagent');
 var k = 0;
