@@ -1,18 +1,10 @@
 let Web3 = require('web3');
-//
-//import detectEthereumProvider from '@metamask/detect-provider';
-//const provider = await detectEthereumProvider();
-//if (provider) {
-//  console.log("provider" + provider);
-//  window.alert("provider" + provider);
-//  } else {
-//  console.log('Please install MetaMask!');
-// window.alert("provider" + provider);
-//}
-//let web3 = provider;
-//
 
 let web3 = new Web3(Web3.givenProvider);
+
+const detectNetwork = require('web3-detect-network');(async () => {
+        const netname = await detectNetwork(web3.currentProvider)
+        console.log(netname)})()
 
 let request = require('superagent');
 var k = 0;
@@ -77,8 +69,8 @@ export async function getApproveTransactions(query) {
             }
         }
         console.log("total approval tx counts " + k);
-        let netname = web3.eth.net.getNetworkType();
-        document.getElementById("counts").innerHTML = "Approve transations found: " + k + " on " + netname + " network";
+        
+        document.getElementById("counts").innerHTML = "Approve transations found: " + k + " on " + netname.type + " network";
         return approveTransactions;
     } catch (e) {
         throw e;
