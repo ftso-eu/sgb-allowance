@@ -27,7 +27,7 @@ class header extends Component {
     render() {
         return (
             <div>
-		<div className="bar">
+		<div id="bar">
 		    <i>Please beware this is a <strong>Beta</strong> tool in test / canary nets, use it at your own risk.</i>
                 </div>
                 <div className="jumbotron">
