@@ -78,15 +78,15 @@ font-size: medium;
 .grid-container {
   display: grid;
   grid-template-columns: auto auto auto auto;
-  padding: 10px;
+  padding: 1%;
 }
 
 body {
-  background: #F7F7F7;
+  background: #FBFDFC;
 }
 
 .jumbotron{
-   background: #F7F7F7;
+   background: #FBFDFC;
   -webkit-background-size: 100% 100%;
   -moz-background-size: 100% 100%;
   -o-background-size: 100% 100%;
@@ -95,11 +95,11 @@ body {
 }
 
 .revoke-full {
-  background: url("./images/REVOKE_FULL_SIZE_NEON.png") no-repeat center center;
+ color: black;
 }
 
 .revoke-small {
-  background: url("./images/REVOKE_SMALL_SIZE_NEON.png") no-repeat center center;
+ color: black;
 }
 
 .allowance {
@@ -109,7 +109,7 @@ body {
 #columns {
   background-size: auto;
   padding: 5%;
-  background: url("./images/toolbar.png") no-repeat;
+  color: black;
 }
 
 #headers {
