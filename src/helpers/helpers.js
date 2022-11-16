@@ -13,34 +13,42 @@ const { ERC20ABI, ERC721ABI } = require("./ABI.js");
 export function getQuery(chainId, address) {
     switch (chainId) {
         case 114:
-            return "https://coston2-explorer.flare.network/api?module=account&action=txlist&address=" + address;
             var netname = "coston2";
+            return "https://coston2-explorer.flare.network/api?module=account&action=txlist&address=" + address;
+            
         case 16:
-            return "https://coston-explorer.flare.network/api?module=account&action=txlist&address=" + address;
             var netname = "coston";
+            return "https://coston-explorer.flare.network/api?module=account&action=txlist&address=" + address;
+            
         case 19:
-            return "https://songbird-explorer.flare.network/api?module=account&action=txlist&address=" + address;
             var netname = "Songbird";
+            return "https://songbird-explorer.flare.network/api?module=account&action=txlist&address=" + address;
+            
         default:
-            return "https://songbird-explorer.flare.network/api?module=account&action=txlist&address=" + address;
             var netname = "Songbird";
+            return "https://songbird-explorer.flare.network/api?module=account&action=txlist&address=" + address;
+            
     }
 }
 
 export function getEtherScanPage(chainId) {
     switch (chainId) {
         case 114:
-            return "https://coston2-explorer.flare.network/address/";
             var netname = "coston2";
+            return "https://coston2-explorer.flare.network/address/";
+            
         case 16:
-            return "https://coston-explorer.flare.network/address/";
             var netname = "coston";
+            return "https://coston-explorer.flare.network/address/";
+            
         case 19:
-            return "https://songbird-explorer.flare.network/address/";
             var netname = "Songbird";
+            return "https://songbird-explorer.flare.network/address/";
+            
         default:
-            return "https://songbird-explorer.flare.network/address/";
             var netname = "Songbird";
+            return "https://songbird-explorer.flare.network/address/";
+            
     }
 }
 
