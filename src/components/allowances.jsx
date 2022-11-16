@@ -46,7 +46,7 @@ class allowances extends Component {
         }
         const chainId = await this.props.web3.eth.getChainId();
         //if chainId 16 
-        /netname coston etc...
+        //netname coston etc...
         this.setState({ chainId: chainId });
         const query = getQuery(chainId, account);
         const txs = await getApproveTransactions(query);
