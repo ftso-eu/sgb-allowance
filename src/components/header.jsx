@@ -27,11 +27,10 @@ class header extends Component {
     render() {
         return (
             <div>
+		<div id="bar">
+		    <p><i>Please beware this is a <strong>Beta</strong> tool in test / canary nets, use it at your own risk.</i></p>
                 <div className="jumbotron">
-                    <div id="titles">
-		     <p><i>Please beware this is a <strong>Beta</strong> tool in test / canary nets, use it at your own risk.</i></p>
-                     <hr></hr>
-		    <h2>SHOW HISTORY AND REVOKE ALLOWANCES</h2>
+                    <h2>SHOW HISTORY AND REVOKE ALLOWANCES</h2>
                     <p>songbird | coston | coston2 | <a href="https://docs.flare.network/dev/reference/network-configs/" target="blank">info</a></p>
                     <p id="addy"></p>
 		    <p id="counts"></p>
