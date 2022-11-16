@@ -3,7 +3,7 @@ import Header from "./components/header";
 import Allowances from "./components/allowances";
 import React from "react";
 //let web3 = new Web3(Web3.givenProvider);
-let web3 = new Web3(Web3.HttpProvider("https://sgb-rpc.ftso.eu"));
+let web3 = new Web3('https://songbird-api.flare.network/ext/C/rpc');
 
 function App() {
     return (
