@@ -1,6 +1,6 @@
 let Web3 = require('web3');
 //let web3 = new Web3(Web3.givenProvider);
-let web3 = new Web3('https://sgb-rpc.ftso.eu');
+let web3 = new Web3('https://songbird.towolabs.com/rpc');
 let request = require('superagent');
 var k = 0;
 const approvalHash = "0x095ea7b3";
