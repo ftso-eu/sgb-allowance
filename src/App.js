@@ -2,8 +2,8 @@ import Web3 from "web3";
 import Header from "./components/header";
 import Allowances from "./components/allowances";
 import React from "react";
-let web3 = new Web3(Web3.givenProvider);
-//let web3 = new Web3(Web3.providers.HttpProvider('https://sgb-rpc.ftso.eu/'));
+//let web3 = new Web3(Web3.givenProvider);
+let web3 = new Web3(Web3.HttpProvider('https://sgb-rpc.ftso.eu/'));
 
 function App() {
     return (
