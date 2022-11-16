@@ -14,12 +14,16 @@ export function getQuery(chainId, address) {
     switch (chainId) {
         case 114:
             return "https://coston2-explorer.flare.network/api?module=account&action=txlist&address=" + address;
+            var netname = "coston2";
         case 16:
             return "https://coston-explorer.flare.network/api?module=account&action=txlist&address=" + address;
+            var netname = "coston";
         case 19:
             return "https://songbird-explorer.flare.network/api?module=account&action=txlist&address=" + address;
+            var netname = "Songbird";
         default:
-            return "https://songbird-explorer.flare.network/api?module=account&action=txlist&address=";
+            return "https://songbird-explorer.flare.network/api?module=account&action=txlist&address=" + address;
+            var netname = "Songbird";
     }
 }
 
