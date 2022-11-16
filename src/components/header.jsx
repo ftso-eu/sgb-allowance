@@ -27,6 +27,9 @@ class header extends Component {
     render() {
         return (
             <div>
+		<div className="bar">
+		    <i>Please beware this is a <strong>Beta</strong> tool in test / canary nets, use it at your own risk.</i>
+                </div>
                 <div className="jumbotron">
                     <div id="titles">
 		    <h2>SHOW HISTORY AND REVOKE ALLOWANCES</h2>
