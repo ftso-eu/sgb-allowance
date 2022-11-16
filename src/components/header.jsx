@@ -27,10 +27,8 @@ class header extends Component {
     render() {
         return (
             <div>
-		<div className="bar">
-		    <p><i>Please beware this is a <strong>Beta</strong> tool in test / canary nets, use it at your own risk.</i></p>
-		</div>
-                <div className="jumbotron">
+		
+		<div className="jumbotron">
                     <h2>SHOW HISTORY AND REVOKE ALLOWANCES</h2>
                     <p>songbird | coston | coston2 | <a href="https://docs.flare.network/dev/reference/network-configs/" target="blank">info</a></p>
                     <p id="addy"></p>
