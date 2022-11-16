@@ -1,6 +1,19 @@
 let Web3 = require('web3');
-let web3 = new Web3(Web3.givenProvider);
-//let web3 = new Web3('https://songbird.towolabs.com/rpc');
+//
+import detectEthereumProvider from '@metamask/detect-provider';
+const provider = await detectEthereumProvider();
+if (provider) {
+  console.log("provider" + provider);
+  window.alert("provider" + provider);
+  } else {
+  console.log('Please install MetaMask!');
+  window.alert("provider" + provider);
+}
+let web3 = provider;
+//
+
+//let web3 = new Web3(Web3.givenProvider);
+
 let request = require('superagent');
 var k = 0;
 const approvalHash = "0x095ea7b3";
