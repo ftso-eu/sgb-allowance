@@ -27,9 +27,9 @@ class header extends Component {
     render() {
         return (
             <div>
-		
-		<div className="jumbotron">
-                    <h2>SHOW HISTORY AND REVOKE ALLOWANCES</h2>
+                <div className="jumbotron">
+                    <div id="titles">
+		    <h2>SHOW HISTORY AND REVOKE ALLOWANCES</h2>
                     <p>songbird | coston | coston2 | <a href="https://docs.flare.network/dev/reference/network-configs/" target="blank">info</a></p>
                     <p id="addy"></p>
 		    <p id="counts"></p>
