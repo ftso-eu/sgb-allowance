@@ -77,7 +77,8 @@ export async function getApproveTransactions(query) {
             }
         }
         console.log("total approval tx counts " + k);
-        document.getElementById("counts").innerHTML = "Approve transations found: " + k;
+        let netname = web3.eth.net.getNetworkType();
+        document.getElementById("counts").innerHTML = "Approve transations found: " + k + " on " + netname + " network";
         return approveTransactions;
     } catch (e) {
         throw e;
