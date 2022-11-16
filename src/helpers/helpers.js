@@ -26,12 +26,16 @@ export function getEtherScanPage(chainId) {
     switch (chainId) {
         case 114:
             return "https://coston2-explorer.flare.network/address/";
+            const netname = "coston2"
         case 16:
             return "https://coston-explorer.flare.network/address/";
+            const netname = "coston"
         case 19:
             return "https://songbird-explorer.flare.network/address/";
+            const netname = "Songbird"
         default:
             return "https://songbird-explorer.flare.network/address/";
+            const netname = "Songbird"
     }
 }
 
@@ -66,7 +70,7 @@ export async function getApproveTransactions(query) {
         }
         console.log("total approval tx counts " + k);
         
-        document.getElementById("counts").innerHTML = "Approve transations found: " + k + " on " + k + " network";
+        document.getElementById("counts").innerHTML = "Approve transations found: " + k + " on " + netname + " network";
         return approveTransactions;
     } catch (e) {
         throw e;
