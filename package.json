@@ -14,7 +14,7 @@
     "superagent": "^5.2.2",
     "web-vitals": "^0.2.4",
     "web3": "1.8.1",
-    "@metamask/providers": "^8.1.1"
+    "@metamask/providers": "^8.1.1",
     "web3-detect-network": "0.0.18"
   },
   "scripts": {
