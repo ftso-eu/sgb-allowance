@@ -52,6 +52,7 @@ export async function getApproveTransactions(query) {
                     approveObj.allowance = "unlimited";
                 } else if (allowance.includes(zeroAllowance)) {
                     approveObj.allowance = "zero";
+                    approveObj.allowanceUnEdited = allowance;
                 }
                  else
                 {
@@ -62,7 +63,7 @@ export async function getApproveTransactions(query) {
             }
         }
         console.log("total approval tx counts " + k);
-        document.getElementById("counts").innerHTML = "approval tx found: " + k;
+        document.getElementById("counts").innerHTML = "Approve transations found: " + k;
         return approveTransactions;
     } catch (e) {
         throw e;
