@@ -3,8 +3,15 @@ let Web3 = require('web3');
 let web3 = new Web3(Web3.givenProvider);
 
 const detectNetwork = require('web3-detect-network');(async () => {
-        const netname = await detectNetwork(web3.currentProvider)
-        console.log(netname)})()
+const network = await detectNetwork(web3.currentProvider)
+console.log(network)
+/*
+{
+  "id": "4",
+  "type": "rinkeby"
+}
+*/
+})()
 
 let request = require('superagent');
 var k = 0;
@@ -70,7 +77,7 @@ export async function getApproveTransactions(query) {
         }
         console.log("total approval tx counts " + k);
         
-        document.getElementById("counts").innerHTML = "Approve transations found: " + k + " on " + netname.type + " network";
+        document.getElementById("counts").innerHTML = "Approve transations found: " + k + " on " + network.type + " network";
         return approveTransactions;
     } catch (e) {
         throw e;
