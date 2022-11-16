@@ -4,7 +4,7 @@ let web3 = new Web3(Web3.givenProvider);
 
 let request = require('superagent');
 var k = 0;
-var netname = "?";
+var netname = "this";
 const approvalHash = "0x095ea7b3";
 const unlimitedAllowance = "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff";
 const zeroAllowance = "0";
