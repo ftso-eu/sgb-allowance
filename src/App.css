@@ -11,8 +11,6 @@ font-size: medium;
 #titles {
   text-align: center;
   color: black;
-  margin-top: 0%;
-  margin-left: 0%;
   font-family: 'Montserrat', sans-serif;
 }
  
@@ -20,9 +18,9 @@ font-size: medium;
 @media screen and (min-width: 800px) {
   /* Centered text */
   .centered {
+    width:100%;
     position: relative;
     text-align:center;
-    left: 20%;
     color: black;
     font-size: large;
     font-family: 'Montserrat', sans-serif;
@@ -30,9 +28,9 @@ font-size: medium;
 
   /* Centered text */
   .centered-white {
+    width:100%;
     position: relative;
     text-align:center;
-    left: 20%;
     color: black;
     font-size: large;
     font-family: 'Montserrat', sans-serif;
@@ -43,10 +41,10 @@ font-size: medium;
 
 /* Container holding the image and the text */
 .container {
+  width:100%;
   position: relative;
   text-align: center;
   color: black;
-  max-width: 100%;
   display: table-cell;
 }
 
