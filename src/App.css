@@ -49,7 +49,6 @@ font-size: medium;
   text-align: center;
   color: black;
   max-width: 100%;
-  vertical-align: middle;
   display: table-cell;
 }
 
@@ -92,7 +91,7 @@ body {
   -moz-background-size: 100% 100%;
   -o-background-size: 100% 100%;
   background-size: 100% 100%;
-  margin: 0;
+  margin: 5%;
 }
 
 .revoke-full {
