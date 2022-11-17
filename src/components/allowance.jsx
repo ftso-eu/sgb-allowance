@@ -88,25 +88,22 @@ class allowance extends Component {
                 <div className="allowance">
 
                     <div className="container">
-                        <img className="container" src={textBoxMedium} alt=""/>
                         <div className="centered"><a href={this.props.etherscanURL + this.props.tx.contract}>{this.truncateName(this.props.tx.contractName)}</a></div>
                     </div>
 
                     <div className="container">
-                        <img className="container" src={textBoxMedium} alt=""/>
                         <div className="centered"><a href={this.props.etherscanURL + this.props.tx.approved}>{this.truncateName(this.props.tx.approvedName)}</a></div>
                     </div>
 
                     <div className="container">
-                        <img className="container" src={textBoxMedium} alt=""/>
                         <div className="centered">{this.props.tx.allowance}</div>
                     </div>
 
                     <div className="container">
-                        <img className="container" src={revokeFull} alt=""/>
                         <div className="centered-white"><a name="revoke" id="revokeLink" onClick={this.setRevokeClick}>Revoke</a></div>
                     </div>
                     {this.getDappButton()}
+                <hr></hr>
                 </div>
             </div>
         )
