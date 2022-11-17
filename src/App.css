@@ -21,9 +21,7 @@ font-size: medium;
   /* Centered text */
   .centered {
     position: absolute;
-    top: 0%;
     left: 50%;
-    transform: translate(-50%, -50%);
     color: black;
     font-size: large;
     font-family: 'Montserrat', sans-serif;
@@ -32,6 +30,7 @@ font-size: medium;
   /* Centered text */
   .centered-white {
     position: absolute;
+    left: 50%;
     color: black;
     font-size: large;
     font-family: 'Montserrat', sans-serif;
