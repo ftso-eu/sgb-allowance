@@ -39,7 +39,10 @@ class allowance extends Component {
                     console.log("revoked: " + JSON.stringify(receipt));
                     window.location.reload();
                 }).catch((err) => {
+                    console.log(err)
                     console.log("failed: " + JSON.stringify(err));
+                    window.alert("oopsi! something went wrong: " + JSON.stringify(err));
+                    window.location.reload();
                 });
             } else {
                 // revoke erc20 by nulling approval amount
