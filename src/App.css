@@ -41,7 +41,6 @@ font-size: medium;
 
 /* Container holding the image and the text */
 .container {
-  width:100%;
   position: relative;
   text-align: center;
   color: black;
