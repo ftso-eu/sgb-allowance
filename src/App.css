@@ -68,18 +68,18 @@ font-size: medium;
 }
 
 #page {
-  margin:5%;
+  margin:0;
 }
 
 #results {
-  margin-left: 3%;
+  margin-left: 0%;
 }
 
 .grid-container {
   display: grid;
   grid-template-columns: auto auto auto auto;
   grid-template-rows: auto auto auto auto;
-  padding: 1%;
+  padding: 0;
 }
 
 body {
@@ -114,7 +114,7 @@ body {
 }
 
 #headers {
-  margin-top: -2%;
+  margin-top: 0;
 }
 
 #revokeLink {
