@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import '../App.css';
 import '../helpers/helpers.js';
-import textBoxMedium from "../images/TEXTBOX_MEDIUM.png";
-import revokeFullSpecial from "../images/REVOKE_Button_vers2.png";
 async function onInit() {
         await window.ethereum.enable();
         const accounts = await window.ethereum.request({ method: 'eth_requestAccounts' });
@@ -32,13 +30,13 @@ class header extends Component {
                 </div>
                 <div className="jumbotron">
                     <div id="titles">
-		    <h2>SHOW HISTORY AND REVOKE ALLOWANCES</h2>
-                    <p>songbird | coston | coston2 | <a href="https://docs.flare.network/dev/reference/network-configs/" target="blank">info</a></p>
-                    <p id="addy"></p>
-		    <p id="counts"></p>
+		    <h1>SHOW HISTORY AND REVOKE ALLOWANCES</h2>
+                    <h3>songbird | coston | coston2 | <a href="https://docs.flare.network/dev/reference/network-configs/" target="blank">info</a></h3>
+                    <h4 id="addy"></h4>
+		    <h4 id="counts"></h4>
 		</div>
 		</div>
-                <h3 id="loading" hidden>Loading, please wait...</h3>
+                <h2 id="loading" hidden>Loading, please wait...</h3>
 		<script> window.reload(); </script>
                 <div id="revokeAll">
                     <div className="container">
