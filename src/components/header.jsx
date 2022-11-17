@@ -30,10 +30,10 @@ class header extends Component {
                 </div>
                 <div className="jumbotron">
                     <div id="titles">
-		    <h1>SHOW HISTORY AND REVOKE ALLOWANCES</h1>
+		    <h2>SHOW HISTORY AND REVOKE ALLOWANCES</h2>
                     <h3>songbird | coston | coston2 | <a href="https://docs.flare.network/dev/reference/network-configs/" target="blank">info</a></h3>
-                    <h4 id="addy"></h4>
-		    <h4 id="counts"></h4>
+                    <h5 id="addy"></h4>
+		    <h5 id="counts"></h4>
 		</div>
 		</div>
                 <h2 id="loading" hidden>Loading, please wait...</h2>
