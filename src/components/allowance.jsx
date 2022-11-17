@@ -2,9 +2,6 @@ import React, { Component } from 'react';
 import { is721 } from "../helpers/helpers";
 import dapps from "../helpers/dapps";
 import { ERC20ABI } from "../helpers/ABI";
-import textBoxMedium from "../images/TEXTBOX_MEDIUM.png";
-import revokeFull from "../images/REVOKE_FULL_SIZE_NEON.png"
-import dappButtonV2 from "../images/DAPP_Button_vers2.png";
 
 class allowance extends Component {
 
@@ -75,7 +72,7 @@ class allowance extends Component {
 
     truncateName(name) {
         if(name.length > 20) {
-            return name.substring(0, 10) + '...'
+            return name.substring(0, 11) + '...'
         }
 
         return name;
