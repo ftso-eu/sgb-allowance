@@ -64,7 +64,7 @@ class allowance extends Component {
         const dappUrl = this.dappURL();
         if(dappUrl !== "") {
             return <div className="container">
-                <div className="centered-white"><a onClick={() => { window.open(dappUrl) } }>Visit dApp</a></div>
+                <div className="centered-white"><a onClick={() => { window.open(dappUrl) } }>visit dApp</a></div>
             </div>;
         } else {
             return <div className="container">
@@ -99,7 +99,7 @@ class allowance extends Component {
                     </div>
 
                     <div className="container">
-                        <div className="centered-white"><a name="revoke" id="revokeLink" onClick={this.setRevokeClick}>Revoke</a></div>
+                        <div className="centered-white"><a name="revoke" id="revokeLink" onClick={this.setRevokeClick}>revoke this</a></div>
                     </div>
                     {this.getDappButton()}
                 <hr></hr>
