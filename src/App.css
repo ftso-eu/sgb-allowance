@@ -20,7 +20,7 @@ font-size: medium;
 @media screen and (min-width: 800px) {
   /* Centered text */
   .centered {
-    position: absolute;
+    position: relative;
     text-align:center;
     left: 10%;
     color: black;
@@ -30,9 +30,9 @@ font-size: medium;
 
   /* Centered text */
   .centered-white {
-    position: absolute;
+    position: relative;
     text-align:center;
-    left: 5%;
+    left: 10%;
     color: black;
     font-size: large;
     font-family: 'Montserrat', sans-serif;
