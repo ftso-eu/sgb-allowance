@@ -32,11 +32,11 @@ class header extends Component {
                     <div id="titles">
 		    <h2>SHOW HISTORY AND REVOKE ALLOWANCES</h2>
                     <h3>songbird | coston | coston2 | <a href="https://docs.flare.network/dev/reference/network-configs/" target="blank">info</a></h3>
-                    <h5 id="addy"></h4>
-		    <h5 id="counts"></h4>
+                    <h5 id="addy"></h5>
+		    <h5 id="counts"></h5>
 		</div>
 		</div>
-                <h2 id="loading" hidden>Loading, please wait...</h2>
+                <h3 id="loading" hidden>Loading, please wait...</h3>
 		<script> window.reload(); </script>
                 <div id="revokeAll">
                     <div className="container">
