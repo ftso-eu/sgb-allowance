@@ -70,7 +70,7 @@ export async function getApproveTransactions(query) {
                 if(allowance.includes(unlimitedAllowance)) {
                     approveObj.allowance = "unlimited";
                 } else if (allowance.includes(zeroAllowance)) {
-                    approveObj.allowance = "revoked";
+                    approveObj.allowance = "already revoked";
                     approveObj.allowanceUnEdited = allowance;
                 }
                  else
