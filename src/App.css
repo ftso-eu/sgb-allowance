@@ -20,9 +20,9 @@ font-size: medium;
 @media screen and (min-width: 800px) {
   /* Centered text */
   .centered {
-    position: absolute;
-    top: 5%;
-    left: 5%;
+    position: relative;
+    top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
     color: black;
     font-size: large;
@@ -32,8 +32,8 @@ font-size: medium;
   /* Centered text */
   .centered-white {
     position: absolute;
-    top: 50;
-    left: 5%;
+    top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
     color: black;
     font-size: large;
@@ -51,7 +51,6 @@ font-size: medium;
   max-width: 100%;
   vertical-align: middle;
   display: table-cell;
-  min-height: 15%;
 }
 
 #footerImage {
@@ -79,6 +78,7 @@ font-size: medium;
 .grid-container {
   display: grid;
   grid-template-columns: auto auto auto auto;
+  grid-template-rows: auto auto auto auto;
   padding: 1%;
 }
 
