@@ -83,7 +83,7 @@ export async function getApproveTransactions(query) {
         }
         console.log("total approval tx counts " + k);
         
-        document.getElementById("counts").innerHTML = "Approve transactions found on " + netname + " network: " + k + ;
+        document.getElementById("counts").innerHTML = "Approve transactions found on " + netname + " network: " + k;
         return approveTransactions;
     } catch (e) {
         throw e;
