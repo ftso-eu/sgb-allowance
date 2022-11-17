@@ -21,8 +21,8 @@ font-size: medium;
   /* Centered text */
   .centered {
     position: absolute;
-    top: 25%;
-    left: 25%;
+    top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
     color: black;
     font-size: large;
@@ -32,8 +32,8 @@ font-size: medium;
   /* Centered text */
   .centered-white {
     position: absolute;
-    top: 25%;
-    left: 25%;
+    top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
     color: black;
     font-size: large;
