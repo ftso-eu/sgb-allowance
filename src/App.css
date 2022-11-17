@@ -22,7 +22,7 @@ font-size: medium;
   .centered {
     position: absolute;
     text-align:center;
-    left: 50%;
+    left: 5%;
     color: black;
     font-size: large;
     font-family: 'Montserrat', sans-serif;
@@ -32,7 +32,7 @@ font-size: medium;
   .centered-white {
     position: absolute;
     text-align:center;
-    left: 50%;
+    left: 5%;
     color: black;
     font-size: large;
     font-family: 'Montserrat', sans-serif;
@@ -92,7 +92,7 @@ body {
   -moz-background-size: 100% 100%;
   -o-background-size: 100% 100%;
   background-size: 100% 100%;
-  margin: 1%;
+  margin: 5%;
 }
 
 .revoke-full {
