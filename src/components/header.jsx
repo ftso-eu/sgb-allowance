@@ -61,7 +61,7 @@ class header extends Component {
                         <img className="container" src={textBoxMedium} alt=""/>
                         <div className="centered-white"><a onClick={() => { window.open("https://github.com/ftso-eu/sgb-allowance/issues") } }>Report issue</a></div>
                     </div>
-                    <iframe id="widget_data_provider_metrics" frameborder="0" scrolling="no" height="100%" width="74%" src="https://widgets.flaremetrics.io/data-provider-metrics/?address=0x010a16c53f33e4d93892f00897965578b55a8cfc'&'network=songbird'&'header=true'&'dark=false'&'transparent=true> </iframe>
+                    <iframe id="widget_data_provider_metrics" frameborder="0" scrolling="no" height="100%" width="74%" src="https://widgets.flaremetrics.io/data-provider-metrics/?address=0x010a16c53f33e4d93892f00897965578b55a8cfc&transparent=true"> </iframe>
                 </div>
             </div>
         )
