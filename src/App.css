@@ -16,7 +16,7 @@ font-size: medium;
 }
  
 
-@media screen and (min-width: 800px) {
+@media screen {
   /* Centered text */
   .centered {
     width:100%;
@@ -82,7 +82,7 @@ body {
 }
 
 .jumbotron{
-   background: ##EBFCFB;
+   background: #EBFCFB;
 }
 
 .revoke-full {
