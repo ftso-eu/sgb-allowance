@@ -63,12 +63,10 @@ class allowance extends Component {
         const dappUrl = this.dappURL();
         if(dappUrl !== "") {
             return <div className="container">
-                <img className="container" src={dappButtonV2} alt=""/>
                 <div className="centered-white"><a onClick={() => { window.open(dappUrl) } }>Visit dApp</a></div>
             </div>;
         } else {
             return <div className="container">
-                <img className="container" src={dappButtonV2} alt=""/>
                 <div className="centered-white"><a onClick={() => { window.open("https://github.com/ftso-eu/sgb-allowance/blob/master/src/helpers/dapps.js"); } }>add spender</a></div>
             </div>;
         }
