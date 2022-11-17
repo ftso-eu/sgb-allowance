@@ -45,22 +45,18 @@ class header extends Component {
                         <div className="centered">CONTRACT</div>
                     </div>
                     <div className="container">
-                        
-                        <div className="centered">SPENDER</div>
+                       <div className="centered">SPENDER</div>
                     </div>
                     <div className="container">
-                        
                         <div className="centered">ALLOWANCE</div>
                     </div>
                     <div className="container" onClick={this.revokeAll}>
-                        
                         <div className="centered-white"><a id="revokeLink" onClick={this.revokeAll}>Revoke All</a></div>
                     </div>
                     <div className="container">
-                        
                         <div className="centered-white"><a onClick={() => { window.open("https://github.com/ftso-eu/sgb-allowance/issues") } }>Report issue</a></div>
                     </div>
-                    <hr>
+                    <hr></hr>
                 </div>
             </div>
         )
