@@ -82,12 +82,12 @@ body {
 }
 
 .jumbotron{
-   background: #FBFDFC;
+   background: #FBFDF0;
   -webkit-background-size: 100% 100%;
   -moz-background-size: 100% 100%;
   -o-background-size: 100% 100%;
   background-size: 100% 100%;
-  margin: 5%;
+  margin: 0%;
 }
 
 .revoke-full {
