@@ -19,8 +19,8 @@ font-size: medium;
   /* Centered text */
   .centered {
     width:100%;
-    position: relative;
-    text-align:center;
+    position: static;
+    text-align: center;
     color: black;
     font-size: large;
     font-family: 'Montserrat', sans-serif;
@@ -29,7 +29,7 @@ font-size: medium;
   /* Centered text */
   .centered-white {
     width:100%;
-    position: relative;
+    position: static;
     text-align:center;
     color: black;
     font-size: large;
