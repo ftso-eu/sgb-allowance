@@ -22,7 +22,7 @@ font-size: medium;
   .centered {
     position: relative;
     text-align:center;
-    left: 10%;
+    left: 20%;
     color: black;
     font-size: large;
     font-family: 'Montserrat', sans-serif;
@@ -32,7 +32,7 @@ font-size: medium;
   .centered-white {
     position: relative;
     text-align:center;
-    left: 10%;
+    left: 20%;
     color: black;
     font-size: large;
     font-family: 'Montserrat', sans-serif;
