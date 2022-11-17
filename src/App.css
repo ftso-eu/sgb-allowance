@@ -12,6 +12,7 @@ font-size: medium;
   text-align: center;
   color: black;
   font-family: 'Montserrat', sans-serif;
+  font-size: medium;
 }
  
 
@@ -62,7 +63,7 @@ font-size: medium;
 }
 
 #page {
-  margin:5%;
+  margin:0%;
 }
 
 #results {
@@ -74,9 +75,6 @@ font-size: medium;
   text-align: center;
   grid-template-columns: auto auto auto auto;
   grid-template-rows: auto auto auto auto;
-  gap: 10px;
-  background-color: #2196F3;
-  padding: 10px;
 }
 
 body {
