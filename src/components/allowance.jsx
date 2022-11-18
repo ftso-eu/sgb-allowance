@@ -64,11 +64,11 @@ class allowance extends Component {
         const dappUrl = this.dappURL();
         if(dappUrl !== "") {
             return <div className="container">
-                <div className="centered-white"><a onClick={() => { window.open(dappUrl) } }>visit dApp</a></div>
+                <div className="centered-white"><a onClick={() => { window.open(dappUrl) } }>visit spender website</a></div>
             </div>;
         } else {
             return <div className="container">
-                <div className="centered-white"><a onClick={() => { window.open("https://github.com/ftso-eu/sgb-allowance/blob/master/src/helpers/dapps.js"); } }>add spender</a></div>
+                <div className="centered-white"><a onClick={() => { window.open("https://github.com/ftso-eu/sgb-allowance/blob/master/src/helpers/dapps.js"); } }>add spender name</a></div>
             </div>;
         }
     }
