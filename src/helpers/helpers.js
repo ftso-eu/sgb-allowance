@@ -12,20 +12,14 @@ const { ERC20ABI, ERC721ABI } = require("./ABI.js");
 
 export function getTxUrl(chainId, hash) {
     switch (chainId) {
-        case 114:
-            
-            return "https://coston2-explorer.flare.network/tx/" + hash;
-            
-        case 16:
-           
-            return "https://coston-explorer.flare.network/tx/" + hash;
-            
+        case 114:       
+            return "https://coston2-explorer.flare.network/tx/" + hash;       
+        case 16:  
+            return "https://coston-explorer.flare.network/tx/" + hash;     
         case 19:
-            "https://Songbird-explorer.flare.network/tx/" + hash;
-            
+            "https://Songbird-explorer.flare.network/tx/" + hash;      
         default:
-            "https://Songbird-explorer.flare.network/tx/" + hash;
-            
+            "https://Songbird-explorer.flare.network/tx/" + hash;         
     }
 }
 
@@ -42,18 +36,18 @@ export function getTxUrl(chainId, hash) {
 //    }
 //}
 
-// export function getQuery(chainId, address) {
-//    switch (chainId) {
-//        case 114:          
-//           return "https://coston2-explorer.flare.network/api?module=account&action=txlist&address=" + address;         
-//        case 16:          
-//            return "https://coston-explorer.flare.network/api?module=account&action=txlist&address=" + address;         
-//        case 19:        
-//            return "https://songbird-explorer.flare.network/api?module=account&action=txlist&address=" + address;          
-//        default:          
-//            return "https://songbird-explorer.flare.network/api?module=account&action=txlist&address=" + address;           
-//    }
-//}
+export function getQuery(chainId, address) {
+    switch (chainId) {
+        case 114:          
+           return "https://coston2-explorer.flare.network/api?module=account&action=txlist&address=" + address;         
+        case 16:          
+            return "https://coston-explorer.flare.network/api?module=account&action=txlist&address=" + address;         
+        case 19:        
+            return "https://songbird-explorer.flare.network/api?module=account&action=txlist&address=" + address;          
+       default:          
+           return "https://songbird-explorer.flare.network/api?module=account&action=txlist&address=" + address;           
+    }
+}
 
 export function getEtherScanPage(chainId) {
     switch (chainId) {
