@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { getQuery, getApproveTransactions, getName, getEtherScanPage } from "../helpers/helpers";
+import { getQuery, getApproveTransactions, getName, getEtherScanPage, getEtherTxPage } from "../helpers/helpers";
 import Allowance from "./allowance";
 
 class allowances extends Component {
@@ -64,9 +64,11 @@ class allowances extends Component {
         let elements = "";
         if(this.state.txs !== undefined && this.state.chainId !== undefined) {
             const etherscanUrl = getEtherScanPage(this.state.chainId);
+            const ethertxUrl = getEtherTxPage(this.state.chainId);
+ 
             elements = this.state.txs.map((tx) => {
                 return <Allowance etherscanURL={etherscanUrl} tx={tx} web3={this.props.web3} id={tx.contract} account={this.state.account}/>
-                document.getElementById("txhash").innerHTML = tx.hash;
+                document.getElementById("ethertxUrl").innerHTML = ethertxUrl;
             });
         }
 
