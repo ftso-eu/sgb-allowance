@@ -85,7 +85,6 @@ class allowance extends Component {
         return (
             <div>
                 <div className="allowance">
-
                     <div className="container">
                         <div className="centered"><a href={this.props.etherscanURL + this.props.tx.contract}>{this.truncateName(this.props.tx.contractName)}</a></div>
                     </div>
@@ -101,8 +100,7 @@ class allowance extends Component {
                     <div className="container">
                         <div className="centered-white"><a name="revoke" id="revokeLink" onClick={this.setRevokeClick}>revoke this</a></div>
                     </div>
-                    {this.getDappButton()}
-                <hr></hr>
+                    <hr></hr>
                 </div>
             </div>
         )
