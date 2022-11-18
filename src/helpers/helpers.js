@@ -10,18 +10,18 @@ const unlimitedAllowance = "ffffffffffffffffffffffffffffffffffffffffffffffffffff
 const zeroAllowance = "0";
 const { ERC20ABI, ERC721ABI } = require("./ABI.js");
 
-export function getTxUrl(chainId, hash) {
-    switch (chainId) {
-        case 114:       
-            return "https://coston2-explorer.flare.network/tx/" + hash;       
-        case 16:  
-            return "https://coston-explorer.flare.network/tx/" + hash;     
-        case 19:
-            "https://Songbird-explorer.flare.network/tx/" + hash;      
-        default:
-            "https://Songbird-explorer.flare.network/tx/" + hash;         
-    }
-}
+// export function getTxUrl(chainId, hash) {
+//     switch (chainId) {
+//        case 114:       
+//             return "https://coston2-explorer.flare.network/tx/" + hash;       
+//         case 16:  
+//             return "https://coston-explorer.flare.network/tx/" + hash;     
+//         case 19:
+//             "https://Songbird-explorer.flare.network/tx/" + hash;      
+//         default:
+//             "https://Songbird-explorer.flare.network/tx/" + hash;         
+//     }
+// }
 
 // export function getNetName(chainId) {
 //    switch (chainId) {
