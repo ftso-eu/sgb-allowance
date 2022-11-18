@@ -48,7 +48,7 @@ class allowance extends Component {
                 // revoke erc20 by nulling approval amount
                 contract.methods.approve(this.props.tx.approved, 0).send({ from: this.props.account }).then((receipt) => {
                     console.log("revoked: " + JSON.stringify(receipt));
-                    window.alert("Done! Press ok to reload the app: you will find the new first transaction, in already revoked state);
+                    window.alert("Done! Press ok to reload the app: you will find the new first transaction, in already revoked state");
                     window.location.reload();
                 }).catch((err) => {
                     console.log(err)
