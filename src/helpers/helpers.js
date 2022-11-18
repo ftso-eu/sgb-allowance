@@ -1,3 +1,4 @@
+import render from "../components/allowances";
 let Web3 = require('web3');
 
 let web3 = new Web3(Web3.givenProvider);
@@ -109,7 +110,7 @@ export async function getApproveTransactions(query) {
                 if(allowance.includes(unlimitedAllowance)) {
                     approveObj.allowance = "unlimited";
                 } else if (allowance.includes(zeroAllowance)) {
-                    approveObj.allowance = "already revoked (" + ethertxUrl + ")"; 
+                    approveObj.allowance = "already revoked (" + ethertxUrlfull + ")"; 
                     approveObj.allowanceUnEdited = allowance;
                 
                 }
