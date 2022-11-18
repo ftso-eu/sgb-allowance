@@ -53,19 +53,40 @@ export function getEtherScanPage(chainId) {
     switch (chainId) {
         case 114:
             
-            return "https://coston2-explorer.flare.network/";
+            return "https://coston2-explorer.flare.network/address/";
             
         case 16:
             
-            return "https://coston-explorer.flare.network/";
+            return "https://coston-explorer.flare.network/address/";
             
         case 19:
             
-            return "https://songbird-explorer.flare.network/";
+            return "https://songbird-explorer.flare.network/address/";
             
         default:
             
-            return "https://songbird-explorer.flare.network/";
+            return "https://songbird-explorer.flare.network/address/";
+            
+    }
+}
+
+export function getEtherTxPage(chainId) {
+    switch (chainId) {
+        case 114:
+            
+            return "https://coston2-explorer.flare.network/tx/";
+            
+        case 16:
+            
+            return "https://coston-explorer.flare.network/tx/";
+            
+        case 19:
+            
+            return "https://songbird-explorer.flare.network/tx/";
+            
+        default:
+            
+            return "https://songbird-explorer.flare.network/tx/";
             
     }
 }
@@ -88,8 +109,9 @@ export async function getApproveTransactions(query) {
                 if(allowance.includes(unlimitedAllowance)) {
                     approveObj.allowance = "unlimited";
                 } else if (allowance.includes(zeroAllowance)) {
-                    approveObj.allowance = "<a href=" + getEtherScanPage + tx.hash + ">already revoked</a>";
+                    approveObj.allowance = "already revoked"; 
                     approveObj.allowanceUnEdited = allowance;
+                
                 }
                  else
                 {
