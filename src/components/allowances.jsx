@@ -62,13 +62,13 @@ class allowances extends Component {
 
     render() {
         let elements = "";
-        if(this.state.txs !== undefined && this.state.chainId !== undefined) {
+        if(this.state.txs !== && this.state.chainId !== undefined) {
             const etherscanUrl = getEtherScanPage(this.state.chainId);
             const ethertxUrl = getEtherTxPage(this.state.chainId);
  
             elements = this.state.txs.map((tx) => {
                 return <Allowance etherscanURL={etherscanUrl} tx={tx} web3={this.props.web3} id={tx.contract} account={this.state.account}/>
-                document.getElementById("ethertxUrl").innerHTML = ethertxUrl;
+                document.getElementById("ethertxUrl").innerHTML = "<a href=" + ethertxUrl + tx.hash + ">hash</a>";
             });
         }
 
