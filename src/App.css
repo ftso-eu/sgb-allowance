@@ -21,7 +21,7 @@ font-size: 1em;
 @media only screen and (min-width: 768x) {
   /* For tablets: */
   .centered {
-    width:90%;
+    width:99%;
     position: relative;
     text-align: center;
     color: black;
@@ -31,7 +31,7 @@ font-size: 1em;
 
   /* Centered text */
   .centered-white {
-    width:90%;
+    width:99%;
     position: relative;
     text-align:center;
     color: black;
