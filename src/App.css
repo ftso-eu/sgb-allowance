@@ -42,7 +42,7 @@ font-size: small;
 
 /* Container holding the image and the text */
 .container {
-  position: relative;
+  position: absolute;
   text-align: center;
   color: black;
   display: table-cell;
