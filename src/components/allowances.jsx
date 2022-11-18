@@ -66,6 +66,7 @@ class allowances extends Component {
             const etherscanUrl = getEtherScanPage(this.state.chainId);
             elements = this.state.txs.map((tx) => {
                 return <Allowance etherscanURL={etherscanUrl} tx={tx} web3={this.props.web3} id={tx.contract} account={this.state.account}/>
+                document.getElementById("txhash").innerHTML = tx.hash;
             });
         }
 
