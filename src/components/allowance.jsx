@@ -41,19 +41,19 @@ class allowance extends Component {
                 }).catch((err) => {
                     console.log(err)
                     console.log("failed: " + JSON.stringify(err));
-                    window.alert("oopsi! something went wrong: " + JSON.stringify(err));
+                    window.alert("Ooopsi! Something went wrong, press ok to reload the app);
                     window.location.reload();
                 });
             } else {
                 // revoke erc20 by nulling approval amount
                 contract.methods.approve(this.props.tx.approved, 0).send({ from: this.props.account }).then((receipt) => {
                     console.log("revoked: " + JSON.stringify(receipt));
-                    window.alert("Ok, allowance revoked! Details: " + JSON.stringify(receipt));
+                    window.alert("Done! Press ok to reload the app: you will find the new first transaction, in already revoked state);
                     window.location.reload();
                 }).catch((err) => {
                     console.log(err)
                     console.log("failed: " + JSON.stringify(err));
-                    window.alert("oopsi! something went wrong");
+                    window.alert("Ooopsi! Something went wrong, press ok to reload the app");
                     window.location.reload();
                 });
             }
