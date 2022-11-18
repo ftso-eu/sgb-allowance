@@ -1,6 +1,7 @@
 #bar {
 width:100%;
 background-color:red;
+position: relative;
 text-align: center;
 color: white;
 text-align:center;
@@ -10,6 +11,7 @@ font-size: small;
 
 #titles {
   text-align: center;
+  position: relative;
   color: black;
   font-family: 'Ubuntu';
   font-size: small;
