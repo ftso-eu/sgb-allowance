@@ -40,16 +40,16 @@ class header extends Component {
 		<script> window.reload(); </script>
                 <div id="revokeAll">
                     <div className="container">
-                        <div className="centered">CONTRACT</div>
+                        <div className="centered"><strong>CONTRACT</strong></div>
                     </div>
                     <div className="container">
-                       <div className="centered">SPENDER</div>
+                       <div className="centered"><strong>SPENDER</strong></div>
                     </div>
                     <div className="container">
-                        <div className="centered">ALLOWANCE</div>
+                        <div className="centered"<strong>>ALLOWANCE</strong></div>
                     </div>
                     <div className="container" onClick={this.revokeAll}>
-                        <div className="centered-white"><a id="revokeLink" onClick={this.revokeAll}>REVOKE ALL</a></div>
+                        <div className="centered-white"><a id="revokeLink" onClick={this.revokeAll}><strong>REVOKE ALL</strong></a></div>
                     </div>
                     
                     <hr></hr>
