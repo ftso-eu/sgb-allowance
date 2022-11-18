@@ -19,21 +19,21 @@ font-size: medium;
 @media screen {
   /* Centered text */
   .centered {
-    width:95%;
+    width:90%;
     position: absolute;
     text-align: center;
     color: black;
-    font-size: large;
+    font-size: medium;
     font-family: 'Ubuntu';
   }
 
   /* Centered text */
   .centered-white {
-    width:95%;
+    width:90%;
     position: absolute;
     text-align:center;
     color: black;
-    font-size: large;
+    font-size: medium;
     font-family: 'Ubuntu';
   }
 
