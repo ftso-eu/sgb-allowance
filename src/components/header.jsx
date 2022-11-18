@@ -26,7 +26,7 @@ class header extends Component {
         return (
             <div>
 		<div id="bar">
-		    <i>Please beware this is a <strong>Beta</strong> tool in test / canary nets, use it at your own risk.</i>
+		    <i>Please beware this is a <strong>Beta</strong> tool in test / canary nets, use it at your own risk. Also, pay attention to <a href="https://en.wikipedia.org/wiki/Typosquatting">typosquatting</a> before signing transactions!</i>
                 </div>
                 <div className="jumbotron">
                     <div id="titles">
