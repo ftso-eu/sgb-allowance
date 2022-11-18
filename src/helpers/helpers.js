@@ -29,22 +29,22 @@ export function getTxUrl(chainId, hash) {
     }
 }
 
-export function getNetName(chainId) {
-    switch (chainId) {
-        case 114:
-            return "coston2";
+// export function getNetName(chainId) {
+//    switch (chainId) {
+//        case 114:
+//            return "coston2";
             
-        case 16:
-            return "coston";
+//        case 16:
+//            return "coston";
             
-        case 19:
-            return "Songbird";
+//        case 19:
+//            return "Songbird";
             
-        default:
-            return "Songbird";
+//        default:
+//            return "Songbird";
             
-    }
-}
+//    }
+//}
 
 export function getQuery(chainId, address) {
     switch (chainId) {
