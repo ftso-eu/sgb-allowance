@@ -1,4 +1,3 @@
-import allowances from "../components/allowances";
 let Web3 = require('web3');
 
 let web3 = new Web3(Web3.givenProvider);
@@ -6,6 +5,8 @@ let web3 = new Web3(Web3.givenProvider);
 let request = require('superagent');
 var k = 0;
 var netname = "this";
+const ethertxUrl = getEtherTxPage(this.state.chainId);
+const ethertxUrlfull = "<a href=" + ethertxUrl + tx.hash + ">hash</a>";
 const approvalHash = "0x095ea7b3";
 const unlimitedAllowance = "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff";
 const zeroAllowance = "0";
