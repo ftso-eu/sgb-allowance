@@ -18,8 +18,8 @@ font-size: 1em;
 }
  
 
-@media only screen and (min-width: 768x) {
-  /* For tablets: */
+@media only screen and (min-width: 500x) {
+  /* For PC and Tablet */
   .centered {
     width:99%;
     position: relative;
@@ -29,7 +29,8 @@ font-size: 1em;
     font-family: 'Ubuntu';
   }
 
-  /* Centered text */
+  /* For Mobile and Small Tablet: */
+@media only screen and (max-width:499px)
   .centered-white {
     width:99%;
     position: relative;
