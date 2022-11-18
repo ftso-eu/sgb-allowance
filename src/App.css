@@ -48,6 +48,7 @@ font-size: 1em;
 /* Container holding the image and the text */
 .container {
   position: relative;
+  aspect-ratio: 100 / 29;
   text-align: center;
   color: black;
   display: table-cell;
