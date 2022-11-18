@@ -46,7 +46,7 @@ class header extends Component {
                        <div className="centered"><strong>SPENDER</strong></div>
                     </div>
                     <div className="container">
-                        <div className="centered"<strong>>ALLOWANCE</strong></div>
+                        <div className="centered"><strong>ALLOWANCE</strong></div>
                     </div>
                     <div className="container" onClick={this.revokeAll}>
                         <div className="centered-white"><a id="revokeLink" onClick={this.revokeAll}><strong>REVOKE ALL</strong></a></div>
