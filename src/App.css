@@ -4,14 +4,14 @@ background-color:red;
 text-align: center;
 color: white;
 text-align:center;
-font-family: 'Montserrat', sans-serif;
+font-family: 'Ubuntu';
 font-size: medium;
 }
 
 #titles {
   text-align: center;
   color: black;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Ubuntu';
   font-size: medium;
 }
  
@@ -24,7 +24,7 @@ font-size: medium;
     text-align: center;
     color: black;
     font-size: large;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Ubuntu';
   }
 
   /* Centered text */
@@ -34,7 +34,7 @@ font-size: medium;
     text-align:center;
     color: black;
     font-size: large;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Ubuntu';
   }
 
 
