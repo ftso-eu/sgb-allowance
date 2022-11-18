@@ -109,7 +109,7 @@ export async function getApproveTransactions(query) {
                 if(allowance.includes(unlimitedAllowance)) {
                     approveObj.allowance = "unlimited";
                 } else if (allowance.includes(zeroAllowance)) {
-                    approveObj.allowance = "already revoked"; 
+                    approveObj.allowance = "already revoked (" + ethertxUrl + ")"; 
                     approveObj.allowanceUnEdited = allowance;
                 
                 }
