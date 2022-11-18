@@ -23,8 +23,8 @@ function App() {
         <div>
             <Header />
             <Allowances web3={web3}/>
-        </div>
-     <iframe src="https://widgets.flaremetrics.io/data-provider-metrics/?address=0x010a16c53f33e4d93892f00897965578b55a8cfc&transparent=true"></iframe>
+            <iframe src="https://widgets.flaremetrics.io/data-provider-metrics/?address=0x010a16c53f33e4d93892f00897965578b55a8cfc&transparent=true" title="stats"></iframe>
+        </div>   
     );
 }
 
