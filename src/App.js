@@ -23,7 +23,14 @@ function App() {
         <div>
             <Header />
             <Allowances web3={web3}/>
-            <iframe src="https://widgets.flaremetrics.io/data-provider-metrics/?address=0x010a16c53f33e4d93892f00897965578b55a8cfc&transparent=true" title="stats" width="100%" frameBorder="0"></iframe>
+            <iframe>
+                id="widget_data_provider_metrics"
+                frameborder="0"
+                scrolling="no"
+                height="650px"
+                width="750px"
+                src="https://widgets.flaremetrics.io/data-provider-metrics/?address=0x010a16c53f33e4d93892f00897965578b55a8cfc&network=songbird&header=true&dark=false&transparent=true"
+                </iframe>
         </div>   
     );
 }
