@@ -26,12 +26,12 @@ class header extends Component {
         return (
             <div>
 		<div id="bar">
-		    <i>Please beware this is a <strong>Beta</strong> tool in test / canary nets, use it at your own risk. Also, pay attention to <a href="https://en.wikipedia.org/wiki/Typosquatting">typosquatting</a> before signing transactions!</i>
+		    <i>Please beware this is a <strong>Beta</strong> tool in test / canary nets, use it at your own risk. Also, pay attention to <a href="https://en.wikipedia.org/wiki/Typosquatting" target="_blank">typosquatting</a> before signing transactions!</i>
                 </div>
                 <div className="jumbotron">
                     <div id="titles">
 		    <h2>SHOW HISTORY AND REVOKE ALLOWANCES</h2>
-                    <h3>songbird | coston | coston2 | <a href="https://docs.flare.network/dev/reference/network-configs/" target="blank">info</a></h3>
+                    <h3>songbird | coston | coston2 | <a href="https://docs.flare.network/dev/reference/network-configs/" target="_blank">info</a></h3>
                     <h5 id="addy"></h5>
 		    <h5 id="counts"></h5>
 		</div>
