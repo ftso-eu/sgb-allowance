@@ -32,40 +32,28 @@ export function getTxUrl(chainId, hash) {
 // export function getNetName(chainId) {
 //    switch (chainId) {
 //        case 114:
-//            return "coston2";
-            
+//            return "coston2";        
 //        case 16:
-//            return "coston";
-            
+//            return "coston";         
 //        case 19:
-//            return "Songbird";
-            
+//            return "Songbird";         
 //        default:
-//            return "Songbird";
-            
+//            return "Songbird";         
 //    }
 //}
 
-export function getQuery(chainId, address) {
-    switch (chainId) {
-        case 114:
-            
-            return "https://coston2-explorer.flare.network/api?module=account&action=txlist&address=" + address;
-            
-        case 16:
-            
-            return "https://coston-explorer.flare.network/api?module=account&action=txlist&address=" + address;
-            
-        case 19:
-           
-            return "https://songbird-explorer.flare.network/api?module=account&action=txlist&address=" + address;
-            
-        default:
-            
-            return "https://songbird-explorer.flare.network/api?module=account&action=txlist&address=" + address;
-            
-    }
-}
+// export function getQuery(chainId, address) {
+//    switch (chainId) {
+//        case 114:          
+//           return "https://coston2-explorer.flare.network/api?module=account&action=txlist&address=" + address;         
+//        case 16:          
+//            return "https://coston-explorer.flare.network/api?module=account&action=txlist&address=" + address;         
+//        case 19:        
+//            return "https://songbird-explorer.flare.network/api?module=account&action=txlist&address=" + address;          
+//        default:          
+//            return "https://songbird-explorer.flare.network/api?module=account&action=txlist&address=" + address;           
+//    }
+//}
 
 export function getEtherScanPage(chainId) {
     switch (chainId) {
