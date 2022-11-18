@@ -5,14 +5,14 @@ text-align: center;
 color: white;
 text-align:center;
 font-family: 'Ubuntu';
-font-size: medium;
+font-size: small;
 }
 
 #titles {
   text-align: center;
   color: black;
   font-family: 'Ubuntu';
-  font-size: medium;
+  font-size: small;
 }
  
 
@@ -23,7 +23,7 @@ font-size: medium;
     position: absolute;
     text-align: center;
     color: black;
-    font-size: medium;
+    font-size: small;
     font-family: 'Ubuntu';
   }
 
@@ -33,7 +33,7 @@ font-size: medium;
     position: absolute;
     text-align:center;
     color: black;
-    font-size: medium;
+    font-size: small;
     font-family: 'Ubuntu';
   }
 
