@@ -10,8 +10,5 @@ It shows the  approval transactions in chronological order from the most recent 
 
 You can check if the latest one is not zero and set it to zero clicking on "Revoke".
 
-## Add a dapp to the list
-Submit an [issue](https://github.com/ftso-eu/sgb-allowance/issues) to add a spender address to a dApp friendly name.
-
 ## Credits
 This is a fork of https://github.com/James-Sangalli/eth-allowance
