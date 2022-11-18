@@ -52,7 +52,7 @@ class header extends Component {
                         <div className="centered-white"><a id="revokeLink" onClick={this.revokeAll}>REVOKE ALL</a></div>
                     </div>
                     <div className="container">
-                        <div className="centered-white"><a onClick={() => { window.open("https://github.com/ftso-eu/sgb-allowance/issues") } }>Report issue</a></div>
+                        <div className="centered-white"><a onClick={() => { window.open("https://github.com/ftso-eu/sgb-allowance/issues") } }>REPOR ISSUE</a></div>
                     </div>
                     <hr></hr>
                 </div>
