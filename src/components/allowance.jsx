@@ -75,7 +75,7 @@ class allowance extends Component {
 
     truncateName(name) {
         if(name.length > 20) {
-            return name.substring(0, 11) + '...'
+            return name.substring(0, 7) + '...'
         }
 
         return name;
