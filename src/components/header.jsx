@@ -50,10 +50,10 @@ class header extends Component {
                     </div>
                     <div className="container" onClick={this.revokeAll}>
                         <div className="centered-white"><a id="revokeLink" onClick={this.revokeAll}>REVOKE ALL</a></div>
-                   // </div>
-                   // <div className="container">
-                   //     <div className="centered-white"><a onClick={() => { window.open("https://github.com/ftso-eu/sgb-allowance/issues") } }>REPORT ISSUE</a></div>
-                   // </div>
+                   <!–– </div>
+                   <div className="container">
+                        <div className="centered-white"><a onClick={() => { window.open("https://github.com/ftso-eu/sgb-allowance/issues") } }>REPORT ISSUE</a></div>
+                   </div> -->
                     <hr></hr>
                 </div>
             </div>
