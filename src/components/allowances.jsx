@@ -62,7 +62,7 @@ class allowances extends Component {
 
     render() {
         let elements = "";
-        if(this.state.txs !== && this.state.chainId !== undefined) {
+        if(this.state.txs !==  undefined && this.state.chainId !== undefined) {
             const etherscanUrl = getEtherScanPage(this.state.chainId);
             const ethertxUrl = getEtherTxPage(this.state.chainId);
  
