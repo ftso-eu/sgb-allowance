@@ -6,7 +6,6 @@ let request = require('superagent');
 var k = 0;
 var netname = "this";
 const ethertxUrl = getEtherTxPage(this.state.chainId);
-const ethertxUrlfull = "<a href=" + ethertxUrl + tx.hash + ">hash</a>";
 const approvalHash = "0x095ea7b3";
 const unlimitedAllowance = "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff";
 const zeroAllowance = "0";
@@ -111,7 +110,7 @@ export async function getApproveTransactions(query) {
                 if(allowance.includes(unlimitedAllowance)) {
                     approveObj.allowance = "unlimited";
                 } else if (allowance.includes(zeroAllowance)) {
-                    approveObj.allowance = "already revoked (" + ethertxUrlfull + ")"; 
+                    approveObj.allowance = "already revoked (" + ethertxUrl + tx.hash")"; 
                     approveObj.allowanceUnEdited = allowance;
                 
                 }
