@@ -31,7 +31,7 @@ class header extends Component {
                 <div className="jumbotron">
                     <div id="titles">
 		    <h2>SHOW HISTORY AND REVOKE ALLOWANCES</h2>
-                    <h3><a href="https://github.com/ftso-eu/sgb-allowance/blob/master/README.md" target="_blank"><img id="github" alt="GitHub" src="images/github.png" width="25"></img></a> | songbird | coston | coston2 | <a href="https://docs.flare.network/dev/reference/network-configs/" target="_blank">info</a></h3>
+                    <h3><a href="https://github.com/ftso-eu/sgb-allowance/blob/master/README.md" target="_blank"><img id="github" alt="GitHub" src="images/github.png" width="25"></img></a> | songbird | coston1+2 | <a href="https://docs.flare.network/dev/reference/network-configs/" target="_blank">info</a></h3>
                     <h5 id="addy"></h5>
 		    <h5 id="counts"></h5>
 		</div>
