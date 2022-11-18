@@ -20,7 +20,7 @@ font-size: small;
   /* Centered text */
   .centered {
     width:90%;
-    position: absolute;
+    position: relative;
     text-align: center;
     color: black;
     font-size: small;
@@ -30,7 +30,7 @@ font-size: small;
   /* Centered text */
   .centered-white {
     width:90%;
-    position: absolute;
+    position: relative;
     text-align:center;
     color: black;
     font-size: small;
@@ -42,7 +42,7 @@ font-size: small;
 
 /* Container holding the image and the text */
 .container {
-  position: absolute;
+  position: relative;
   text-align: center;
   color: black;
   display: table-cell;
