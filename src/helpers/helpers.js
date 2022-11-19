@@ -125,7 +125,7 @@ export async function getApproveTransactions(query) {
                 if(allowance.includes(unlimitedAllowance)) {
                     approveObj.allowance = "set unlimited value on " + time;
                 } else if (allowance.includes(zeroAllowance)) {
-                    approveObj.allowance = "revoked on " + time; 
+                    approveObj.allowance = "revoked on\n" + time + "\ntx hash :" + dataObj[k].hash; 
                     approveObj.allowanceUnEdited = allowance;
                 }
                  else
