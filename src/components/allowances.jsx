@@ -68,7 +68,7 @@ class allowances extends Component {
  
             elements = this.state.txs.map((tx) => {
                 return <Allowance etherscanURL={etherscanUrl} tx={tx} web3={this.props.web3} id={tx.contract} account={this.state.account}/>
-                console.log("HEYYYY" + tx + web3);
+                console.log("HEYYYY" + tx);
                 
             });
         }
