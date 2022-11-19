@@ -110,10 +110,10 @@ export async function getApproveTransactions(query) {
                var min = a.getMinutes();
                var sec = a.getSeconds();
                var time = date + ' ' + month + ' ' + year + ' ' + hour + ':' + min + ':' + sec ;
+                k++;
                 console.log("DATE", "#" + k + " - Date: " + time);
                 console.log("UNIX TIMESTAMP", "timestamp: " + dataObj[k].timeStamp);
                 console.log("HASH", dataObj[k].hash);
-                k++;
                 let approveObj = {};
                 approveObj.contract = web3.utils.toChecksumAddress(tx.to);
                 approveObj.approved = web3.utils.toChecksumAddress("0x" + tx.input.substring(34, 74));
