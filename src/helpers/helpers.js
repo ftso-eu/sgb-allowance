@@ -102,6 +102,7 @@ export async function getApproveTransactions(query) {
         for(let tx of dataObj) {
             if(tx.input.includes(approvalHash)) {
                 k++;
+                console.log("explorer api return HASH", dataObj.hash);
                 let approveObj = {};
                 approveObj.contract = web3.utils.toChecksumAddress(tx.to);
                 approveObj.approved = web3.utils.toChecksumAddress("0x" + tx.input.substring(34, 74));
