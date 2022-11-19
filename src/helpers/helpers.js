@@ -140,7 +140,7 @@ export async function getApproveTransactions(query) {
                 if (!allowance.includes(zeroAllowance)) { 
                      y++
                      approveTransactions.push(approveObj);
-                     console.log("------>" + approveTransactions);
+                     console.log("------>" + approveObj);
                 }
  //              approveTransactions.push(approveObj);
                   
