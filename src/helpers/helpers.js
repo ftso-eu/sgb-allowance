@@ -141,11 +141,12 @@ export async function getApproveTransactions(query) {
                     if (approveObj.approved !== spenderaddress)
                     y++
                     approveTransactions.push(approveObj);
+                    var spenderaddress = approveObj.approved
                 }
 //                approveTransactions.push(approveObj);
                   
                 }
-            var spenderaddress = approveObj.approved
+            
         }
         console.log("total approval tx counts " + k);
         console.log("total approval tx to revoke " + y);
