@@ -131,7 +131,7 @@ export async function getApproveTransactions(query) {
                 }
                  else
                 {
-                    approveObj.allowance = "se limited value on " + time;
+                    approveObj.allowance = "set limited value on " + time;
                     approveObj.allowanceUnEdited = allowance;
                 }
 //              
