@@ -135,21 +135,21 @@ export async function getApproveTransactions(query) {
                     approveObj.allowance = "set some value " + time;
                     approveObj.allowanceUnEdited = allowance;
                 }
-//              
+              
                           
                 if (!allowance.includes(zeroAllowance)) { 
                      y++
-                     approveTransactions.push(approveObj);
+//                     approveTransactions.push(approveObj);
                      console.log("------>" + approveObj);
                 }
- //              approveTransactions.push(approveObj);
+               approveTransactions.push(approveObj);
                   
                 }
             
         }
         console.log("total approval tx counts " + k);
         console.log("total approval tx to revoke " + y);
-        document.getElementById("counts").innerHTML = "approve transactions found: " + k + " | spenders not revoked: " + y;
+        document.getElementById("counts").innerHTML = "approve transactions found: " + k; // + " | spenders not revoked: " + y;
         return approveTransactions;
     } catch (e) {
         throw e;
