@@ -15,7 +15,10 @@ font-size: 1em;
   color: black;
   font-family: 'Ubuntu';
   font-size: 0.5em;
-}
+  img {
+    vertical-align: middle;
+   }
+ }
  
 
 @media only screen and (min-width: 500x) {
