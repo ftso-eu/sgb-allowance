@@ -102,19 +102,21 @@ export async function getApproveTransactions(query) {
         for(let tx of dataObj) {
             if(tx.input.includes(approvalHash)) {
                 console.log("explorer api return HASH", dataObj[k].hash);
-                console.log("explorer api return TIMESTAMP", dataObj[k].timeStamp);
+                console.log("explorer api return TIMESTAMP", "#" + k + " - timestamp: " + dataObj[k].timeStamp);
                 console.log("explorer api return LIMIT SET", dataObj[k].value);
                 k++;
                 let approveObj = {};
                 approveObj.contract = web3.utils.toChecksumAddress(tx.to);
                 approveObj.approved = web3.utils.toChecksumAddress("0x" + tx.input.substring(34, 74));
+                approveObj.timestamp = "#" + k + " - timestamp: " + dataObj[k].timeStamp);
+                approveObj.hash = "allowance value : " + dataObj[k].value);
+                
                 let allowance = tx.input.substring(74);
                 if(allowance.includes(unlimitedAllowance)) {
                     approveObj.allowance = "unlimited";
                 } else if (allowance.includes(zeroAllowance)) {
                     approveObj.allowance = "already revoked"; 
                     approveObj.allowanceUnEdited = allowance;
-                
                 }
                  else
                 {
