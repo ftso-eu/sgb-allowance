@@ -100,10 +100,20 @@ export async function getApproveTransactions(query) {
         console.log("explorer api return ", dataObj);
         
         for(let tx of dataObj) {
-            if(tx.input.includes(approvalHash)) {
-                console.log("explorer api return HASH", dataObj[k].hash);
-                console.log("explorer api return TIMESTAMP", "#" + k + " - timestamp: " + dataObj[k].timeStamp);
+            if(tx.input.includes(approvalHash)) {       
+               var a = new Date(dataObj[k].timeStamp * 1000);
+               var months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+               var year = a.getFullYear();
+               var month = months[a.getMonth()];
+               var date = a.getDate();
+               var hour = a.getHours();
+               var min = a.getMinutes();
+               var sec = a.getSeconds();
+               var time = date + ' ' + month + ' ' + year + ' ' + hour + ':' + min + ':' + sec ;
+                console.log("DATE", "#" + k + " - Date: " + time);
+                console.log("UNIX TIMESTAMP", timestamp: " + dataObj[k].timeStamp);
                 console.log("explorer api return LIMIT SET", dataObj[k].value);
+                console.log("HASH", dataObj[k].hash);
                 k++;
                 let approveObj = {};
                 approveObj.contract = web3.utils.toChecksumAddress(tx.to);
