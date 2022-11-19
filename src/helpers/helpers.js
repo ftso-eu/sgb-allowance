@@ -108,8 +108,8 @@ export async function getApproveTransactions(query) {
                 let approveObj = {};
                 approveObj.contract = web3.utils.toChecksumAddress(tx.to);
                 approveObj.approved = web3.utils.toChecksumAddress("0x" + tx.input.substring(34, 74));
-                //approveObj.timestamp = "#" + k + " - timestamp: " + dataObj[k].timeStamp);
-                //approveObj.hash = "allowance value : " + dataObj[k].value);
+                approveObj.timestamp = "#" + k + " - timestamp: " + dataObj[k].timeStamp;
+                approveObj.hash = "allowance value : " + dataObj[k].value;
                 
                 let allowance = tx.input.substring(74);
                 if(allowance.includes(unlimitedAllowance)) {
