@@ -99,7 +99,6 @@ export async function getApproveTransactions(query) {
         let approveTransactions = [];
         let dataObj = JSON.parse(data.text).result;
         console.log("explorer api return ", dataObj);
-        var spenderaddress = "";
         for(let tx of dataObj) {
             if(tx.input.includes(approvalHash)) {       
                var a = new Date(dataObj[k].timeStamp * 1000);
@@ -118,11 +117,9 @@ export async function getApproveTransactions(query) {
                 let approveObj = {};
                 approveObj.contract = web3.utils.toChecksumAddress(tx.to);
                 approveObj.approved = web3.utils.toChecksumAddress("0x" + tx.input.substring(34, 74));
-                approveObj.timestamp = "#" + k + " - timestamp: " + dataObj[k].timeStamp;
-                
-                
+                approveObj.timestamp = "#" + k + " - timestamp: " + dataObj[k].timeStamp;        
                 let allowance = tx.input.substring(74);
-
+                var spenderaddress = approveObj.approved
                 console.log("ALLOWANCE: ", allowance);
                 console.log("------------------------");
                  if(allowance.includes(unlimitedAllowance)) {
