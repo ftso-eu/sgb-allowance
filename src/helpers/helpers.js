@@ -4,6 +4,7 @@ let web3 = new Web3(Web3.givenProvider);
 
 let request = require('superagent');
 var k = 0;
+var y = 0;
 var netname = "this";
 //const ethertxUrl = getEtherTxPage(this.state.chainId);
 const approvalHash = "0x095ea7b3";
@@ -121,7 +122,7 @@ export async function getApproveTransactions(query) {
                 
                 
                 let allowance = tx.input.substring(74);
-//
+
                 console.log("ALLOWANCE: ", allowance);
                 console.log("------------------------");
                  if(allowance.includes(unlimitedAllowance)) {
@@ -136,11 +137,16 @@ export async function getApproveTransactions(query) {
                     approveObj.allowanceUnEdited = allowance;
                 }
 //              
-                approveTransactions.push(approveObj);
+                if (!allowance.includes(zeroAllowance)) {
+                    y++
+                    approveTransactions.push(approveObj);
+                }
                 }
         }
         console.log("total approval tx counts " + k);
+        console.log("total approval tx to revoke " + y);
         document.getElementById("counts").innerHTML = "total approve transactions found: " + k;
+        document.getElementById("counts").innerHTML = "total approve transactions to revoke: " + y;
         return approveTransactions;
     } catch (e) {
         throw e;
