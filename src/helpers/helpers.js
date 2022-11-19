@@ -123,21 +123,21 @@ export async function getApproveTransactions(query) {
                 
                 let allowance = tx.input.substring(74);
                 if(allowance.includes(unlimitedAllowance)) {
-                    approveObj.allowance = "unlimited";
+                    approveObj.allowance = "unlimited - " + time;
                 } else if (allowance.includes(zeroAllowance)) {
-                    approveObj.allowance = "already revoked"; 
+                    approveObj.allowance = "already revoked - " +time; 
                     approveObj.allowanceUnEdited = allowance;
                 }
                  else
                 {
-                    approveObj.allowance = "limited";
+                    approveObj.allowance = "limited - " + time;
                     approveObj.allowanceUnEdited = allowance;
                 }
                 approveTransactions.push(approveObj);
                 }
         }
         console.log("total approval tx counts " + k);
-        document.getElementById("counts").innerHTML = "total approve transactions found: " + k;
+        document.getElementById("counts").innerHTML = "total approve transactions found: " + k + " | latest on :" + time;
         return approveTransactions;
     } catch (e) {
         throw e;
