@@ -8,7 +8,7 @@ var netname = "this";
 //const ethertxUrl = getEtherTxPage(this.state.chainId);
 const approvalHash = "0x095ea7b3";
 const unlimitedAllowance = "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff";
-const zeroAllowance = "0000000000000000000000000000000000000000000000000000000000000000";
+const zeroAllowance = "0";
 const { ERC20ABI, ERC721ABI } = require("./ABI.js");
 
 // export function getTxUrl(chainId, hash) {
