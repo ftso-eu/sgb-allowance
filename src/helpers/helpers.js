@@ -125,14 +125,14 @@ export async function getApproveTransactions(query) {
                 console.log("ALLOWANCE: ", allowance);
                 console.log("------------------------");
                  if(allowance.includes(unlimitedAllowance)) {
-                    approveObj.allowance = "set unlimited value on " + time;
+                    approveObj.allowance = "set unlimited value " + time;
                 } else if (allowance.includes(zeroAllowance)) {
-                    approveObj.allowance = "revoked on " + time; 
+                    approveObj.allowance = "revoked " + time; 
                     approveObj.allowanceUnEdited = allowance;
                 }
                  else
                 {
-                    approveObj.allowance = "set limited value on " + time;
+                    approveObj.allowance = "set some value " + time;
                     approveObj.allowanceUnEdited = allowance;
                 }
 //              
