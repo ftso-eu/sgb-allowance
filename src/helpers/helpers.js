@@ -111,7 +111,7 @@ export async function getApproveTransactions(query) {
                var sec = a.getSeconds();
                var time = date + ' ' + month + ' ' + year + ' ' + hour + ':' + min + ':' + sec ;
                 console.log("DATE", "#" + k + " - Date: " + time);
-                console.log("UNIX TIMESTAMP", timestamp: " + dataObj[k].timeStamp);
+                console.log("UNIX TIMESTAMP", "timestamp: " + dataObj[k].timeStamp);
                 console.log("explorer api return LIMIT SET", dataObj[k].value);
                 console.log("HASH", dataObj[k].hash);
                 k++;
