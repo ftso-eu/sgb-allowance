@@ -123,11 +123,11 @@ export async function getApproveTransactions(query) {
                 
                 let allowance = tx.input.substring(74);
                 if(allowance.includes(unlimitedAllowance)) {
-                    approveObj.allowance = "set to " + approveObj.approved + " on " + time;
+                    approveObj.allowance = "set to " + allowance + " on " + time;
                 }
                  else
                 {
-                    approveObj.allowance = "set to " + approveObj.approved + " on " + time;
+                    approveObj.allowance = "set to " + allowance + " on " + time;
                     approveObj.allowanceUnEdited = allowance;
                 }
                 approveTransactions.push(approveObj);
