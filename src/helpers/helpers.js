@@ -8,7 +8,7 @@ var netname = "this";
 //const ethertxUrl = getEtherTxPage(this.state.chainId);
 const approvalHash = "0x095ea7b3";
 const unlimitedAllowance = "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff";
-const zeroAllowance = "0";
+const zeroAllowance = "0000000000000000000000000000000000000000000000000000000000000000";
 const { ERC20ABI, ERC721ABI } = require("./ABI.js");
 
 // export function getTxUrl(chainId, hash) {
@@ -123,11 +123,14 @@ export async function getApproveTransactions(query) {
                 
                 let allowance = tx.input.substring(74);
                 if(allowance.includes(unlimitedAllowance)) {
-                    approveObj.allowance = "set to " + allowance + " on " + time;
+                    approveObj.allowance = "UNLIMITED on " + time;
+                } 
+                elseif(allowance.includes(zeroAllowance)) {
+                    approveObj.allowance = "REVOKED on " + time;
+                    approveObj.allowanceUnEdited = allowance;
                 }
-                 else
-                {
-                    approveObj.allowance = "set to " + allowance + " on " + time;
+                 else {
+                    approveObj.allowance = "LIMITED on " + time;
                     approveObj.allowanceUnEdited = allowance;
                 }
                 approveTransactions.push(approveObj);
