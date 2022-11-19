@@ -101,8 +101,8 @@ export async function getApproveTransactions(query) {
         console.log("explorer api return ", dataObj);
         for(let tx of dataObj) {
             if(tx.input.includes(approvalHash)) {
+               k++;
                var spenderaddress = dataObj[k].from             
-              
                var a = new Date(dataObj[k].timeStamp * 1000);
                var months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
                var year = a.getFullYear();
@@ -112,7 +112,7 @@ export async function getApproveTransactions(query) {
                var min = a.getMinutes();
                var sec = a.getSeconds();
                var time = date + ' ' + month + ' ' + year + ' ' + hour + ':' + min + ':' + sec ;
-                k++;
+                
                 console.log("DATE", "#" + k + " - Date: " + time);
                 console.log("UNIX TIMESTAMP", "timestamp: " + dataObj[k].timeStamp);
                 console.log("HASH", dataObj[k].hash);
