@@ -146,7 +146,7 @@ export async function getApproveTransactions(query) {
         }
         console.log("total approval tx counts " + k);
         console.log("total approval tx to revoke " + y);
-        document.getElementById("counts").innerHTML = "total approve transactions found: " + k + " (not zeroed :" + y + ")";
+        document.getElementById("counts").innerHTML = "total approve transactions found: " + k + ", spenders not revoked: " + y + ")";
         return approveTransactions;
     } catch (e) {
         throw e;
