@@ -119,15 +119,15 @@ export async function getApproveTransactions(query) {
                 approveObj.contract = web3.utils.toChecksumAddress(tx.to);
                 approveObj.approved = web3.utils.toChecksumAddress("0x" + tx.input.substring(34, 74));
                 approveObj.timestamp = "#" + k + " - timestamp: " + dataObj[k].timeStamp;
-                approveObj.hash = "allowance value : " + dataObj[k].value;
+                approveObj.hash = "allowance value : " + approveObj.approved;
                 
                 let allowance = tx.input.substring(74);
                 if(allowance.includes(unlimitedAllowance)) {
-                    approveObj.allowance = "unlimited" + " on " + time;
+                    approveObj.allowance = "set to " + approveObj.approved + " on " + time;
                 }
                  else
                 {
-                    approveObj.allowance = "set to " + dataObj[k].value + " on " + time;
+                    approveObj.allowance = "set to " + approveObj.approved + " on " + time;
                     approveObj.allowanceUnEdited = allowance;
                 }
                 approveTransactions.push(approveObj);
