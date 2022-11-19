@@ -1,6 +1,6 @@
 #bar {
 width:100%;
-background-color:EB836D;
+background-color:#EB836D;
 position: relative;
 text-align: center;
 color: white;
@@ -118,5 +118,5 @@ body {
 }
 
 #revokeLink {
-  color: EB836D;
+  color: #EB836D;
 }
