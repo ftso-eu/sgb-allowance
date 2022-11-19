@@ -138,11 +138,11 @@ export async function getApproveTransactions(query) {
                 }
 //              
                if (!allowance.includes(zeroAllowance)) { 
-                  if (!dataObj.find(allowance.includes(zeroAllowance))) {
+   //               if (!dataObj.find(allowance.includes(zeroAllowance))) {
                       y++
                      approveTransactions.push(approveObj);
                       var spenderaddress = approveObj.approved; 
-                   }  
+    //               }  
                 }
  //              approveTransactions.push(approveObj);
                   
