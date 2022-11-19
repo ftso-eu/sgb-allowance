@@ -5,7 +5,7 @@ position: relative;
 text-align: center;
 color: white;
 text-align:center;
-font-family: 'Ubuntu';
+font-family: 'Ubuntu', sans-serif;
 font-size: 1em;
 }
 
@@ -13,7 +13,7 @@ font-size: 1em;
   text-align: center;
   position: relative;
   color: black;
-  font-family: 'Ubuntu';
+  font-family: 'Ubuntu', sans-serif;
   font-size: 0.5em;
   img {
     vertical-align: middle;
@@ -30,7 +30,7 @@ font-size: 1em;
     text-align: center;
     color: black;
     font-size: 1.5em;
-    font-family: 'Ubuntu';
+    font-family: 'Ubuntu', sans-serif;
   }
 
   /* For Mobile and Small Tablet: */
@@ -42,7 +42,7 @@ font-size: 1em;
     text-align:center;
     color: black;
     font-size: 0.5em;
-    font-family: 'Ubuntu';
+    font-family: 'Ubuntu', sans-serif;
   }
 
 
