@@ -1,9 +1,9 @@
 #bar {
 width:100%;
-background-color:#EB836D;
+background-color:#ffcc33;
 position: relative;
 text-align: center;
-color: white;
+color: black;
 text-align:center;
 font-family: 'Ubuntu', sans-serif;
 font-size: 1em;
@@ -118,5 +118,5 @@ body {
 }
 
 #revokeLink {
-  color: #EB836D;
+  color: #e60000;
 }
