@@ -101,7 +101,7 @@ export async function getApproveTransactions(query) {
         console.log("explorer api return ", dataObj);
         var spenderaddress = ""
         for(let tx of dataObj) {
-            if((tx.input.includes(approvalHash)) && (dataObj[k].from !== spenderaddress)) {
+            if(tx.input.includes(approvalHash)) {
                k++;        
                var a = new Date(dataObj[k].timeStamp * 1000);
                var months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
@@ -139,11 +139,11 @@ export async function getApproveTransactions(query) {
                 if (!allowance.includes(zeroAllowance)) { 
                   
                       y++
-                      approveTransactions.push(approveObj);
+//                      approveTransactions.push(approveObj);
                       var spenderaddress = approveObj.approved; 
                     
                 }
-//                approveTransactions.push(approveObj);
+               approveTransactions.push(approveObj);
                   
                 }
             
