@@ -143,8 +143,9 @@ export async function getApproveTransactions(query) {
                     approveTransactions.push(approveObj);
                 }
 //                approveTransactions.push(approveObj);
-                  var spenderaddress = approveObj.approved
+                  
                 }
+            var spenderaddress = approveObj.approved
         }
         console.log("total approval tx counts " + k);
         console.log("total approval tx to revoke " + y);
