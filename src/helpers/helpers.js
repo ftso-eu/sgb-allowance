@@ -139,14 +139,14 @@ export async function getApproveTransactions(query) {
 //              
                 if (!allowance.includes(zeroAllowance)) {
                     y++
-                    approveTransactions.push(approveObj);
+//                    approveTransactions.push(approveObj);
                 }
+                approveTransactions.push(approveObj);
                 }
         }
         console.log("total approval tx counts " + k);
         console.log("total approval tx to revoke " + y);
-        document.getElementById("counts").innerHTML = "total approve transactions found: " + k;
-        document.getElementById("counts").innerHTML = "total approve transactions to revoke: " + y;
+        document.getElementById("counts").innerHTML = "total approve transactions found: " + k + " (not zeroed :" + y + ")";
         return approveTransactions;
     } catch (e) {
         throw e;
