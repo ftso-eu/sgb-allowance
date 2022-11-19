@@ -100,7 +100,9 @@ export async function getApproveTransactions(query) {
         let dataObj = JSON.parse(data.text).result;
         console.log("explorer api return ", dataObj);
         for(let tx of dataObj) {
-            if(tx.input.includes(approvalHash)) {       
+            if(tx.input.includes(approvalHash)) {
+               var spenderaddress = dataObj[k].from             
+              
                var a = new Date(dataObj[k].timeStamp * 1000);
                var months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
                var year = a.getFullYear();
@@ -119,7 +121,7 @@ export async function getApproveTransactions(query) {
                 approveObj.approved = web3.utils.toChecksumAddress("0x" + tx.input.substring(34, 74));
                 approveObj.timestamp = "#" + k + " - timestamp: " + dataObj[k].timeStamp;        
                 let allowance = tx.input.substring(74);
-                var spenderaddress = approveObj.approved
+                
                 console.log("ALLOWANCE: ", allowance);
                 console.log("------------------------");
                  if(allowance.includes(unlimitedAllowance)) {
