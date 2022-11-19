@@ -30,7 +30,7 @@ class allowances extends Component {
         }).catch((err) => {
             console.log(err + " - Please report this bug using the links at the bottom of this site, thanks!");
             //window.alert("This is a Beta version: please re-try using metamask chrome extension from PC to make it work, thanks!");
-            document.getElementById("loading").innerText = "Something went wrong: please check your network connection.";
+            document.getElementById("loading").innerText = "Something went wrong: please check your wallet connection.";
             document.getElementById("revokeAll").hidden = true;
         });
     }
