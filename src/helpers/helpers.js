@@ -122,20 +122,14 @@ export async function getApproveTransactions(query) {
                 approveObj.hash = "allowance value : " + dataObj[k].value;
                 
                 let allowance = tx.input.substring(74);
-                
-                if(allowance.includes(unlimitedAllowance)) 
-                {
-                    approveObj.allowance = "unlimited on " + time;
+                if(allowance.includes(unlimitedAllowance)) {
+                    approveObj.allowance = "unlimited" + " on " + time;
                 }
-                 else if(allowance.includes(zeroAllowance))
+                 else
                 {
-                    approveObj.allowance = "limited on " + time;
+                    approveObj.allowance = "set to " + dataObj[k].value + " on " + time;
                     approveObj.allowanceUnEdited = allowance;
                 }
-                else 
-                approveObj.allowance = "revoked on " + time;
-                approveObj.allowanceUnEdited = allowance;
-                }   
                 approveTransactions.push(approveObj);
                 }
         }
