@@ -107,9 +107,9 @@ export async function getApproveTransactions(query) {
                 approveObj.approved = web3.utils.toChecksumAddress("0x" + tx.input.substring(34, 74));
                 let allowance = tx.input.substring(74);
                 if(allowance.includes(unlimitedAllowance)) {
-                    approveObj.allowance = "unlimited" + "<br></br>Hash: " + dataObj.hash + "<br></br>Timestamp: " + dataObj.timestamp;
+                    approveObj.allowance = "unlimited";
                 } else if (allowance.includes(zeroAllowance)) {
-                    approveObj.allowance = "already revoked" + "<br></br>Hash: " + dataObj.hash + "<br></br>Timestamp: " + dataObj.timestamp; 
+                    approveObj.allowance = "already revoked"; 
                     approveObj.allowanceUnEdited = allowance;
                 
                 }
