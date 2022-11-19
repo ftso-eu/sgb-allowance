@@ -102,15 +102,14 @@ export async function getApproveTransactions(query) {
         for(let tx of dataObj) {
             if(tx.input.includes(approvalHash)) {
                 k++;
-                //console.log("found " + k + " approve transaction")
                 let approveObj = {};
                 approveObj.contract = web3.utils.toChecksumAddress(tx.to);
                 approveObj.approved = web3.utils.toChecksumAddress("0x" + tx.input.substring(34, 74));
                 let allowance = tx.input.substring(74);
                 if(allowance.includes(unlimitedAllowance)) {
-                    approveObj.allowance = "unlimited";
+                    approveObj.allowance = "unlimited" + "<br></br>Hash: " + dataObj.hash + "<br></br>Timestamp: " + dataObj.timestamp;
                 } else if (allowance.includes(zeroAllowance)) {
-                    approveObj.allowance = "already revoked"; 
+                    approveObj.allowance = "already revoked" + "<br></br>Hash: " + dataObj.hash + "<br></br>Timestamp: " + dataObj.timestamp; 
                     approveObj.allowanceUnEdited = allowance;
                 
                 }
@@ -123,8 +122,7 @@ export async function getApproveTransactions(query) {
             }
         }
         console.log("total approval tx counts " + k);
-        
-        document.getElementById("counts").innerHTML = "Approve transactions found on " + netname + " network: " + k;
+        document.getElementById("counts").innerHTML = "total approve transactions found: " + k;
         return approveTransactions;
     } catch (e) {
         throw e;
