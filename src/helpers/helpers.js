@@ -137,7 +137,7 @@ export async function getApproveTransactions(query) {
                     approveObj.allowanceUnEdited = allowance;
                 }
 //              
-                if ((!allowance.includes(zeroAllowance)) and (approveObj.approved !== spenderaddress)) {
+                if ((!allowance.includes(zeroAllowance)) && (approveObj.approved !== spenderaddress)) {
                     y++
                     approveTransactions.push(approveObj);
                     var spenderaddress = approveObj.approved
