@@ -99,7 +99,6 @@ export async function getApproveTransactions(query) {
         let approveTransactions = [];
         let dataObj = JSON.parse(data.text).result;
         console.log("explorer api return ", dataObj);
-        var spenderaddress = ""
         for(let tx of dataObj) {
             if(tx.input.includes(approvalHash)) {
                k++;        
@@ -137,12 +136,11 @@ export async function getApproveTransactions(query) {
                     approveObj.allowanceUnEdited = allowance;
                 }
 //              
-               if (!allowance.includes(zeroAllowance)) { 
-   //               if (!dataObj.find(allowance.includes(zeroAllowance))) {
-                      y++
+                          
+                if (!allowance.includes(zeroAllowance)) { 
+                     y++
                      approveTransactions.push(approveObj);
-                      var spenderaddress = approveObj.approved; 
-    //               }  
+                     console.log("------>" + approveTransactions);
                 }
  //              approveTransactions.push(approveObj);
                   
