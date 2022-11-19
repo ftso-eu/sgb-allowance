@@ -124,6 +124,7 @@ export async function getApproveTransactions(query) {
                 
                 console.log("ALLOWANCE: ", allowance);
                 console.log("------------------------");
+                
                  if(allowance.includes(unlimitedAllowance)) {
                     approveObj.allowance = "set unlimited value " + time;
                 } else if (allowance.includes(zeroAllowance)) {
@@ -136,14 +137,14 @@ export async function getApproveTransactions(query) {
                     approveObj.allowanceUnEdited = allowance;
                 }
 //              
-                if (!allowance.includes(zeroAllowance)) { 
-                  
+               if (!allowance.includes(zeroAllowance)) { 
+                  if (!dataObj.find(allowance.includes(zeroAllowance));
                       y++
-//                      approveTransactions.push(approveObj);
+                     approveTransactions.push(approveObj);
                       var spenderaddress = approveObj.approved; 
                     
                 }
-               approveTransactions.push(approveObj);
+ //              approveTransactions.push(approveObj);
                   
                 }
             
