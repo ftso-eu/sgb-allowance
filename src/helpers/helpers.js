@@ -112,17 +112,18 @@ export async function getApproveTransactions(query) {
                var time = date + ' ' + month + ' ' + year + ' ' + hour + ':' + min + ':' + sec ;
                 console.log("DATE", "#" + k + " - Date: " + time);
                 console.log("UNIX TIMESTAMP", "timestamp: " + dataObj[k].timeStamp);
-                console.log("explorer api return LIMIT SET", dataObj[k].value);
                 console.log("HASH", dataObj[k].hash);
                 k++;
                 let approveObj = {};
                 approveObj.contract = web3.utils.toChecksumAddress(tx.to);
                 approveObj.approved = web3.utils.toChecksumAddress("0x" + tx.input.substring(34, 74));
                 approveObj.timestamp = "#" + k + " - timestamp: " + dataObj[k].timeStamp;
-                approveObj.hash = "allowance value : " + approveObj.approved;
+                
                 
                 let allowance = tx.input.substring(74);
 //
+                console.log("ALLOWANCE: ", allowance);
+                console.log("------------------------");
                  if(allowance.includes(unlimitedAllowance)) {
                     approveObj.allowance = "set unlimited value on " + time;
                 } else if (allowance.includes(zeroAllowance)) {
