@@ -125,9 +125,9 @@ export async function getApproveTransactions(query) {
                var sec = a.getSeconds();
                var time = date + ' ' + month + ' ' + year + ' ' + hour + ':' + min + ':' + sec ;
                 
-                console.log("DATE", "#" + k + " - Date: " + time);
-                console.log("UNIX TIMESTAMP", "timestamp: " + dataObj[k].timeStamp);
-                console.log("HASH", dataObj[k].hash);
+        //        console.log("DATE", "#" + k + " - Date: " + time);
+        //        console.log("UNIX TIMESTAMP", "timestamp: " + dataObj[k].timeStamp);
+        //        console.log("HASH", dataObj[k].hash);
                 let approveObj = {};
                 approveObj.contract = web3.utils.toChecksumAddress(tx.to);
                 approveObj.approved = web3.utils.toChecksumAddress("0x" + tx.input.substring(34, 74));
@@ -162,7 +162,7 @@ export async function getApproveTransactions(query) {
         }
         console.log("total approval tx counts " + k);
         console.log("total approval tx to revoke " + y);
-        document.getElementById("counts").innerHTML = "approve transactions found: " + k; // + " | spenders not revoked: " + y;
+        document.getElementById("counts").innerHTML = "found spenders to revoke: " + y;
         return approveTransactions;
     } catch (e) {
         throw e;
