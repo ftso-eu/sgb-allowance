@@ -134,8 +134,8 @@ export async function getApproveTransactions(query) {
                 approveObj.timestamp = "#" + k + " - timestamp: " + dataObj[k].timeStamp;        
                 let allowance = tx.input.substring(74);
                 
-                console.log("ALLOWANCE: ", allowance);
-                console.log("------------------------");
+                //console.log("ALLOWANCE: ", allowance);
+                //console.log("------------------------");
                 
                  if(allowance.includes(unlimitedAllowance)) {
                     approveObj.allowance = "set unlimited value " + time;
