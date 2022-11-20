@@ -93,12 +93,23 @@ export function getEtherTxPage(chainId) {
     }
 }
 
+export function uniqByKeepFirst(a, key) {
+    let seen = new Set();
+    return a.filter(item => {
+        let k = key(item);
+        return seen.has(k) ? false : seen.add(k);
+    });
+}
+
+
 export async function getApproveTransactions(query) {
     try {
         let data = await request.get(query);
         let approveTransactions = [];
         let dataObj1 = JSON.parse(data.text).result;
-        let dataObj = [...new Set(dataObj1.from)];
+//
+        let dataObj = uniqByKeepFirst(dataObj1, it => it.to)
+        
         console.log("explorer api return ", dataObj1);
         console.log("explorer api filtered ", dataObj);
         for(let tx of dataObj) {
