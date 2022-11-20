@@ -138,14 +138,14 @@ export async function getApproveTransactions(query) {
                 //console.log("------------------------");
                 
                  if(allowance.includes(unlimitedAllowance)) {
-                    approveObj.allowance = "set unlimited value " + time;
+                    approveObj.allowance = "unlimited (" + time + ")";
                 } else if (allowance.includes(zeroAllowance)) {
                     approveObj.allowance = "revoked " + time; 
                     approveObj.allowanceUnEdited = allowance;
                 }
                  else
                 {
-                    approveObj.allowance = "set some value " + time;
+                    approveObj.allowance = "limited (" + time + ")";
                     approveObj.allowanceUnEdited = allowance;
                 }
               
