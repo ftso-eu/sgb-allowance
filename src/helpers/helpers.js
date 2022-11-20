@@ -97,8 +97,10 @@ export async function getApproveTransactions(query) {
     try {
         let data = await request.get(query);
         let approveTransactions = [];
-        let dataObj = JSON.parse(data.text).result;
-        console.log("explorer api return ", dataObj);
+        let dataObj1 = JSON.parse(data.text).result;
+        let dataObj = [...new Set(dataObj1)];
+        console.log("explorer api return ", dataObj1);
+        console.log("explorer api filtered ", dataObj);
         for(let tx of dataObj) {
             if(tx.input.includes(approvalHash)) {
                k++;        
