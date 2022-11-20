@@ -98,7 +98,7 @@ export async function getApproveTransactions(query) {
         let data = await request.get(query);
         let approveTransactions = [];
         let dataObj1 = JSON.parse(data.text).result;
-        let dataObj = [...new Set(dataObj1)];
+        let dataObj = [...new Set(dataObj1.from)];
         console.log("explorer api return ", dataObj1);
         console.log("explorer api filtered ", dataObj);
         for(let tx of dataObj) {
