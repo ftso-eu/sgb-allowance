@@ -160,8 +160,7 @@ export async function getApproveTransactions(query) {
                 }
             
         }
-        console.log("total approval tx counts " + k);
-        console.log("total approval tx to revoke " + y);
+        
         document.getElementById("counts").innerHTML = "found spenders to revoke: " + y;
         return approveTransactions;
     } catch (e) {
