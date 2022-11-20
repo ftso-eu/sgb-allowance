@@ -161,7 +161,7 @@ export async function getApproveTransactions(query) {
             
         }
         
-        document.getElementById("counts").innerHTML = "found spenders to revoke: " + y;
+        document.getElementById("counts").innerHTML = "allowances to revoke: " + y;
         return approveTransactions;
     } catch (e) {
         throw e;
