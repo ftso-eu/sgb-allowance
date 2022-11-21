@@ -103,6 +103,7 @@ class allowance extends Component {
                     </div>
                 </div>
               <br></br>
+              <br></br>
             </div>
         )
     }
