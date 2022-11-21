@@ -29,7 +29,7 @@ class allowances extends Component {
             }
         }).catch((err) => {
             console.log(err);
-            document.getElementById("loading").innerText = "Check your wallet configurations and reload this page to retry";
+            document.getElementById("loading").innerText = "Check your address network configs and reload this page to retry";
             
             document.getElementById("revokeAll").hidden = true;
         });
