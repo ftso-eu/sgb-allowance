@@ -25,7 +25,7 @@ font-size: 1em;
   /* For PC and Tablet */
   .centered {
     width:90%;
-    aspect-ratio: 100 / 29;
+  /*  aspect-ratio: 100 / 29; */
     position: relative;
     text-align: center;
     color: #0D1A5D;
@@ -37,7 +37,7 @@ font-size: 1em;
  /* @media only screen and (max-width:499px)  */
   .centered-white {
     width:90%;
-    aspect-ratio: 100 / 29;
+   /* aspect-ratio: 100 / 29; */
     position: relative;
     text-align:center;
     color: #0D1A5D;
@@ -51,7 +51,7 @@ font-size: 1em;
 /* Container holding the image and the text */
 .container {
   position: relative;
-  aspect-ratio: 100 / 29;
+ /* aspect-ratio: 100 / 29; */
   text-align: center;
   color: #0D1A5D;
   display: table-cell;
