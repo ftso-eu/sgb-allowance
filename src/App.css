@@ -3,7 +3,7 @@ width:100%;
 background-color:#ffcc33;
 position: relative;
 text-align: center;
-color: black;
+color: #0D1A5D;
 text-align:center;
 font-family: 'Ubuntu', sans-serif;
 font-size: 1em;
@@ -12,7 +12,7 @@ font-size: 1em;
 #titles {
   text-align: center;
   position: relative;
-  color: black;
+  color: #0D1A5D;
   font-family: 'Ubuntu', sans-serif;
   font-size: 0.5em;
   img {
@@ -28,7 +28,7 @@ font-size: 1em;
     aspect-ratio: 100 / 29;
     position: relative;
     text-align: center;
-    color: black;
+    color: #0D1A5D;
     font-size: 1.5em;
     font-family: 'Ubuntu', sans-serif;
   }
@@ -40,7 +40,7 @@ font-size: 1em;
     aspect-ratio: 100 / 29;
     position: relative;
     text-align:center;
-    color: black;
+    color: #0D1A5D;
     font-size: 0.5em;
     font-family: 'Ubuntu', sans-serif;
   }
@@ -53,7 +53,7 @@ font-size: 1em;
   position: relative;
   aspect-ratio: 100 / 29;
   text-align: center;
-  color: black;
+  color: #0D1A5D;
   display: table-cell;
 }
 
@@ -68,7 +68,7 @@ font-size: 1em;
 
 #loading {
   text-align: center;
-  color: black;
+  color: #0D1A5D;
 }
 
 #page {
@@ -95,11 +95,11 @@ body {
 }
 
 .revoke-full {
- color: black;
+ color: #0D1A5D;
 }
 
 .revoke-small {
- color: black;
+ color: #0D1A5D;
 }
 
 .allowance {
@@ -110,7 +110,7 @@ body {
   background-size: auto;
   text-align: center;
   padding: 0%;
-  color: black;
+  color: #0D1A5D;
 }
 
 #headers {
