@@ -1,3 +1,4 @@
 module.exports = {
-"BlazeSwap": "https://blazeswap.xyz"
+    "blazeswap": "https://blazeswap.xyz",
+    "flr finance": "https://flr.finance"
 }
