@@ -29,9 +29,9 @@ font-size: 1em;
     position: relative;
     text-align: center;
     color: #0D1A5D;
-    font-size: 1.5em;
+    font-size: 1em;
     font-family: 'Ubuntu', sans-serif;
-    background-color:#ffcc33;
+    
   }
 
   /* For Mobile and Small Tablet: */
@@ -44,7 +44,7 @@ font-size: 1em;
     color: #0D1A5D;
     font-size: 0.5em;
     font-family: 'Ubuntu', sans-serif;
-    background-color:#ffcc33;
+    
   }
 
 
@@ -71,6 +71,7 @@ font-size: 1em;
 #loading {
   text-align: center;
   color: #0D1A5D;
+  background-color:#ffcc33;
 }
 
 #page {
@@ -79,6 +80,7 @@ font-size: 1em;
 
 #results {
   margin-left: 0%;
+background-color:#ffcc33;
 }
 
 .grid-container {
