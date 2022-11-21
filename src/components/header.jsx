@@ -36,7 +36,7 @@ class header extends Component {
 		    <h5 id="counts"></h5>
 		</div>
 		</div>
-                <h3 id="loading" hidden>Loading, please wait...</h3><br>
+                <h3 id="loading" hidden>Loading, please wait...</h3><br></br>
 		<script> window.reload(); </script>
                 <div id="revokeAll">
                     <div className="container">
