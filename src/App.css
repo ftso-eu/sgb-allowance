@@ -29,22 +29,20 @@ font-size: 1em;
     position: relative;
     text-align: center;
     color: #0D1A5D;
-    font-size: 1em;
+    font-size: 0.5em;
     font-family: 'Ubuntu', sans-serif;
-    
   }
 
   /* For Mobile and Small Tablet: */
-@media only screen and (max-width:499px)
+@media only screen and (max-width:499px) {
   .centered-white {
     width:90%;
     aspect-ratio: 100 / 29;
     position: relative;
     text-align:center;
     color: #0D1A5D;
-    font-size: 0.5em;
-    font-family: 'Ubuntu', sans-serif;
-    
+    font-size: 0.3em;
+    font-family: 'Ubuntu', sans-serif;   
   }
 
 
