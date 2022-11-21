@@ -21,7 +21,7 @@ font-size: 1em;
  }
  
 
-@media only screen and (min-width: 500x) {
+@media only screen and (min-width: 500px) {
   /* For PC and Tablet */
   .centered {
     width:90%;
@@ -31,6 +31,7 @@ font-size: 1em;
     color: #0D1A5D;
     font-size: 1.5em;
     font-family: 'Ubuntu', sans-serif;
+    background-color:#ffcc33;
   }
 
   /* For Mobile and Small Tablet: */
@@ -43,6 +44,7 @@ font-size: 1em;
     color: #0D1A5D;
     font-size: 0.5em;
     font-family: 'Ubuntu', sans-serif;
+    background-color:#ffcc33;
   }
 
 
