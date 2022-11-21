@@ -34,7 +34,7 @@ font-size: 1em;
   }
 
   /* For Mobile and Small Tablet: */
-@media only screen and (max-width:499px) {
+@media only screen and (max-width:499px) 
   .centered-white {
     width:90%;
     aspect-ratio: 100 / 29;
