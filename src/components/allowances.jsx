@@ -29,8 +29,8 @@ class allowances extends Component {
             }
         }).catch((err) => {
             console.log(err);
-            document.getElementById("loading").innerText = "sorry, cannot connect your address";
-            window.alert("please check if your wallet is locked, unlock it and reload this page");
+            document.getElementById("loading").innerText = "sorry, cannot connect your address. Please check if your wallet is locked, unlock it and reload this page.";
+            
             document.getElementById("revokeAll").hidden = true;
         });
     }
