@@ -29,7 +29,7 @@ class allowances extends Component {
             }
         }).catch((err) => {
             console.log(err);
-            document.getElementById("loading").innerHTML = <button onClick="window.location.reload();">CONNECT</button>;    
+            document.getElementById("loading").textContent = <button onClick="window.location.reload();">CONNECT</button>;    
             document.getElementById("revokeAll").hidden = true;
         });
     }
