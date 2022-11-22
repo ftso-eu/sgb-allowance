@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import truncateName from './allowance.jsx';
 import '../App.css';
 import '../helpers/helpers.js';
 
