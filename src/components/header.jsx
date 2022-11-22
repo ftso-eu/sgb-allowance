@@ -19,7 +19,7 @@ async function onInit() {
         await window.ethereum.enable();
         const accounts = await window.ethereum.request({ method: 'eth_requestAccounts' });
         const account = accounts[0];
-        var accounstart = account.substring(0,5);
+        var accountstart = account.substring(0,5);
 	var accountend = account.substring(15);
         document.getElementById("addy").innerHTML = "connected address: " + accountstart + "..." + accountend;
         window.ethereum.on('accountsChanged', function (accounts) {
