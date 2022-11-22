@@ -6,24 +6,11 @@ let request = require('superagent');
 var k = 0;
 var y = 0;
 var netname = "this";
-//const ethertxUrl = getEtherTxPage(this.state.chainId);
 const approvalHash = "0x095ea7b3";
 const unlimitedAllowance = "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff";
 const zeroAllowance = "0000000000000000000000000000000000000000000000000000000000000000";
 const { ERC20ABI, ERC721ABI } = require("./ABI.js");
 
-// export function getTxUrl(chainId, hash) {
-//     switch (chainId) {
-//        case 114:       
-//             return "https://coston2-explorer.flare.network/tx/" + hash;       
-//         case 16:  
-//             return "https://coston-explorer.flare.network/tx/" + hash;     
-//         case 19:
-//             "https://Songbird-explorer.flare.network/tx/" + hash;      
-//         default:
-//             "https://Songbird-explorer.flare.network/tx/" + hash;         
-//     }
-// }
 
 // export function getNetName(chainId) {
 //    switch (chainId) {
@@ -75,21 +62,13 @@ export function getEtherScanPage(chainId) {
 export function getEtherTxPage(chainId) {
     switch (chainId) {
         case 114:
-            
             return "https://coston2-explorer.flare.network/tx/";
-            
         case 16:
-            
             return "https://coston-explorer.flare.network/tx/";
-            
         case 19:
-            
             return "https://songbird-explorer.flare.network/tx/";
-            
         default:
-            
             return "https://songbird-explorer.flare.network/tx/";
-            
     }
 }
 
@@ -107,7 +86,6 @@ export async function getApproveTransactions(query) {
         let data = await request.get(query);
         let approveTransactions = [];
         let dataObj1 = JSON.parse(data.text).result;
-//
         let dataObj = uniqByKeepFirst(dataObj1, it => it.to)
         
         console.log("explorer api return ", dataObj1);
@@ -125,17 +103,14 @@ export async function getApproveTransactions(query) {
                var sec = a.getSeconds();
                var time = date + ' ' + month + ' ' + year + ' ' + hour + ':' + min + ':' + sec ;
                 
-        //        console.log("DATE", "#" + k + " - Date: " + time);
-        //        console.log("UNIX TIMESTAMP", "timestamp: " + dataObj[k].timeStamp);
-        //        console.log("HASH", dataObj[k].hash);
+
                 let approveObj = {};
                 approveObj.contract = web3.utils.toChecksumAddress(tx.to);
                 approveObj.approved = web3.utils.toChecksumAddress("0x" + tx.input.substring(34, 74));
                 approveObj.timestamp = "#" + k + " - timestamp: " + dataObj[k].timeStamp;        
                 let allowance = tx.input.substring(74);
+                        
                 
-                //console.log("ALLOWANCE: ", allowance);
-                //console.log("------------------------");
                 
                  if(allowance.includes(unlimitedAllowance)) {
                     approveObj.allowance = "unlimited (" + time + ")";
@@ -153,14 +128,18 @@ export async function getApproveTransactions(query) {
                 if (!allowance.includes(zeroAllowance)) { 
                      y++
                      approveTransactions.push(approveObj);
+                     console.log("DATE", "#" + k + " - Date: " + time);
+                     console.log("UNIX TIMESTAMP", "timestamp: " + dataObj[k].timeStamp);
+                     console.log("HASH", dataObj[k].hash);
+                     console.log("ALLOWANCE: ", allowance);
+                     console.log("------------------------");
                      
-                }
-//               approveTransactions.push(approveObj);
+                    }
                   
                 }
             
-        }
-        
+        }      
+        document.getElementById("totcounts").innerHTML = "total approval transactions: " + k;
         document.getElementById("counts").innerHTML = "allowances to revoke: " + y;
         return approveTransactions;
     } catch (e) {
