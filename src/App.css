@@ -1,7 +1,7 @@
 #bar {
 width:96%;
 margin: auto;
-border-radius: 25px;
+border-radius: 13px;
 background-color:#ffcc33;
 position: relative;
 text-align: center;
@@ -105,7 +105,7 @@ body {
    background: #EDEFF1;
   margin: auto;
   width:96%;
-border-radius: 25px;
+border-radius: 13px;
 }
 
 .revoke-full {
