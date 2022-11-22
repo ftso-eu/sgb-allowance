@@ -139,7 +139,7 @@ export async function getApproveTransactions(query) {
                 }
             
         }      
-        document.getElementById("totcounts").innerHTML = "total approval transactions: " + k;
+        //document.getElementById("totcounts").innerHTML = "total approval transactions: " + k;
         document.getElementById("counts").innerHTML = "allowances to revoke: " + y;
         return approveTransactions;
     } catch (e) {
