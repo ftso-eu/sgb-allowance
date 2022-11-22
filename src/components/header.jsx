@@ -20,7 +20,8 @@ async function onInit() {
         await window.ethereum.enable();
         const accounts = await window.ethereum.request({ method: 'eth_requestAccounts' });
         const account = accounts[0];
-        document.getElementById("addy").innerHTML = "connected address: " + truncateName(account)
+        var accountrunc = account.substring(0,13);
+        document.getElementById("addy").innerHTML = "connected address: " + accountrunc + "...";
         window.ethereum.on('accountsChanged', function (accounts) {
             window.location.reload() 		
             // Time to reload your interface with accounts[0]!
