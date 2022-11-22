@@ -21,7 +21,7 @@ async function onInit() {
         const account = accounts[0];
         document.getElementById("addy").innerHTML = "connected address: " + account
         window.ethereum.on('accountsChanged', function (accounts) {
-            window.reload() 		
+            window.location.reload() 		
             // Time to reload your interface with accounts[0]!
            });
     }
