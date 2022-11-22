@@ -48,6 +48,7 @@ class header extends Component {
 		    <h2>SHOW HISTORY AND REVOKE ALLOWANCES</h2>
 		    <h3><a href="https://docs.flare.network/dev/reference/network-configs/" target="_blank">Songbird</a> | <a href="https://docs.flare.network/dev/reference/network-configs/" target="_blank">Coston1+2</a> | <a href="https://github.com/ftso-eu/sgb-allowance/blob/master/README.md" target="_blank">Inf<img id="github" alt="GitHub" src="https://www.kindpng.com/picc/m/613-6133946_github-awesome-logo-svg-hd-png-download.png" width="15"></img></a></h3>
                     <h5 id="addy"></h5>
+		    <h5 id="totcounts"></h5>
 		    <h5 id="counts"></h5>
 		</div>
 		</div>
