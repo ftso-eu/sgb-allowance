@@ -2,28 +2,28 @@ import React, { Component } from 'react';
 import '../App.css';
 import '../helpers/helpers.js';
 
-async function onInit() {
-  if (window.ethereum) {
-     await window.ethereum.request({ method: "eth_requestAccounts" });
-     window.web3 = new Web3(window.ethereum);
-     const account = web3.eth.accounts;
-     //Get the current MetaMask selected/active wallet
-     const walletAddress = account.givenProvider.selectedAddress;
-     document.getElementById("addy").innerHTML = "connected address: " + account
-     console.log(`Wallet: ${walletAddress}`);
-  } else {
-   console.log("No wallet");
-  }
-
 //async function onInit() {
-//        await window.ethereum.enable();
-//        const accounts = await window.ethereum.request({ method: 'eth_requestAccounts' });
-//        const account = accounts[0];
-//        document.getElementById("addy").innerHTML = "connected address: " + account
-//        window.ethereum.on('accountsChanged', function (accounts) {
-//            // Time to reload your interface with accounts[0]!
-//           });
-//    }
+//  if (window.ethereum) {
+//     await window.ethereum.request({ method: "eth_requestAccounts" });
+//     window.web3 = new Web3(window.ethereum);
+//     const account = web3.eth.accounts;
+//     //Get the current MetaMask selected/active wallet
+//     const walletAddress = account.givenProvider.selectedAddress;
+//     document.getElementById("addy").innerHTML = "connected address: " + account
+//     console.log(`Wallet: ${walletAddress}`);
+//  } else {
+//   console.log("No wallet");
+//  }
+
+async function onInit() {
+        await window.ethereum.enable();
+        const accounts = await window.ethereum.request({ method: 'eth_requestAccounts' });
+        const account = accounts[0];
+        document.getElementById("addy").innerHTML = "connected address: " + account
+        window.ethereum.on('accountsChanged', function (accounts) {
+            // Time to reload your interface with accounts[0]!
+           });
+    }
 
 
     onInit();
