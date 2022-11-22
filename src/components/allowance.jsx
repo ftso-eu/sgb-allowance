@@ -31,7 +31,6 @@ class allowance extends Component {
         const { web3 } = this.props;
         const contract = new web3.eth.Contract(ERC20ABI, this.props.tx.contract);
         document.getElementById("loading").hidden = false;
-        //window.alert("Please sign the transaction and then wait for the transaction outcome: the page reloads automatically.");
         document.getElementById("revokeAll").hidden = false;
         is721(contract, this.props.tx.allowanceUnEdited).then((result) => {
             if(result) {
@@ -49,7 +48,6 @@ class allowance extends Component {
                 // revoke erc20 by nulling approval amount
                 contract.methods.approve(this.props.tx.approved, 0).send({ from: this.props.account }).then((receipt) => {
                     console.log("revoked: " + JSON.stringify(receipt));
-                    //window.alert("Done! Press ok to reload the app: you will find the new first transaction, in already revoked state");
                     window.location.reload();
                 }).catch((err) => {
                     console.log(err)
