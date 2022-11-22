@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import truncateName from './allowance.jsx';
 import '../App.css';
 import '../helpers/helpers.js';
 
@@ -19,7 +20,7 @@ async function onInit() {
         await window.ethereum.enable();
         const accounts = await window.ethereum.request({ method: 'eth_requestAccounts' });
         const account = accounts[0];
-        document.getElementById("addy").innerHTML = "connected address: " + account
+        document.getElementById("addy").innerHTML = "connected address: " + truncateName(account)
         window.ethereum.on('accountsChanged', function (accounts) {
             window.location.reload() 		
             // Time to reload your interface with accounts[0]!
