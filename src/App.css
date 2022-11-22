@@ -1,5 +1,6 @@
 #bar {
 width:90%;
+margin: auto;
 border-radius: 25px;
 background-color:#ffcc33;
 position: relative;
@@ -12,6 +13,7 @@ font-size: 1em;
 
 #titles {
   text-align: center;
+  margin: auto;
   position: relative;
   color: #0D1A5D;
   font-family: 'Ubuntu', sans-serif;
@@ -28,6 +30,7 @@ font-size: 1em;
     width:90%;
   /*  aspect-ratio: 100 / 29; */
     position: relative;
+    margin: auto;
     text-align: center;
     color: #0D1A5D;
   /*  font-size: 0.5em; */
@@ -40,6 +43,7 @@ font-size: 1em;
     width:90%;
    /* aspect-ratio: 100 / 29; */
     position: relative;
+    margin: auto;
     text-align:center;
     color: #0D1A5D;
  /*   font-size: 0.5em; */
@@ -54,6 +58,7 @@ font-size: 1em;
   position: relative;
  /* aspect-ratio: 100 / 29; */
   text-align: center;
+  margin: auto;
   color: #0D1A5D;
   display: table-cell;
 }
@@ -73,7 +78,7 @@ font-size: 1em;
 }
 
 #page {
-  margin:0%;
+  margin: auto;
   background: #E7F8FF;
 }
 
@@ -84,7 +89,10 @@ background-color:#ffcc33;
 
 .grid-container {
   display: grid;
+  
+  
   text-align: center;
+  margin: auto;
   grid-template-columns: auto auto auto auto;
   grid-template-rows: auto auto auto auto;
 }
@@ -95,6 +103,7 @@ body {
 
 .jumbotron{
    background: #E7F8FF;
+  margin: auto;
   width:90%;
 border-radius: 25px;
 }
