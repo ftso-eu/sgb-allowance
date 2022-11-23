@@ -48,7 +48,7 @@ class header extends Component {
                 <div className="jumbotron">
                     <div id="titles">
 		    <h2><strong>&#8855;</strong></h2>
-                    <h5>SHOW AND REVOKE ALLOWANC&Xi;</h5
+                    <h5>SHOW AND REVOKE ALLOWANC&Xi;</h5>
 		    <h3><a href="https://github.com/ftso-eu/sgb-allowance/blob/master/README.md" target="_blank">Supported chain inf<img id="github" alt="GitHub" src="https://www.kindpng.com/picc/m/613-6133946_github-awesome-logo-svg-hd-png-download.png" width="15"></img></a></h3>
                     <h5 id="addy"></h5>
 		    <h5 id="totcounts"></h5>
