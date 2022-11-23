@@ -9,7 +9,7 @@ import '../helpers/helpers.js';
 //     const account = web3.eth.accounts;
 //     //Get the current MetaMask selected/active wallet
 //     const walletAddress = account.givenProvider.selectedAddress;
-//     document.getElementById("addy").innerHTML = "connected address: " + account
+//     document.getElementById("addy").innerText = "connected address: " + account
 //     console.log(`Wallet: ${walletAddress}`);
 //  } else {
 //   console.log("No wallet");
@@ -21,7 +21,7 @@ async function onInit() {
         const account = accounts[0];
         var accountstart = account.substring(0,5);
 	var accountend = account.substring(account.length - 5);
-        document.getElementById("addy").innerHTML = "connected address: " + accountstart + "....." + accountend;
+        document.getElementById("addy").innerText = "connected address: " + accountstart + "....." + accountend;
         window.ethereum.on('accountsChanged', function (accounts) {
             window.location.reload() 		
             // Time to reload your interface with accounts[0]!
