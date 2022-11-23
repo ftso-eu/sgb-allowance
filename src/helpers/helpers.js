@@ -12,23 +12,10 @@ const zeroAllowance = "000000000000000000000000000000000000000000000000000000000
 const { ERC20ABI, ERC721ABI } = require("./ABI.js");
 
 
-// export function getNetName(chainId) {
-//    switch (chainId) {
-//        case 114:
-//            return "coston2";        
-//        case 16:
-//            return "coston";         
-//        case 19:
-//            return "Songbird";         
-//        default:
-//            return "Songbird";         
-//    }
-//}
-
 export function getQuery(chainId, address) {
     switch (chainId) {
         case 14:          
-           return "https://flare-explorer.flare.network//api?module=account&action=txlist&address=" + address;
+           return "https://flare-explorer.flare.network/api?module=account&action=txlist&address=" + address;
         case 114:          
            return "https://coston2-explorer.flare.network/api?module=account&action=txlist&address=" + address;         
         case 16:          
@@ -51,6 +38,8 @@ export function getQuery(chainId, address) {
             return "https://api.arbiscan.io/api?module=account&action=txlist&address=" + address;
         case 137:
             return "https://api.polygonscan.com/api?module=account&action=txlist&address=" + address;
+        case 250:          
+           return "https://api.ftmscan.com/api?module=account&action=txlist&address=" + address;
         default:
             return "";           
     }
@@ -82,24 +71,14 @@ export function getEtherScanPage(chainId) {
             return "https://arbiscan.io/address/";
         case 137:
             return "https://polygonscan.com/address/";
+        case 250:
+            return "https://ftmscan.com/address/";
         default:
             return "";
             
     }
 }
 
-// export function getEtherTxPage(chainId) {
-//     switch (chainId) {
-//         case 114:
-//             return "https://coston2-explorer.flare.network/tx/";
-//         case 16:
-//             return "https://coston-explorer.flare.network/tx/";
-//         case 19:
-//             return "https://songbird-explorer.flare.network/tx/";
-//         default:
-//             return "https://songbird-explorer.flare.network/tx/";
-//     }
-// }
 
 export function uniqByKeepFirst(a, key) {
     let seen = new Set();
