@@ -16,4 +16,4 @@ The newest for unique contracts with a spend limit > 0 are shown and can be revo
 
 ## licence
 
-MIT: https://github.com/ftso-eu/sgb-allowance/blob/master/LICENSE
+MIT: https://github.com/ftso-eu/evmallowance/blob/master/LICENSE
