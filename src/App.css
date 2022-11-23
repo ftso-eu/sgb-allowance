@@ -102,10 +102,10 @@ body {
 }
 
 .jumbotron{
-   background: #EDEFF1;
+  background: #EDEFF1;
   margin: auto;
   width:96%;
-border-radius: 13px;
+  border-radius: 13px;
 }
 
 .revoke-full {
@@ -123,12 +123,11 @@ border-radius: 13px;
 #columns {
   background-size: auto;
   text-align: center;
-  padding: 0%;
   color: #0D1A5D;
 }
 
 #headers {
-  margin-top: 0;
+  margin-top: 0px;
 }
 
 #revokeLink {
