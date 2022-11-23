@@ -3,6 +3,7 @@ Show history and revoke allowances for the connected address on the connnected n
 
 Flare, Songbird, Coston1, Coston2, Polygon, Binance Smart Chain, Arbitrium, Optimistic, Ethereum, Ropsten, Rinkeby, Kovan.
 
+Tested with Metamask, Bifrost, D'Cent.
 
 Web Dapp: https://sgb-allowance.ftso.eu 
 
