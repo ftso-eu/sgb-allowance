@@ -5,7 +5,7 @@ Flare, Songbird, Coston1, Coston2, Polygon, Binance Smart Chain, Arbitrium, Opti
 
 Tested with Metamask, Bifrost, D'Cent.
 
-Web Dapp: https://sgb-allowance.ftso.eu 
+Web Dapp: https://evmallowance.com 
 
 ## How it works
 This tool works by searching all "approve transactions" for the address in the connected network explorer;
