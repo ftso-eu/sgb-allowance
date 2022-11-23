@@ -49,6 +49,8 @@ export function getQuery(chainId, address) {
             return "https://api.bscscan.com/api?module=account&action=txlist&address=" + address;
         case 42161:
             return "https://api.arbiscan.io/api?module=account&action=txlist&address=" + address;
+        case 137:
+            return "https://api.polygonscan.com/api?module=account&action=txlist&address=" + address;
         default:
             return "";           
     }
@@ -78,6 +80,8 @@ export function getEtherScanPage(chainId) {
             return "https://bscscan.com/address/";
         case 42161:
             return "https://arbiscan.io/address/";
+        case 137:
+            return "https://polygonscan.com/address/";
         default:
             return "";
             
