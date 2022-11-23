@@ -50,6 +50,11 @@ font-size: 1em;
     font-family: 'Ubuntu', sans-serif;   
   }
 
+@media screen and (min-width: 768px)
+.jumbotron {
+    padding-top: 0px;
+    padding-bottom: 5px;
+}
 
 /* }  */
 
@@ -102,6 +107,8 @@ body {
 }
 
 .jumbotron{
+  padding-top: 0px;
+  padding-bottom: 5px;
   background: #EDEFF1;
   margin: auto;
   width:96%;
