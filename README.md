@@ -9,6 +9,4 @@ Web Dapp: https://sgb-allowance.ftso.eu
 ## How it works
 This tool works by searching all your "approve transactions" for your address in the connected network block explorer.
 
-Transactions are then filterd for spender address contract in chronological order.
-
-The most recent with a spend limit > 0 are shown and can be revoked pushing the "revoke" button and signing a new "approve transaction" that set the limit back to zero.
+Transactions are then filterd for spender addresses in chronological order: the newest for unique spender with a spend limit > 0 are shown and can be revoked pushing the "revoke" button and signing a new "approve transaction" that set the limit back to zero.
