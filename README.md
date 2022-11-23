@@ -14,6 +14,6 @@ Transactions are then filterd for spender addresses in chronological order;
 
 The newest for unique contracts with a spend limit > 0 are shown and can be revoked pushing the "revoke" button and signing a new "approve transaction" that set the limit back to zero.
 
-## licence
+## license
 
 MIT: https://github.com/ftso-eu/sgb-allowance/blob/master/LICENSE
