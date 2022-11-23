@@ -7,6 +7,8 @@ Flare, Songbird, Coston1, Coston2, Polygon, Binance Smart Chain, Arbitrium, Opti
 Web Dapp: https://sgb-allowance.ftso.eu 
 
 ## How it works
-This tool works by searching all your approve transactions in the connected network.
+This tool works by searching all your "approve transactions" for your address in the connected network block explorer.
 
-Transactions are filterd for spender addresses in chronological order and only the newest with a spend limit > 0 are shown and can be revoked.
+Transactions are then filterd for spender address contract in chronological order.
+
+The most recent with a spend limit > 0 are shown and can be revoked pushing the "revoke" button and signing a new "approve transaction" that set the limit back to zero.
