@@ -46,7 +46,7 @@ class header extends Component {
 		    <i>Please beware this is a <strong><a href="https://en.wikipedia.org/wiki/Software_release_life_cycle">BETA</a></strong> tool in test / canary nets, use it at your own risk. Also, pay attention to <a href="https://en.wikipedia.org/wiki/Typosquatting" target="_blank">typosquatting</a> before signing transactions!</i>
                 </div>
                 <div className="jumbotron">
-                <center><img src="./image/allowance.png"</img></center>
+                <center><img src="../images/allowance.png" alt="Girl in a jacket" width="500" height="600"></img></center>
                     <div id="titles">
 		    <h2><strong>SHOW AND REVOKE ALLOWANC&Xi;</strong></h2>
 		    <h3><a href="https://github.com/ftso-eu/sgb-allowance/blob/master/README.md" target="_blank">Supported chains | inf<img id="github" alt="GitHub" src="https://www.kindpng.com/picc/m/613-6133946_github-awesome-logo-svg-hd-png-download.png" width="15"></img></a></h3>
