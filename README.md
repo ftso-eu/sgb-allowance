@@ -1,5 +1,8 @@
 # sgb-allowance
-Show history and revoke (a single or all) Flare Network (test/canary nets) allowances for the connected address.
+Show history and revoke (a single or all) allowances for the connected address on these networks ( you can pull request for more):
+
+Flare, Songbird, Coston1, Coston2, Polygon, Binance Smart Chain, Arbitrium, Optimistic, Ethereum, Ropsten, Rinkeby, Kovan.
+
 
 Web Dapp: https://sgb-allowance.ftso.eu 
 
