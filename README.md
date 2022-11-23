@@ -8,7 +8,7 @@ Tested with Metamask, Bifrost, D'Cent.
 Web Dapp: https://sgb-allowance.ftso.eu 
 
 ## How it works
-This tool works by searching all your "approve transactions" for your address in the connected network block explorer;
+This tool works by searching all "approve transactions" for the address in the connected network explorer;
 
 Transactions are then filterd for spender addresses in chronological order;
 
