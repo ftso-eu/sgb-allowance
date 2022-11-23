@@ -56,7 +56,7 @@ class header extends Component {
 		</div>
 		</div>
                 <h3 id="loading" hidden>Loading, please wait...</h3>
-		<h3 id="loadingimg" hidden></h3>
+		<h3 id="partyimg"></h3>
 		<script> window.reload(); </script>
                 <div id="revokeAll">
                     <div className="container">
