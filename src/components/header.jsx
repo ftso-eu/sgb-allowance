@@ -43,7 +43,7 @@ class header extends Component {
         return (
             <div>
 		<div id="bar">
-		    <i>Please beware this is a <strong><a href="https://en.wikipedia.org/wiki/Software_release_life_cycle">BETA</a></strong> tool in test / canary nets, use it at your own risk. Also, pay attention to <a href="https://en.wikipedia.org/wiki/Typosquatting" target="_blank">typosquatting</a> before signing transactions!</i>
+		    <i>Please beware this is a <strong><a href="https://en.wikipedia.org/wiki/Software_release_life_cycle">BETA</a></strong> tool, use it at your own risk. Pay attention to <a href="https://en.wikipedia.org/wiki/Typosquatting" target="_blank">typosquatting</a>: the URL should be "evmallowance.com"</i>
                 </div>
                 <div className="jumbotron">
                 <center><img src="../images/allowance.png"></img></center>
