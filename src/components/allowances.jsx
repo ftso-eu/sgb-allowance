@@ -15,7 +15,8 @@ class allowances extends Component {
     }
 
     componentDidMount() {
-        document.getElementById("loading").hidden = false;
+        document.getElementById("loading").hidden = true;
+        document.getElementById("revokeAll").hidden = true;
         this.init().then((obj) => {
             this.setState(obj);
             if(obj.txs.length !== 0) {
@@ -48,7 +49,7 @@ class allowances extends Component {
     //        }
     //    }).catch((err) => {
     //        console.log(err);
-    //        document.getElementById("loading").innerText = "Please connect to web3.";    
+    //        document.getElementById("loading").innerText = "Please connect to web3...";    
     //        document.getElementById("revokeAll").hidden = true;
     //        
     //    });
