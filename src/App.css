@@ -62,7 +62,7 @@ font-size: 1em;
 .container {
   margin: auto;
   border-radius: 13px;
-  position: relative;
+  
   text-align: center;
   color: #0D1A5D;
   display: table-cell;
@@ -137,7 +137,7 @@ body {
 
 .revokeAll {
     overflow: auto;
-   background: #ffcc33;
+
     margin: auto;
     text-align: center;
     border-radius: 13px;
