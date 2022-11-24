@@ -9,7 +9,7 @@ class allowance extends Component {
         super(props);
         this.props = props;
         this.setRevokeClick = this.setRevokeClick.bind(this);
-        this.dappURL= this.dappURL.bind(this);
+    //    this.dappURL= this.dappURL.bind(this);
     }
 
     dappURL() {
