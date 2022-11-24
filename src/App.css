@@ -28,7 +28,7 @@ font-size: 1em;
  
 
 .centered {
-    background: #EDEAF1;
+    background: #EDEFF1;
     margin: auto;
     width:96%;
     border-radius: 13px;
@@ -117,10 +117,18 @@ body {
 }
 
 .revoke-full {
+ background: #EDEFF1;
+    margin: auto;
+    width:96%;
+    border-radius: 13px;
  color: #0D1A5D;
 }
 
 .revoke-small {
+  background: #EDEFF1;
+    margin: auto;
+    width:96%;
+    border-radius: 13px;
  color: #0D1A5D;
 }
 
