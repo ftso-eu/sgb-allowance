@@ -59,6 +59,7 @@ font-size: 1em;
 /* Container holding the image and the text */
 .container {
   background: #EDEFF1;
+  width: 24%
   margin: auto;
   border-radius: 13px;
   position: relative;
@@ -153,7 +154,6 @@ body {
 }
 
 #columns {
-  background-size: auto;
   text-align: center;
   color: #0D1A5D;
   margin: auto;
