@@ -42,9 +42,9 @@ class header extends Component {
                     <h4><a href="https://github.com/ftso-eu/sgb-allowance/blob/master/README.md" target="_blank">how it works | inf<img id="github" alt="GitHub" src="../images/github-o.png" width="13"></img></a></h4>
 		    </div>
 		</div>
-		<div className="jumbotron">
+		
                 <h3 id="loading" hidden>Loading, please wait...</h3>
-		</div>
+		
 		<div id="revokeAll">
 		    <br></br>
                     <div className="container">
