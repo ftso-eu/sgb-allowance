@@ -106,7 +106,6 @@ font-size: 1em;
 #page {
   margin: auto;
   background: #E7F8FF;
-
     margin: auto;
     width:96%;
     border-radius: 13px;
@@ -116,7 +115,6 @@ font-size: 1em;
 #results {
   margin-left: 0%;
 background-color:#ffcc33;
-
     margin: auto;
     width:96%;
     border-radius: 13px;
@@ -140,6 +138,7 @@ background-color:#ffcc33;
 
 body {
   background: #FBFDFC;
+   width:96%;
 }
 
 .jumbotron{
@@ -152,7 +151,7 @@ body {
 }
 
 .revoke-full {
- background: #EDEFF1;
+ background: #0D1A5D;
     margin: auto;
     width:96%;
     border-radius: 13px;
@@ -160,7 +159,7 @@ body {
 }
 
 .revoke-small {
-  background: #EDEFF1;
+  background: #0D1A5D;
     margin: auto;
     width:96%;
     border-radius: 13px;
