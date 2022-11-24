@@ -28,11 +28,10 @@ font-size: 1em;
  
 
 .centered {
-    background: #EDEFF1;
+    background: #EDEAF1;
     margin: auto;
     width:96%;
     border-radius: 13px;
-    width:96%;
     position: relative;
     text-align: center;
     color: #0D1A5D;
