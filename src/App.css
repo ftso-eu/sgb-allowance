@@ -33,7 +33,7 @@ font-size: 1em;
     text-align: center;
     color: #0D1A5D;
     font-family: 'Ubuntu', sans-serif;
-  border: 1px solid #0D1A5D;
+  
   }
 
   .centered-white {
@@ -143,6 +143,7 @@ body {
     text-align: center;
     border-radius: 13px;
  color: #0D1A5D;;
+  border: 1px solid #0D1A5D;
 }
 
 .allowance {
