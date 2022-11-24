@@ -15,8 +15,7 @@ class allowances extends Component {
     }
 
     componentDidMount() {
-        document.getElementById("loading").hidden = false;
-             
+        document.getElementById("loading").hidden = true;
         this.init().then((obj) => {
             this.setState(obj);
             if(obj.txs.length !== 0) {
@@ -26,7 +25,6 @@ class allowances extends Component {
                 
             } else {
                 document.getElementById("loading").innerText = "Cool! No allowances to revoke for your address on this network.";
-                document.getElementById("partyimg").innerHTML = <center><img src="../images/allowance.png"></img></center>;
                 document.getElementById("revokeAll").hidden = true;
             }
         }).catch((err) => {
