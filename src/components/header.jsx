@@ -27,24 +27,25 @@ class header extends Component {
 
     render() {
         return (
-            <div>    
+            <div>
 		<div id="bar">
 		    <i>Please beware this is a <strong><a href="https://en.wikipedia.org/wiki/Software_release_life_cycle">BETA</a></strong> tool, use it at your own risk. Pay attention to <a href="https://en.wikipedia.org/wiki/Typosquatting" target="_blank">typosquatting</a>: the URL should be "evmallowance.com"</i>
                 </div>
                 <div className="jumbotron">
-                    <center><img src="../images/allowance.png"></img></center>
+                <center><img src="../images/allowance.png"></img></center>
                     <div id="titles">
 		    <h2><strong>SHOW AND REVOKE ALLOWANC&Xi;</strong></h2>
                     <h6>Flare, Songbird, Coston1, Coston2, Polygon, Binance Smart Chain, Arbitrium, Optimistic, Ethereum, Ropsten, Rinkeby, Kovan, Fantom.</h6>
+		    
 		    <h4 id="addy"></h4>
 		    <h5 id="totcounts"></h5>
 		    <h5 id="counts"></h5>
+		    
                     <h4><a href="https://github.com/ftso-eu/sgb-allowance/blob/master/README.md" target="_blank">how it works | inf<img id="github" alt="GitHub" src="../images/github-o.png" width="13"></img></a></h4>
-		    </div>
 		</div>
-		
+		</div>
                 <h3 id="loading" hidden>Loading, please wait...</h3>
-		
+		<h3 id="partyimg" hidden></h3>
 		<div id="revokeAll">
 		    <br></br>
                     <div className="container">
@@ -60,7 +61,6 @@ class header extends Component {
                         <div className="centered-white"><a id="revokeLink" onClick={this.revokeAll}><strong>REVOKE ALL</strong></a></div>
                     </div>
                 </div>
-            </div> 
         )
     }
 }
