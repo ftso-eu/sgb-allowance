@@ -60,7 +60,8 @@ class header extends Component {
                     <div className="container" onClick={this.revokeAll}>
                         <div className="centered-white"><a id="revokeLink" onClick={this.revokeAll}><strong>REVOKE ALL</strong></a></div>
                     </div>
-                </div>
+                 </div>
+            </div>
         )
     }
 }
