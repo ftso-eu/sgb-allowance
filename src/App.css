@@ -53,6 +53,11 @@ font-size: 1em;
 .jumbotron {
     padding-top: 0px;
     padding-bottom: 5px;
+   background: #EDEFF1;
+    margin: auto;
+    width:96%;
+    border-radius: 13px;
+ color: #0D1A5D;
 }
 
 
@@ -71,31 +76,60 @@ font-size: 1em;
 
 #footerImage {
   max-height: 5%;
+   background: #EDEFF1;
+    margin: auto;
+    width:96%;
+    border-radius: 13px;
+ color: #0D1A5D;
 }
 
 .footer {
   margin-top: 5%;
   text-align: center;
+   background: #EDEFF1;
+    margin: auto;
+    width:96%;
+    border-radius: 13px;
+ color: #0D1A5D;
 }
 
 #loading {
   text-align: center;
   color: #BA3706;
+   background: #EDEFF1;
+    margin: auto;
+    width:96%;
+    border-radius: 13px;
+
 }
 
 #page {
   margin: auto;
   background: #E7F8FF;
+
+    margin: auto;
+    width:96%;
+    border-radius: 13px;
+ color: #0D1A5D;
 }
 
 #results {
   margin-left: 0%;
 background-color:#ffcc33;
+
+    margin: auto;
+    width:96%;
+    border-radius: 13px;
+ color: #0D1A5D;
 }
 
 .grid-container {
   display: grid;
-  
+   background: #EDEFF1;
+    margin: auto;
+    width:96%;
+    border-radius: 13px;
+ color: #0D1A5D;
   
   text-align: center;
   margin: auto;
@@ -134,6 +168,11 @@ body {
 
 .allowance {
   overflow: hidden;
+   background: #EDEFF1;
+    margin: auto;
+    width:96%;
+    border-radius: 13px;
+ color: #0D1A5D;
 }
 
 #columns {
