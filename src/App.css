@@ -135,6 +135,7 @@ background-color:#ffcc33;
   margin: auto;
   grid-template-columns: auto auto auto auto;
   grid-template-rows: auto auto auto auto;
+  width:96%;
 }
 
 body {
@@ -179,12 +180,15 @@ body {
   background-size: auto;
   text-align: center;
   color: #0D1A5D;
+  width:96%;
 }
 
 #headers {
   margin-top: 0px;
+  width:96%;
 }
 
 #revokeLink {
   color: #e60000;
+  width:96%;
 }
