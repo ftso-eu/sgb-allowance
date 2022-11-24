@@ -138,7 +138,8 @@ background-color:#ffcc33;
 
 body {
   background: #FBFDFC;
-   width:96%;
+  width:96%;
+  margin: auto;
 }
 
 .jumbotron{
@@ -148,6 +149,14 @@ body {
   margin: auto;
   width:96%;
   border-radius: 13px;
+}
+
+.revokeAll {
+ background: #0D1A5D;
+    margin: auto;
+    width:96%;
+    border-radius: 13px;
+ color: #0D1A5D;
 }
 
 .revoke-full {
