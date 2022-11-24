@@ -137,11 +137,11 @@ body {
 
 .revokeAll {
     overflow: auto;
-
+    position: relative;
     margin: auto;
     text-align: center;
     border-radius: 13px;
- color: #0D1A5D;
+    color: #0D1A5D;
 }
 
 .allowance {
@@ -157,14 +157,20 @@ body {
 
 #columns {
   text-align: center;
+  position: relative;
   color: #0D1A5D;
   margin: auto;
 }
 
 #headers {
-  margin-top: 0px;
+  text-align: center;
+  position: relative;
+  margin: auto;
 }
 
 #revokeLink {
+  text-align: center;
+  position: relative;
   color: #e60000;
+  margin: auto;
 }
