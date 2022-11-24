@@ -80,19 +80,18 @@ font-size: 1em;
 .footer {
   margin-top: 5%;
   text-align: center;
-   background: #EDEFF1;
-    margin: auto;
-    border-radius: 13px;
+  background: #EDEFF1;
+  margin: auto;
+  border-radius: 13px;
  color: #0D1A5D;
 }
 
 #loading {
-  text-align: center;
-  color: #BA3706;
+   text-align: center;
+   color: #BA3706;
    background: #EDEFF1;
    margin: auto;
    border-radius: 13px;
-
 }
 
 #page {
@@ -104,8 +103,7 @@ font-size: 1em;
 }
 
 #results {
-  margin-left: 0%;
-   background-color:#ffcc33;
+    background-color:#ffcc33;
     margin: auto;
     border-radius: 13px;
  color: #0D1A5D;
@@ -113,13 +111,11 @@ font-size: 1em;
 
 .grid-container {
   display: grid;
-   background: #EDEFF1;
-    margin: auto;
-    border-radius: 13px;
- color: #0D1A5D;
-  
-  text-align: center;
+  background: #EDEFF1;
   margin: auto;
+  border-radius: 13px;
+  color: #0D1A5D;
+  text-align: center;
   grid-template-columns: auto auto auto auto;
   grid-template-rows: auto auto auto auto;
  }
@@ -147,10 +143,8 @@ body {
  color: #0D1A5D;
 }
 
-
-
 .allowance {
-  overflow: hidden;
+  overflow: auto;
    background: #EDEFF1;
     margin: auto;
     
@@ -167,10 +161,8 @@ body {
 
 #headers {
   margin-top: 0px;
-  
 }
 
 #revokeLink {
   color: #e60000;
-  
 }
