@@ -27,6 +27,7 @@ font-size: 1em;
 .centered {
     width: 100%;
     vertical-align: middle;
+   horizontal-align: middle;
     margin: auto;
     border-radius: 13px;
     position: relative;
@@ -39,6 +40,7 @@ font-size: 1em;
   .centered-white {
     width: 100%;
     vertical-align: middle;
+     horizontal-align: middle;
     margin: auto;
     border-radius: 13px;
     position: relative;
@@ -63,6 +65,7 @@ font-size: 1em;
   margin: auto;
   border-radius: 13px;
   vertical-align: middle;
+  horizontal-align: middle;
   text-align: center;
   color: #0D1A5D;
   display: table-cell;
