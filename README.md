@@ -12,7 +12,7 @@ This tool works by searching all "approve transactions" for the address in the c
 
 Transactions are then filterd for spender addresses in chronological order;
 
-The newest for unique contracts with a spend limit > 0 (limited or unlimited) are shown and can be revoked pushing the "revoke" button and signing a new "approve transaction" that set the limit back to zero.
+The newest for unique approved contracts with a spend limit > 0 are shown ("limited" or "unlimited" aumount + approved date) and can be revoked pushing the "revoke" button and signing a new "approve transaction" that set the limit back to zero.
 
 ## license
 
