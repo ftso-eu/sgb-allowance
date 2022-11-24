@@ -60,7 +60,6 @@ font-size: 1em;
 .container {
   background: #EDEFF1;
   margin: auto;
- 
   border-radius: 13px;
   position: relative;
   text-align: center;
@@ -106,7 +105,8 @@ font-size: 1em;
     background-color:#ffcc33;
     margin: auto;
     border-radius: 13px;
- color: #0D1A5D;
+    text-align: center;
+    color: #0D1A5D;
 }
 
 .grid-container {
@@ -131,7 +131,6 @@ body {
   padding-bottom: 5px;
   background: #EDEFF1;
   margin: auto;
-  
   border-radius: 13px;
 }
 
@@ -140,6 +139,7 @@ body {
     margin: auto;
     overflow: hidden;
     border-radius: 13px;
+    text-align: center;
  color: #0D1A5D;
 }
 
@@ -147,7 +147,7 @@ body {
   overflow: auto;
    background: #EDEFF1;
     margin: auto;
-    
+    text-align: center;
     border-radius: 13px;
  color: #0D1A5D;
 }
