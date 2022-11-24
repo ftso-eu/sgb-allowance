@@ -15,8 +15,6 @@ class allowances extends Component {
     }
 
     componentDidMount() {
-        document.getElementById("loading").hidden = true;
-        document.getElementById("revokeAll").hidden = true;
         this.init().then((obj) => {
             this.setState(obj);
             if(obj.txs.length !== 0) {
