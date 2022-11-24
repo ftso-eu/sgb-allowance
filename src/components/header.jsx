@@ -45,7 +45,6 @@ class header extends Component {
 		</div>
 		</div>
                 <h3 id="loading" hidden>Loading, please wait...</h3>
-		<h3 id="partyimg" hidden></h3>
 		<div className="revokeAll">
 		    <div className="container">
                         <div className="centered"><strong>TOKEN</strong></div>
