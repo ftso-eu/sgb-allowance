@@ -59,7 +59,7 @@ font-size: 1em;
 /* Container holding the image and the text */
 .container {
   background: #EDEFF1;
-  width: 24%
+  width: 24%;
   margin: auto;
   border-radius: 13px;
   position: relative;
