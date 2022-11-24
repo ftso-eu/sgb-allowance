@@ -136,7 +136,6 @@ body {
 }
 
 .revokeAll {
-  padding-top: 5px;
     overflow: auto;
    background: #EDEFF1;
     margin: auto;
@@ -153,6 +152,7 @@ body {
     text-align: center;
     border-radius: 13px;
  color: #0D1A5D;
+  border: 1px solid #0D1A5D;
 }
 
 #columns {
