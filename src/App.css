@@ -1,5 +1,4 @@
 #bar {
-width:96%;
 margin: auto;
 border-radius: 13px;
 background-color:#ffcc33;
@@ -14,7 +13,6 @@ font-size: 1em;
 #titles {
   background: #EDEFF1;
   margin: auto;
-  width:96%;
   border-radius: 13px;
   text-align: center;
   margin: auto;
@@ -30,7 +28,6 @@ font-size: 1em;
 .centered {
     background: #EDEFF1;
     margin: auto;
-    width:96%;
     border-radius: 13px;
     position: relative;
     text-align: center;
@@ -41,7 +38,6 @@ font-size: 1em;
   .centered-white {
     background: #EDEFF1;
     margin: auto;
-    width:96%;
     border-radius: 13px;
     position: relative;
     text-align:center;
@@ -55,7 +51,6 @@ font-size: 1em;
     padding-bottom: 5px;
    background: #EDEFF1;
     margin: auto;
-    width:96%;
     border-radius: 13px;
  color: #0D1A5D;
 }
@@ -65,7 +60,7 @@ font-size: 1em;
 .container {
   background: #EDEFF1;
   margin: auto;
-  width:96%;
+  width:24%;
   border-radius: 13px;
   position: relative;
   text-align: center;
@@ -78,7 +73,6 @@ font-size: 1em;
   max-height: 5%;
    background: #EDEFF1;
     margin: auto;
-    width:96%;
     border-radius: 13px;
  color: #0D1A5D;
 }
@@ -88,7 +82,6 @@ font-size: 1em;
   text-align: center;
    background: #EDEFF1;
     margin: auto;
-    width:96%;
     border-radius: 13px;
  color: #0D1A5D;
 }
@@ -97,26 +90,23 @@ font-size: 1em;
   text-align: center;
   color: #BA3706;
    background: #EDEFF1;
-    margin: auto;
-    width:96%;
-    border-radius: 13px;
+   margin: auto;
+   border-radius: 13px;
 
 }
 
 #page {
   margin: auto;
   background: #E7F8FF;
-    margin: auto;
-    width:96%;
-    border-radius: 13px;
+  margin: auto;
+  border-radius: 13px;
  color: #0D1A5D;
 }
 
 #results {
   margin-left: 0%;
-background-color:#ffcc33;
+   background-color:#ffcc33;
     margin: auto;
-    width:96%;
     border-radius: 13px;
  color: #0D1A5D;
 }
@@ -125,7 +115,6 @@ background-color:#ffcc33;
   display: grid;
    background: #EDEFF1;
     margin: auto;
-    width:96%;
     border-radius: 13px;
  color: #0D1A5D;
   
@@ -133,8 +122,7 @@ background-color:#ffcc33;
   margin: auto;
   grid-template-columns: auto auto auto auto;
   grid-template-rows: auto auto auto auto;
-  width:96%;
-}
+ }
 
 body {
   background: #FBFDFC;
@@ -147,14 +135,14 @@ body {
   padding-bottom: 5px;
   background: #EDEFF1;
   margin: auto;
-  width:96%;
+  
   border-radius: 13px;
 }
 
 .revokeAll {
  background: #0D1A5D;
     margin: auto;
-    width:96%;
+    
     border-radius: 13px;
  color: #0D1A5D;
 }
@@ -162,7 +150,7 @@ body {
 .revoke-full {
  background: #0D1A5D;
     margin: auto;
-    width:96%;
+    
     border-radius: 13px;
  color: #0D1A5D;
 }
@@ -170,7 +158,7 @@ body {
 .revoke-small {
   background: #0D1A5D;
     margin: auto;
-    width:96%;
+    
     border-radius: 13px;
  color: #0D1A5D;
 }
@@ -179,7 +167,7 @@ body {
   overflow: hidden;
    background: #EDEFF1;
     margin: auto;
-    width:96%;
+    
     border-radius: 13px;
  color: #0D1A5D;
 }
@@ -188,15 +176,15 @@ body {
   background-size: auto;
   text-align: center;
   color: #0D1A5D;
-  width:96%;
+  
 }
 
 #headers {
   margin-top: 0px;
-  width:96%;
+  
 }
 
 #revokeLink {
   color: #e60000;
-  width:96%;
+  
 }
