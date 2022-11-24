@@ -40,8 +40,7 @@ class header extends Component {
 		    <h4 id="addy"></h4>
 		    <h5 id="totcounts"></h5>
 		    <h5 id="counts"></h5>
-		    
-                    <h4><a href="https://github.com/ftso-eu/sgb-allowance/blob/master/README.md" target="_blank">how it works | inf<img id="github" alt="GitHub" src="../images/github-o.png" width="13"></img></a></h4>
+		                        
 		</div>
 		</div>
                 <h3 id="loading" hidden>Loading, please wait...</h3>
