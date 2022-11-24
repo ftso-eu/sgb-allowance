@@ -142,26 +142,12 @@ body {
 .revokeAll {
  background: #0D1A5D;
     margin: auto;
-    
+    overflow: hidden;
     border-radius: 13px;
  color: #0D1A5D;
 }
 
-.revoke-full {
- background: #0D1A5D;
-    margin: auto;
-    
-    border-radius: 13px;
- color: #0D1A5D;
-}
 
-.revoke-small {
-  background: #0D1A5D;
-    margin: auto;
-    
-    border-radius: 13px;
- color: #0D1A5D;
-}
 
 .allowance {
   overflow: hidden;
@@ -176,7 +162,7 @@ body {
   background-size: auto;
   text-align: center;
   color: #0D1A5D;
-  
+  margin: auto;
 }
 
 #headers {
