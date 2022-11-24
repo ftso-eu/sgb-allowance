@@ -135,10 +135,12 @@ body {
 }
 
 .revokeAll {
+    overflow: auto;
+   background: #EDEFF1;
     margin: auto;
-    overflow: hidden;
     text-align: center;
-    color: #0D1A5D;
+    border-radius: 13px;
+ color: #0D1A5D;;
 }
 
 .allowance {
