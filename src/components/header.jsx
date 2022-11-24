@@ -10,7 +10,7 @@ async function onInit() {
 	var accountend = account.substring(account.length - 5);
         document.getElementById("addy").innerText = "connected address: " + accountstart + "....." + accountend;
         window.ethereum.on('accountsChanged', function (accounts) {
-            window.location.reload(); 		
+           // window.location.reload(); 		
             // Time to reload your interface with accounts[0]!
            });
     }
