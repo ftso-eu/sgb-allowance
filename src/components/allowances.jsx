@@ -45,6 +45,7 @@ class allowances extends Component {
         } catch (e) {
             const accounts = await window.ethereum.enable();
             account = accounts[0];
+            window.location.reload();
         }
         const chainId = await this.props.web3.eth.getChainId();
         //if chainId 16 
