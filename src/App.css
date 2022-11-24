@@ -12,6 +12,10 @@ font-size: 1em;
 }
 
 #titles {
+  background: #EDEFF1;
+  margin: auto;
+  width:96%;
+  border-radius: 13px;
   text-align: center;
   margin: auto;
   position: relative;
