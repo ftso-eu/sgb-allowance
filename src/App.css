@@ -146,6 +146,7 @@ body {
 
 .allowance {
   overflow: auto;
+  position: relative;
    background: #EDEFF1;
     margin: auto;
     text-align: center;
