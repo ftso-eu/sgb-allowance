@@ -34,7 +34,7 @@ class header extends Component {
                 <div className="jumbotron">
                 <center><img src="../images/allowance.png"></img></center>
                     <div id="titles">
-		    <h2><strong>C&XiVMALLOWANC&Xi;</strong></h2>
+		    <h2><strong>C&Xi;VMALLOWANC&Xi;</strong></h2>
                     <h6>Flare, Songbird, Coston1, Coston2, Polygon, Binance Smart Chain, Arbitrium, Optimistic, Ethereum, Ropsten, Rinkeby, Kovan, Fantom.</h6>
 		    
 		    <h4 id="addy"></h4>
