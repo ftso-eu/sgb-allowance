@@ -31,7 +31,7 @@ class allowance extends Component {
         const { web3 } = this.props;
         const contract = new web3.eth.Contract(ERC20ABI, this.props.tx.contract);
         document.getElementById("loading").hidden = false;
-        document.getElementById("revokeAll").hidden = false;
+        
         is721(contract, this.props.tx.allowanceUnEdited).then((result) => {
             if(result) {
                 //revoke erc721 by nulling the address
