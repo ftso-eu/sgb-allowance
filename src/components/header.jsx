@@ -27,7 +27,7 @@ class header extends Component {
 
     render() {
         return (
-            <div>
+            
 		<div id="bar">
 		    <i>Please beware this is a <strong><a href="https://en.wikipedia.org/wiki/Software_release_life_cycle">BETA</a></strong> tool, use it at your own risk. Pay attention to <a href="https://en.wikipedia.org/wiki/Typosquatting" target="_blank">typosquatting</a>: the URL should be "evmallowance.com"</i>
                 </div>
@@ -36,7 +36,6 @@ class header extends Component {
                     <div id="titles">
 		    <h2><strong>SHOW AND REVOKE ALLOWANC&Xi;</strong></h2>
                     <h6>Flare, Songbird, Coston1, Coston2, Polygon, Binance Smart Chain, Arbitrium, Optimistic, Ethereum, Ropsten, Rinkeby, Kovan, Fantom.</h6>
-		    
 		    <h4 id="addy"></h4>
 		    <h5 id="totcounts"></h5>
 		    <h5 id="counts"></h5>
