@@ -22,11 +22,13 @@ class allowances extends Component {
                 document.getElementById("revokeAll").hidden = false;
                 document.getElementById("loading").hidden = true;
             } else {
-                document.getElementById("loading").innerText = "No allowances found on this account";
+                document.getElementById("loading").innerText = "Cool! No allowances to revoke for your address on this network.";
+                document.getElementById("revokeAll").hidden = true;
             }
         }).catch((err) => {
             console.log(err);
-            document.getElementById("loading").innerText = "No allowances found on this account";
+            document.getElementById("loading").innerText = "Please connect to web3";    
+            document.getElementById("revokeAll").hidden = true;
         });
     }
     
