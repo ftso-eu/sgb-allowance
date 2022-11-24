@@ -17,28 +17,21 @@ font-size: 1em;
   position: relative;
   color: #0D1A5D;
   font-family: 'Ubuntu', sans-serif;
-/*  font-size: 0.5em; */
   img {
     vertical-align: middle;
    }
  }
  
 
-  /* @media only screen and (min-width: 500px) {  */
-  /* For PC and Tablet */
-  .centered {
+.centered {
     width:96%;
-  /*  aspect-ratio: 100 / 29; */
     position: relative;
     margin: auto;
     text-align: center;
     color: #0D1A5D;
-  /*  font-size: 0.5em; */
     font-family: 'Ubuntu', sans-serif;
   }
 
-  /* For Mobile and Small Tablet: */
- /* @media only screen and (max-width:499px)  */
   .centered-white {
     width:96%;
    /* aspect-ratio: 100 / 29; */
@@ -46,7 +39,6 @@ font-size: 1em;
     margin: auto;
     text-align:center;
     color: #0D1A5D;
- /*   font-size: 0.5em; */
     font-family: 'Ubuntu', sans-serif;   
   }
 
@@ -56,12 +48,14 @@ font-size: 1em;
     padding-bottom: 5px;
 }
 
-/* }  */
 
 /* Container holding the image and the text */
 .container {
+  background: #EDEFF1;
+  margin: auto;
+  width:96%;
+  border-radius: 13px;
   position: relative;
- /* aspect-ratio: 100 / 29; */
   text-align: center;
   margin: auto;
   color: #0D1A5D;
