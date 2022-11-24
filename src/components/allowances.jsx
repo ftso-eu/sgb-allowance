@@ -75,7 +75,7 @@ class allowances extends Component {
         }
 
         return (
-            <div>
+            <div id=revokeAll>
                 {elements}
             </div>
         )
