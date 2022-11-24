@@ -51,7 +51,7 @@ class header extends Component {
                         <div className="centered"><strong>CONTRACT</strong></div>
                     </div>
                     <div className="container">
-                       <div className="centered"><strong>SPENDER</strong></div>
+                       <div className="centered"><strong>SPENDER ADDY</strong></div>
                     </div>
                     <div className="container">
                         <div className="centered"><strong>ALLOWANCE</strong></div>
