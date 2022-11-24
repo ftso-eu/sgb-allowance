@@ -48,7 +48,7 @@ class header extends Component {
 		<h3 id="partyimg" hidden></h3>
 		<div id="revokeAll">
                     <div className="container">
-                        <div className="centered"><strong>CONTRACT</strong></div>
+                        <div className="centered"><strong>TOKEN</strong></div>
                     </div>
                     <div className="container">
                        <div className="centered"><strong>SPENDER ADDY</strong></div>
