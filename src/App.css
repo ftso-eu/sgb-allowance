@@ -12,7 +12,6 @@ font-size: 1em;
 
 #titles {
   background: #EDEFF1;
-  margin: auto;
   border-radius: 13px;
   text-align: center;
   margin: auto;
@@ -135,6 +134,7 @@ body {
 }
 
 .revokeAll {
+  padding-top: 5px;
     overflow: auto;
    background: #EDEFF1;
     margin: auto;
