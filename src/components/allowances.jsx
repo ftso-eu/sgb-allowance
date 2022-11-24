@@ -21,8 +21,7 @@ class allowances extends Component {
             if(obj.txs.length !== 0) {
                 document.getElementById("revokeAll").hidden = false;
                 document.getElementById("loading").hidden = true;
-                document.getElementById("partyimg").hidden = true;
-                
+                                
             } else {
                 document.getElementById("loading").innerText = "Cool! No allowances to revoke for your address on this network.";
                 document.getElementById("revokeAll").hidden = true;
@@ -31,7 +30,7 @@ class allowances extends Component {
             console.log(err);
             document.getElementById("loading").innerText = "Please connect to web3.";    
             document.getElementById("revokeAll").hidden = true;
-            document.getElementById("partyimg").hidden = true;
+           
         });
     }
 
