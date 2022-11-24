@@ -58,11 +58,13 @@ font-size: 1em;
 
 /* Container holding the image and the text */
 .container {
+  width: 25%;
   margin: auto;
   border-radius: 13px;
   position: relative;
   text-align: center;
   color: #0D1A5D;
+  display: table-cell;
 }
 
 #footerImage {
