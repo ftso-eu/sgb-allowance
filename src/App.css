@@ -1,7 +1,7 @@
 #bar {
 margin: auto;
 border-radius: 13px;
-background-color:#ffcc33;
+background-color:#BA370680;
 position: relative;
 text-align: center;
 color: #0D1A5D;
@@ -174,6 +174,6 @@ body {
 #revokeLink {
   text-align: center;
   position: relative;
-  color: #e60000;
+  color: #BA3706;
   margin: auto;
 }
