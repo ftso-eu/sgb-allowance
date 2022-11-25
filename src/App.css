@@ -150,12 +150,12 @@ body {
 .allowance {
   overflow: auto;
   position: relative;
-   background: #EDEFF1;
+   background: #F3FBFC;
     margin: auto;
     text-align: center;
     border-radius: 13px;
  color: #0D1A5D;
-  border: 1px solid #0D1A5D;
+  
 }
 
 #columns {
