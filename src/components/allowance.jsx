@@ -100,7 +100,7 @@ class allowance extends Component {
                         <div className="centered-white"><a name="revoke" id="revokeLink" onClick={this.setRevokeClick}>revoke this</a></div>
                     </div>
                 </div>
-              <hr height="0.2em" border-width="0" color="gray" background-color="gray"></hr>
+              <center><hr height="0.2em" border-width="0" color="gray" background-color="gray" width="96%"></hr></center>
             </div>
         )
     }
