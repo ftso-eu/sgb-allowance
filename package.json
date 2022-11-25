@@ -1,8 +1,8 @@
 {
-  "name": "sgb-allowance",
+  "name": "evmallowance.com",
   "version": "0.1.0",
   "private": false,
-  "homepage": "https://sgb-allowance.ftso.eu/",
+  "homepage": "https://evmallowance.com",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
