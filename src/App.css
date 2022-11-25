@@ -12,6 +12,7 @@ font-size: 1em;
 }
 
 #titles {
+  width:96%;
   text-align: center;
   margin: auto;
   position: relative;
@@ -120,6 +121,7 @@ body {
 }
 
 .allowance {
+  width:96%;
   overflow: hidden;
   vertical-align: middle;
 }
