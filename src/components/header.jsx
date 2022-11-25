@@ -59,7 +59,8 @@ class header extends Component {
                 <h3 id="loading" hidden>Loading, please wait...</h3>
 		<h3 id="partyimg" hidden></h3>
 		<script> window.reload(); </script>
-                <div id="revokeAll">
+                <div className="revokeAll">
+                 <div id="revokeAll">
                     <div className="container">
                         <div className="centered"><strong>contract</strong></div>
                     </div>
@@ -73,6 +74,7 @@ class header extends Component {
                         <div className="centered-white"><a id="revokeLink" onClick={this.revokeAll}><strong>revoke all</strong></a></div>
                     </div>
                    <center><hr height="0.2em" border-width="0" color="gray" background-color="gray" width="96%"></hr></center>
+                 </div>
                 </div>
             </div>
         )
