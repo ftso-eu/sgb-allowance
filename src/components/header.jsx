@@ -50,8 +50,7 @@ class header extends Component {
                     <div id="titles">
 		    <h2><strong>&Xi;VMALLOWANC&Xi;</strong></h2>
                     <h6>Revoke on Flare, Songbird, Coston1, Coston2, Polygon, Binance Smart Chain, Arbitrum, Optimistic, Ethereum, Ropsten, Rinkeby, Kovan, Fantom.</h6>
-		    <h3><a href="https://github.com/ftso-eu/sgb-allowance/blob/master/README.md" target="_blank">inf<img id="github" alt="GitHub" src="../images/github-o.png" width="15"></img></a></h3>
-                    <h4 id="addy"></h4>
+		    <h4 id="addy"></h4>
 		    <h5 id="totcounts"></h5>
 		    <h5 id="counts"></h5>
 		</div>
