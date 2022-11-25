@@ -106,6 +106,7 @@ background-color:#ffcc33;
 
 body {
   background: #FBFDFC;
+  width:98%;
 }
 
 .jumbotron{
@@ -127,10 +128,12 @@ body {
 }
 
 .revoke-full {
+  overflow: auto;
  color: #0D1A5D;
 }
 
 .revoke-small {
+  overflow: auto;
  color: #0D1A5D;
 }
 
