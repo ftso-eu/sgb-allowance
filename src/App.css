@@ -18,56 +18,43 @@ font-size: 1em;
   position: relative;
   color: #0D1A5D;
   font-family: 'Ubuntu', sans-serif;
-/*  font-size: 0.5em; */
   img {
     vertical-align: middle;
    }
  }
- 
 
-  /* @media only screen and (min-width: 500px) {  */
-  /* For PC and Tablet */
   .centered {
     width:96%;
-  /*  aspect-ratio: 100 / 29; */
     position: relative;
     margin: auto;
     text-align:center;
     vertical-align: middle;
     horizontal-align: middle;
     color: #0D1A5D;
-  /*  font-size: 0.5em; */
     font-family: 'Ubuntu', sans-serif;
   }
 
-  /* For Mobile and Small Tablet: */
- /* @media only screen and (max-width:499px)  */
   .centered-white {
     width:96%;
-   /* aspect-ratio: 100 / 29; */
     position: relative;
     margin: auto;
     text-align:center;
     vertical-align: middle;
     horizontal-align: middle;
     color: #0D1A5D;
- /*   font-size: 0.5em; */
     font-family: 'Ubuntu', sans-serif;   
   }
 
 
-/* }  */
-
 /* Container holding the image and the text */
 .container {
-  position: relative;
- /* aspect-ratio: 100 / 29; */
+/* position: relative; */
  margin: auto;
-    text-align:center;
-    vertical-align: middle;
-    horizontal-align: middle;
-  color: #0D1A5D;
-  display: table-cell;
+ text-align:center;
+ vertical-align: middle;
+ horizontal-align: middle;
+ color: #0D1A5D;
+ display: table-cell;
 }
 
 #footerImage {
@@ -96,8 +83,6 @@ background-color:#ffcc33;
 
 .grid-container {
   display: grid;
-  
-  
   text-align: center;
   margin: auto;
   grid-template-columns: auto auto auto auto;
@@ -107,6 +92,7 @@ background-color:#ffcc33;
 body {
   background: #FBFDFC;
   width:98%;
+  horizontal-align: middle;
 }
 
 .jumbotron{
