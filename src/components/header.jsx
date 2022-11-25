@@ -49,7 +49,7 @@ class header extends Component {
                 <center><img src="../images/allowance.png"></img></center>
                     <div id="titles">
 		    <h2><strong>SHOW AND REVOKE ALLOWANC&Xi;</strong></h2>
-                    <h6>Flare, Songbird, Coston1, Coston2, Polygon, Binance Smart Chain, Arbitrium, Optimistic, Ethereum, Ropsten, Rinkeby, Kovan, Fantom.</h6>
+                    <h6>Flare, Songbird, Coston1, Coston2, Polygon, Binance Smart Chain, Arbitrum, Optimistic, Ethereum, Ropsten, Rinkeby, Kovan, Fantom.</h6>
 		    <h3><a href="https://github.com/ftso-eu/sgb-allowance/blob/master/README.md" target="_blank">inf<img id="github" alt="GitHub" src="../images/github-o.png" width="15"></img></a></h3>
                     <h4 id="addy"></h4>
 		    <h5 id="totcounts"></h5>
@@ -72,7 +72,7 @@ class header extends Component {
                     <div className="container" onClick={this.revokeAll}>
                         <div className="centered-white"><a id="revokeLink" onClick={this.revokeAll}><strong>REVOKE ALL</strong></a></div>
                     </div>
-                   <hr height="0.2em" border-width="0" color="gray" background-color="gray"></hr>
+                   <center><hr height="0.2em" border-width="0" color="gray" background-color="gray" width=96%></hr></center>
                 </div>
             </div>
         )
