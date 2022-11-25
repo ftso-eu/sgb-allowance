@@ -32,8 +32,9 @@ font-size: 1em;
   /*  aspect-ratio: 100 / 29; */
     position: relative;
     margin: auto;
-    text-align: center;
+    text-align:center;
     vertical-align: middle;
+    horizontal-align: middle;
     color: #0D1A5D;
   /*  font-size: 0.5em; */
     font-family: 'Ubuntu', sans-serif;
@@ -48,6 +49,7 @@ font-size: 1em;
     margin: auto;
     text-align:center;
     vertical-align: middle;
+    horizontal-align: middle;
     color: #0D1A5D;
  /*   font-size: 0.5em; */
     font-family: 'Ubuntu', sans-serif;   
@@ -60,9 +62,10 @@ font-size: 1em;
 .container {
   position: relative;
  /* aspect-ratio: 100 / 29; */
-  text-align: center;
-  vertical-align: middle;
-  margin: auto;
+ margin: auto;
+    text-align:center;
+    vertical-align: middle;
+    horizontal-align: middle;
   color: #0D1A5D;
   display: table-cell;
 }
@@ -116,7 +119,10 @@ body {
 
 .revokeAll {
   overflow: auto;
-  vertical-align: middle;
+  margin: auto;
+    text-align:center;
+    vertical-align: middle;
+    horizontal-align: middle;
 }
 
 .revoke-full {
@@ -129,7 +135,10 @@ body {
 
 .allowance {
   overflow: auto;
-  vertical-align: middle;
+  margin: auto;
+    text-align:center;
+    vertical-align: middle;
+    horizontal-align: middle;
 }
 
 #columns {
