@@ -118,6 +118,7 @@ body {
 }
 
 .revokeAll {
+  width:96%;
   overflow: auto;
   margin: auto;
     text-align:center;
