@@ -42,7 +42,7 @@ class allowance extends Component {
                 }).catch((err) => {
                     console.log(err)
                     console.log("failed: " + JSON.stringify(err));
-                    window.alert("Ooopsi! Something went wrong, press ok to reload the app");
+                    window.alert("Ooopsi! Something went wrong, press ok to reload the app. Error detail: " + JSON.stringify(err));
                     window.location.reload();
                 });
             } else {
@@ -53,7 +53,7 @@ class allowance extends Component {
                 }).catch((err) => {
                     console.log(err)
                     console.log("failed: " + JSON.stringify(err));
-                    window.alert("Ooopsi! Something went wrong, press ok to reload the app");
+                    window.alert("Ooopsi! Something went wrong, press ok to reload the app. Error detail: " + JSON.stringify(err));
                     window.location.reload();
                 });
             }
