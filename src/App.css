@@ -11,7 +11,7 @@ font-size: 1em;
 }
 
 #titles {
-  background: #EDEFF1;
+  background: #EDEFF180;
   border-radius: 13px;
   text-align: center;
   margin: auto;
@@ -53,7 +53,7 @@ font-size: 1em;
 .jumbotron {
     padding-top: 0px;
     padding-bottom: 5px;
-   background: #EDEFF1;
+   background: #EDEFF180;
     margin: auto;
     border-radius: 13px;
  color: #0D1A5D;
@@ -74,7 +74,7 @@ font-size: 1em;
 
 #footerImage {
   max-height: 5%;
-   background: #EDEFF1;
+   background: #EDEFF180;
     margin: auto;
     border-radius: 13px;
  color: #0D1A5D;
@@ -92,7 +92,7 @@ font-size: 1em;
 #loading {
    text-align: center;
    color: #BA3706;
-   background: #EDEFF1;
+   background: #EDEFF180;
    margin: auto;
    border-radius: 13px;
 }
@@ -115,7 +115,7 @@ font-size: 1em;
 
 .grid-container {
   display: grid;
-  background: #EDEFF1;
+  background: #EDEFF180;
   margin: auto;
   border-radius: 13px;
   color: #0D1A5D;
@@ -133,7 +133,7 @@ body {
 .jumbotron{
   padding-top: 0px;
   padding-bottom: 5px;
-  background: #EDEFF180;
+ background: #EDEFF180;
   margin: auto;
   border-radius: 13px;
 }
