@@ -1,7 +1,7 @@
 #bar {
 margin: auto;
 border-radius: 13px;
-background-color:#BA370619;
+background-color:#BA370621;
 position: relative;
 text-align: center;
 color: #0D1A5D;
@@ -83,7 +83,7 @@ font-size: 1em;
 .footer {
   margin-top: 5%;
   text-align: center;
-  background: #BA370619;
+  background: #BA370621;
   margin: auto;
   border-radius: 13px;
  color: #0D1A5D;
@@ -150,7 +150,7 @@ body {
 .allowance {
   overflow: auto;
   position: relative;
-   background: #ffcc3319;
+   background: #ffcc3321;
     margin: auto;
     text-align: center;
     border-radius: 13px;
