@@ -106,10 +106,17 @@ body {
 }
 
 .jumbotron{
+  padding-top: 0px;
+  padding-bottom: 3px;
   background: #EDEFF1;
   margin: auto;
   width:96%;
   border-radius: 13px;
+}
+
+.revokeAll {
+  overflow: auto;
+  vertical-align: middle;
 }
 
 .revoke-full {
@@ -121,8 +128,7 @@ body {
 }
 
 .allowance {
-  width:96%;
-  overflow: hidden;
+  overflow: auto;
   vertical-align: middle;
 }
 
