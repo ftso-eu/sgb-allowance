@@ -21,12 +21,13 @@ let web3 = new Web3(Web3.givenProvider);
 function App() {
     return (
         <div>
-            <br></br>
             <Header />
             <Allowances web3={web3}/>
             <center>
             <br></br>
-            <div class="jumbotron"><a href="https://github.com/ftso-eu/sgb-allowance/blob/master/README.md" target="_blank">how it works? get more inf<img id="github" alt="GitHub" src="../images/github-o.png" width="11"></img></a>
+            <div class="jumbotron">
+            <br></br>
+            <a href="https://github.com/ftso-eu/sgb-allowance/blob/master/README.md" target="_blank">how it works? get more inf<img id="github" alt="GitHub" src="../images/github-o.png" width="11"></img></a>
             <br></br>
             <br></br>
             <iframe src="https://widgets.flaremetrics.io/data-provider-metrics/?address=0x010a16c53f33e4d93892f00897965578b55a8cfc&network=songbird&header=true&dark=true&transparent=false" frameborder="0" scrolling="no"  height="450px" width="96%"> </iframe>
