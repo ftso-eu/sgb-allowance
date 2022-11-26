@@ -49,7 +49,7 @@ class header extends Component {
                     <div id="titles">
 		    <h1><strong>&Xi;VMALLOWANC&Xi;</strong></h1>    
                     <h5>Show & Revoke allowances on: Flare, Songbird, Coston1, Coston2, Polygon, Binance Smart Chain, Arbitrum, Optimistic, Ethereum, Ropsten, Rinkeby, Kovan, Fantom.</h5>
-		<img src="../images/allowance.png"></img>    
+		<center><hr height="0.2em" border-width="0" color="#0D1A5D" background-color="#0D1A5D"></hr></center>    
 		<h4 id="addy"></h4>
 		    <h5 id="totcounts"></h5>
 		    <h5 id="counts"></h5>
