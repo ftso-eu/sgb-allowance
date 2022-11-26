@@ -46,9 +46,9 @@ class header extends Component {
 		    <i>Please beware this is a <strong><a href="https://en.wikipedia.org/wiki/Software_release_life_cycle">BETA</a></strong> tool in test / canary nets, use it at your own risk. Also, pay attention to <a href="https://en.wikipedia.org/wiki/Typosquatting" target="_blank">typosquatting</a> before signing transactions!</i>
                 </div>
                 <div className="jumbotron">
-                <center><img src="../images/allowance.png"></img></center>
                     <div id="titles">
 		    <h2><strong>&Xi;VMALLOWANC&Xi;</strong></h2>
+		    <img src="../images/allowance.png"></img>
                     <h6>Revoke on Flare, Songbird, Coston1, Coston2, Polygon, Binance Smart Chain, Arbitrum, Optimistic, Ethereum, Ropsten, Rinkeby, Kovan, Fantom.</h6>
 		    <h4 id="addy"></h4>
 		    <h5 id="totcounts"></h5>
