@@ -43,8 +43,8 @@ class header extends Component {
 		                        
 		</div>
 		</div>
-                <br></br>
-                <h4 id="loading" hidden>Loading, please wait...</h4>
+                
+                <h4 id="loading" hidden><br></br>Loading, please wait...</h4>
                 <div id="revokeAll">
 		<div className="revokeAll">
 		    <div className="container">
