@@ -47,7 +47,7 @@ class header extends Component {
                 </div>
                 <div className="jumbotron">
                     <div id="titles">
-		    <h2><strong>&Xi;VMALLOWANC&Xi;</strong></h2>    
+		    <h1><strong>&Xi;VMALLOWANC&Xi;</strong></h1>    
                     <h5>Show & Revoke allowances on: Flare, Songbird, Coston1, Coston2, Polygon, Binance Smart Chain, Arbitrum, Optimistic, Ethereum, Ropsten, Rinkeby, Kovan, Fantom.</h5>
 		<img src="../images/allowance.png"></img>    
 		<h4 id="addy"></h4>
