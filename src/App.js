@@ -21,9 +21,11 @@ let web3 = new Web3(Web3.givenProvider);
 function App() {
     return (
         <div>
+            <br></br>
             <Header />
             <Allowances web3={web3}/>
             <center>
+            <br></br>
             <div class="jumbotron"><a href="https://github.com/ftso-eu/sgb-allowance/blob/master/README.md" target="_blank">how it works? get more inf<img id="github" alt="GitHub" src="../images/github-o.png" width="11"></img></a>
             <br></br>
             <br></br>
