@@ -55,7 +55,7 @@ class header extends Component {
 		    <h5 id="counts"></h5>
 		</div>
 		</div>
-                <h3 id="loading" hidden>Loading, please wait...</h3>
+                <i><h4 id="loading" hidden>Loading, please wait...</h4></i>
 		<h3 id="partyimg" hidden></h3>
                 <div className="revokeAll">
                  <br></br>
