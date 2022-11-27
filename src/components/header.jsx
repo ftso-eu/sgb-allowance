@@ -71,7 +71,7 @@ class header extends Component {
                         <div className="centered"><strong>allowance</strong></div>
                     </div>
                     <div className="container" onClick={this.revokeAll}>
-                        <div className="centered-white"><a id="revokeLink" onClick={this.revokeAll}><strong>revoke all</strong></a></div>
+                        <div className="centered"><strong>actions</strong></div>
                     </div>
                    <center><hr height="0.2em" border-width="0" color="gray" background-color="gray" width="96%"></hr></center>
                  </div>
