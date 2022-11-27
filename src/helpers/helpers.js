@@ -121,7 +121,7 @@ export async function getApproveTransactions(query) {
         console.log("explorer api filtered ", dataObj);
         for(let tx of dataObj) {
             if(tx.input.includes(approvalHash)) {
-               k++;        
+                     
                var a = new Date(dataObj[k].timeStamp * 1000);
                var months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
                var year = a.getFullYear();
@@ -131,6 +131,7 @@ export async function getApproveTransactions(query) {
                var min = a.getMinutes();
                var sec = a.getSeconds();
                var time = date + ' ' + month + ' ' + year + ' ' + hour + ':' + min + ':' + sec ;
+               
                 
 
                 let approveObj = {};
@@ -139,7 +140,7 @@ export async function getApproveTransactions(query) {
                 approveObj.timestamp = "#" + k + " - timestamp: " + dataObj[k].timeStamp;        
                 let allowance = tx.input.substring(74);
                         
-                
+               k++; 
                 
                  if(allowance.includes(unlimitedAllowance)) {
                     approveObj.allowance = "unlimited (" + time + ")";
