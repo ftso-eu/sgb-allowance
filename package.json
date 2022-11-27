@@ -4,13 +4,9 @@
   "private": false,
   "homepage": "https://evmallowance.com",
   "dependencies": {
-    "@testing-library/jest-dom": "^5.11.4",
-    "@testing-library/react": "^11.1.0",
-    "@testing-library/user-event": "^12.1.10",
     "bootstrap": "^3.3.7",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
-    "react-scripts": "^5.0.0",
     "superagent": "^5.2.2",
     "web-vitals": "^0.2.4",
     "web3": "^1.8.0",
@@ -44,6 +40,10 @@
     ]
   },
   "devDependencies": {
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "react-scripts": "^5.0.0",
     "gh-pages": "^3.1.0"
   }
 }
