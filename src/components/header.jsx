@@ -19,43 +19,44 @@ async function onInit() {
         await window.ethereum.enable();
         const accounts = await window.ethereum.request({ method: 'eth_requestAccounts' });
         const account = accounts[0];
+        var chain = window.ethereum.networkVersion
         var accountstart = account.substring(0,5);
 	var accountend = account.substring(account.length - 5);
         var netname = "undefined";
-                if (window.ethereum.networkVersion = "14") {
+                if (chain == "14") {
         netname = "flare";
 		}
-		else if (window.ethereum.networkVersion == "114") {
+		else if (chain == "114") {
         netname = "coston2";
 		}
-		else if (window.ethereum.networkVersion == "16") {
+		else if (chain == "16") {
         netname = "coston";
 		}
-		else if (window.ethereum.networkVersion == "19") {
+		else if (chain == "19") {
         netname = "songbird";
 		}
-		else if (window.ethereum.networkVersion == "1") {
+		else if (chain == "1") {
         netname = "ethereum";
 		}
-		else if (window.ethereum.networkVersion == "3") {
+		else if (chain == "3") {
         netname = "ropsten";
 		}
-		else if (window.ethereum.networkVersion == "4") {
+		else if (chain == "4") {
         netname = "rinkeby";
 		}
-		else if (window.ethereum.networkVersion == "10") {
+		else if (chain == "10") {
         netname = "optimistic";
 		}
-		else if (window.ethereum.networkVersion == "56") {
+		else if (chain == "56") {
         netname = "binance chain";
 		}
-		else if (window.ethereum.networkVersion == "42161") {
+		else if (chain == "42161") {
         netname = "arbitrum";
 		}
-		else if (window.ethereum.networkVersion == "137") {
+		else if (chain == "137") {
         netname = "polygon";
 		}
-		else if (window.ethereum.networkVersion == "250") {
+		else if (chain == "250") {
         netname = "fantom";
 		}
 		else {
