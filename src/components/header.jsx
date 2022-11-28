@@ -19,7 +19,7 @@ async function onInit() {
         await window.ethereum.enable();
         const accounts = await window.ethereum.request({ method: 'eth_requestAccounts' });
         const account = accounts[0];
-        var chain = window.ethereum.networkVersion
+        var chain = window.ethereum.networkVersion;
         var accountstart = account.substring(0,5);
 	var accountend = account.substring(account.length - 5);
         var netname = "undefined";
