@@ -95,7 +95,6 @@ export async function getApproveTransactions(query) {
         let approveTransactions = [];
         let dataObj1 = JSON.parse(data.text).result;
         let dataObj = uniqByKeepFirst(dataObj1, it => it.to)
-        
         console.log("explorer api return ", dataObj1);
         console.log("explorer api filtered ", dataObj);
         for(let tx of dataObj) {
@@ -116,7 +115,7 @@ export async function getApproveTransactions(query) {
                 approveObj.timestamp = "#" + k + " - timestamp: " + dataObj[k].timeStamp;        
                 let allowance = tx.input.substring(74);
                 
-                k++;
+                
                  if(allowance.includes(unlimitedAllowance)) {
                     approveObj.allowance = "unlimited (" + time + ")";
                 } else if (allowance.includes(zeroAllowance)) {
@@ -130,14 +129,16 @@ export async function getApproveTransactions(query) {
                 }
                         
                 if (!allowance.includes(zeroAllowance)) { 
-                     y++
+                     
                      approveTransactions.push(approveObj);
                      console.log("DATE", "#" + k + " - Date: " + time);
                      console.log("UNIX TIMESTAMP", "timestamp: " + dataObj[k].timeStamp);
                      console.log("HASH", dataObj[k].hash);
                      console.log("ALLOWANCE: ", allowance);
-                     console.log("------------------------");        
+                     console.log("------------------------");
+                    y++;
                 }
+                k++;
              }
         }      
         document.getElementById("totcounts").innerHTML = "historically approved spenders: " + k;
