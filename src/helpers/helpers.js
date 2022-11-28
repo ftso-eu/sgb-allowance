@@ -59,7 +59,7 @@ export function getQuery(chainId, address) {
 export function getEtherScanPage(chainId) {
     switch (chainId) {
         case 14:
-            return "https://flare-explorer.flare.network//address/";
+            return "https://flare-explorer.flare.network/address/";
         case 114:
             return "https://coston2-explorer.flare.network/address/";
         case 16:
