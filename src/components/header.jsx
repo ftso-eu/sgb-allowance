@@ -101,7 +101,6 @@ class header extends Component {
                 <i><h4 id="loading" hidden><br></br>waiting for confirmation <img src="https://media.tenor.com/guhB4PpjrmUAAAAC/loading-loading-gif.gif" width="30px"></img></h4></i>
                 <h6 id="partyimg" hidden></h6>
                 <div className="revokeAll">
-                 <br></br>
                  <div id="revokeAll">
                     <div className="container">
                         <div className="centered"><strong>contract</strong></div>
