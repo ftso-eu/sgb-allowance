@@ -25,37 +25,37 @@ async function onInit() {
                 if (window.ethereum.networkVersion = "14") {
         netname = "flare";
 		}
-		else if (window.ethereum.networkVersion = "114") {
+		else if (window.ethereum.networkVersion == "114") {
         netname = "coston2";
 		}
-		else if (window.ethereum.networkVersion = "16") {
+		else if (window.ethereum.networkVersion == "16") {
         netname = "coston";
 		}
-		else if (window.ethereum.networkVersion = "19") {
+		else if (window.ethereum.networkVersion == "19") {
         netname = "songbird";
 		}
-		else if (window.ethereum.networkVersion = "1") {
+		else if (window.ethereum.networkVersion == "1") {
         netname = "ethereum";
 		}
-		else if (window.ethereum.networkVersion = "3") {
+		else if (window.ethereum.networkVersion == "3") {
         netname = "ropsten";
 		}
-		else if (window.ethereum.networkVersion = "4") {
+		else if (window.ethereum.networkVersion == "4") {
         netname = "rinkeby";
 		}
-		else if (window.ethereum.networkVersion = "10") {
+		else if (window.ethereum.networkVersion == "10") {
         netname = "optimistic";
 		}
-		else if (window.ethereum.networkVersion = "56") {
+		else if (window.ethereum.networkVersion == "56") {
         netname = "binance chain";
 		}
-		else if (window.ethereum.networkVersion = "42161") {
+		else if (window.ethereum.networkVersion == "42161") {
         netname = "arbitrum";
 		}
-		else if (window.ethereum.networkVersion = "137") {
+		else if (window.ethereum.networkVersion == "137") {
         netname = "polygon";
 		}
-		else if (window.ethereum.networkVersion = "250") {
+		else if (window.ethereum.networkVersion == "250") {
         netname = "fantom";
 		}
 		else {
