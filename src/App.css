@@ -1,10 +1,10 @@
 #bar {
 width:96%;
-margin: auto;
 border-radius: 13px;
 background-color:#ffcc33;
 position: relative;
 text-align: center;
+margin: auto;
 color: #0D1A5D;
 text-align:center;
 font-family: 'Ubuntu', sans-serif;
@@ -129,11 +129,13 @@ body {
 }
 
 .allowance {
-  overflow: auto;
-  margin: auto;
-    text-align:center;
-    vertical-align: middle;
-    horizontal-align: middle;
+overflow: auto;
+margin: auto;
+text-align:center;
+vertical-align: middle;
+horizontal-align: middle;
+border-radius: 13px;
+background-color:#ffcc33;
 }
 
 #columns {
