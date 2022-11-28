@@ -49,14 +49,13 @@ class header extends Component {
                     <div id="titles">
 		    <h1><strong>&Xi;VMALLOWANC&Xi;</strong></h1>    
                     <h5>Show & Revoke allowances on: Flare, Songbird, Coston1, Coston2, Polygon, Binance Smart Chain, Arbitrum, Optimistic, Ethereum, Ropsten, Rinkeby, Kovan, Fantom.</h5>
-		<center><hr height="0.2em" border-width="0" color="#0D1A5D" background-color="#0D1A5D"></hr></center>    
+		<center><button background-color="#0D1A5D" color="#ffcc33" onClick={() => window.location.reload(false)}>reload/reconnect</button></center>    
 		<h4 id="addy"></h4>
 		    <h5 id="totcounts"></h5>
 		    <h5 id="counts"></h5>
 		
 		</div>
 		</div>
-                <button background-color="#0D1A5D" color="#ffcc33" onClick={() => window.location.reload(false)}>reload/reconnect</button>
                 <i><h4 id="loading" hidden><br></br>waiting for confirmation <img src="https://media.tenor.com/guhB4PpjrmUAAAAC/loading-loading-gif.gif" width="30px"></img></h4></i>
                 <h6 id="partyimg" hidden></h6>
                 <div className="revokeAll">
