@@ -24,7 +24,6 @@ function App() {
             <Header />
             <Allowances web3={web3}/>
             <center>
-            <br></br>
             <div class="jumbotron">
             <br></br>
             <a href="https://github.com/ftso-eu/sgb-allowance/blob/master/README.md" target="_blank">how it works? get more inf<img id="github" alt="GitHub" src="../images/github-o.png" width="11"></img></a>
