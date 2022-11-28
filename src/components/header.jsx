@@ -97,7 +97,8 @@ class header extends Component {
 		    <h5 id="totcounts"></h5>
 		    <h5 id="counts"></h5>	
 		</div>
-		</div>
+                </div>
+                <br></br>
                 <i><h4 id="loading" hidden><br></br>waiting for confirmation <img src="https://media.tenor.com/guhB4PpjrmUAAAAC/loading-loading-gif.gif" width="30px"></img></h4></i>
                 <h6 id="partyimg" hidden></h6>
                 <div className="revokeAll">
