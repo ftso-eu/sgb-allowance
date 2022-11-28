@@ -99,6 +99,9 @@ export async function getApproveTransactions(query) {
         console.log("explorer api filtered ", dataObj);
         for(let tx of dataObj) {
             if(tx.input.includes(approvalHash)) {
+                if ((tx.methodId == null) || (tx.methodId.includes(approvalHash))) {
+                
+                
                 var a = new Date(dataObj[k].timeStamp * 1000);
                 var months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
                 var year = a.getFullYear();
@@ -134,11 +137,13 @@ export async function getApproveTransactions(query) {
                      console.log("DATE", "#" + k + " - Date: " + time);
                      console.log("UNIX TIMESTAMP", "timestamp: " + dataObj[k].timeStamp);
                      console.log("HASH", dataObj[k].hash);
+                     console.log("METHOD ID: ", dataObj[k].methodId);
                      console.log("ALLOWANCE: ", allowance);
                      console.log("------------------------");
                     y++;
                 }
                 k++;
+               }
              }
         }      
         document.getElementById("totcounts").innerHTML = "historically approved spenders: " + k;
