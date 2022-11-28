@@ -98,10 +98,10 @@ export async function getApproveTransactions(query) {
         console.log("explorer api return ", dataObj1);
         console.log("explorer api filtered ", dataObj);
         for(let tx of dataObj) {
+
             if(tx.input.includes(approvalHash)) {
-                if ((tx.methodId == null) || (tx.methodId.includes(approvalHash))) {
-                
-                
+                if ((typeof tx.methodId == 'undefined') || (tx.methodId.includes(approvalHash))) {
+
                 var a = new Date(dataObj[k].timeStamp * 1000);
                 var months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
                 var year = a.getFullYear();
