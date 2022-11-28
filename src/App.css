@@ -121,6 +121,7 @@ body {
     width:96%;
   border-bottom:1px solid;
   border-bottom-style: ridged;
+  border-bottom-color: grey;
 }
 
 .revoke-full {
@@ -144,6 +145,7 @@ background-color:#EBF6FC;
 width:96%;
   border-bottom:1px solid;
   border-bottom-style: ridged;
+   border-bottom-color: grey;
 }
 
 #columns {
