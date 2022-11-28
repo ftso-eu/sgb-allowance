@@ -73,7 +73,7 @@ class header extends Component {
                     <div className="container" onClick={this.revokeAll}>
                         <div className="centered"><strong>actions</strong></div>
                     </div>
-                   
+                   <br></br>
                  </div>
                 </div>
             </div>
