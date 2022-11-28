@@ -18,20 +18,6 @@ const ethEnabled = async () => {
 }
 }
 
-//async function onInit() {
-//        await window.ethereum.enable();
-//        const accounts = await window.ethereum.request({ method: 'eth_requestAccounts' });
-//        const account = accounts[0];
-//        var accountstart = account.substring(0,5);
-	//var accountend = account.substring(account.length - 5);
-        //document.getElementById("addy").innerText = "connected address: " + accountstart + "....." + accountend;
-        //window.ethereum.on('accountsChanged', function (accounts) {
-         //   window.location.reload() 		
-            // Time to reload your interface with accounts[0]!
-        //   });
-  //  }
-
-
 onInit();
 
 class header extends Component {
@@ -52,7 +38,7 @@ class header extends Component {
                 <div className="jumbotron">
                 <center><img src="../images/allowance.png"></img></center>
                     <div id="titles">
-                    
+                    <button onClick={() => window.location.reload(false)}>reload</button>
 		    <h2><strong>SHOW AND REVOKE ALLOWANC&Xi;</strong></h2>
                     <h6>Flare, Songbird, Coston1, Coston2, Polygon, Binance Smart Chain, Arbitrum, Optimistic, Ethereum, Ropsten, Rinkeby, Kovan, Fantom.</h6>
 		    <h3><a href="https://github.com/ftso-eu/sgb-allowance/blob/master/README.md" target="_blank">inf<img id="github" alt="GitHub" src="../images/github-o.png" width="15"></img></a></h3>
