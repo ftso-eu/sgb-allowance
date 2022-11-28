@@ -21,7 +21,49 @@ async function onInit() {
         const account = accounts[0];
         var accountstart = account.substring(0,5);
 	var accountend = account.substring(account.length - 5);
-        document.getElementById("addy").innerText = "address " + accountstart + "..." + accountend + " connected to chain ID " +  window.ethereum.networkVersion;
+        var netname = "undefined";
+                if (window.ethereum.networkVersion === 14) {
+        netname = "flare";
+		}
+		else if (window.ethereum.networkVersion === 114) {
+        netname = "coston2";
+		}
+		else if (window.ethereum.networkVersion === 16) {
+        netname = "coston";
+		}
+		else if (window.ethereum.networkVersion === 19) {
+        netname = "songbird";
+		}
+		else if (window.ethereum.networkVersion === 1) {
+        netname = "ethereum";
+		}
+		else if (window.ethereum.networkVersion === 3) {
+        netname = "ropsten";
+		}
+		else if (window.ethereum.networkVersion === 4) {
+        netname = "rinkeby";
+		}
+		else if (window.ethereum.networkVersion === 10) {
+        netname = "optimistic";
+		}
+		else if (window.ethereum.networkVersion === 56) {
+        netname = "binance chain";
+		}
+		else if (window.ethereum.networkVersion === 42161) {
+        netname = "arbitrum";
+		}
+		else if (window.ethereum.networkVersion === 137) {
+        netname = "polygon";
+		}
+		else if (window.ethereum.networkVersion === 250) {
+        netname = "fantom";
+		}
+		else {
+        netname = "network not supported";
+		}
+		
+        
+        document.getElementById("addy").innerText = "address " + accountstart + "..." + accountend + " connected to " +  netname;
         window.ethereum.on('accountsChanged', function (accounts) {
             window.location.reload() 		
             // Time to reload your interface with accounts[0]!
