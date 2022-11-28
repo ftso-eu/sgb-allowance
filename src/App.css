@@ -116,6 +116,9 @@ body {
     text-align:center;
     vertical-align: middle;
     horizontal-align: middle;
+  border-radius: 13px;
+background-color:#EBF6FC;
+width:96%;
 }
 
 .revoke-full {
