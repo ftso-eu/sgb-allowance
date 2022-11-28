@@ -91,13 +91,11 @@ class header extends Component {
                 <div className="jumbotron">
                     <div id="titles">
 		    <h1><strong>&Xi;VMALLOWANC&Xi;</strong></h1>    
-                    <h5>Show & Revoke allowances on: Flare, Songbird, Coston1, Coston2, Polygon, Binance Smart Chain, Arbitrum, Optimistic, Ethereum, Ropsten, Rinkeby, Kovan, Fantom.</h5>
-		    
+                    <h5>Show & Revoke allowances on: Flare, Songbird, Coston1, Coston2, Polygon, Binance Smart Chain, Arbitrum, Optimistic, Ethereum, Ropsten, Rinkeby, Kovan, Fantom.</h5>	    
 		<h4 id="addy"></h4>
 		<center><button background-color="#0D1A5D" color="#ffcc33" onClick={() => window.location.reload(false)}>reload/reconnect</button></center>
 		    <h5 id="totcounts"></h5>
-		    <h5 id="counts"></h5>
-		
+		    <h5 id="counts"></h5>	
 		</div>
 		</div>
                 <i><h4 id="loading" hidden><br></br>waiting for confirmation <img src="https://media.tenor.com/guhB4PpjrmUAAAAC/loading-loading-gif.gif" width="30px"></img></h4></i>
@@ -117,9 +115,7 @@ class header extends Component {
                     <div className="container" onClick={this.revokeAll}>
                         <div className="centered"><strong>actions</strong></div>
                     </div>
-                   <br></br>
-                 </div>
-<br></br>
+                  </div>
                 </div>
             </div>
         )
