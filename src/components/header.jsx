@@ -21,7 +21,7 @@ async function onInit() {
         const account = accounts[0];
         var accountstart = account.substring(0,5);
 	var accountend = account.substring(account.length - 5);
-        document.getElementById("addy").innerText = "address " + accountstart + "..." + accountend + " connected to chain ID " +  window.ethereum.networkVersion + ")";
+        document.getElementById("addy").innerText = "address " + accountstart + "..." + accountend + " connected to chain ID " +  window.ethereum.networkVersion;
         window.ethereum.on('accountsChanged', function (accounts) {
             window.location.reload() 		
             // Time to reload your interface with accounts[0]!
