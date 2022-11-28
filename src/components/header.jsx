@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import '../App.css';
 import '../helpers/helpers.js';
 
-
+async function onInit() {
 const Web3 = require("web3");
 const ethEnabled = async () => {
   if (window.ethereum) {
@@ -16,7 +16,7 @@ const ethEnabled = async () => {
   }
   return false;
 }
-
+}
 
 //async function onInit() {
 //        await window.ethereum.enable();
