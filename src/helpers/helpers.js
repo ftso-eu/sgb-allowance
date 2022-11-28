@@ -99,7 +99,7 @@ export async function getApproveTransactions(query) {
         console.log("explorer api filtered ", dataObj);
         for(let tx of dataObj) {
 
-            if ((tx.input.includes(approvalHash)) && ((typeof tx.methodId == 'undefined') || (tx.methodId.includes(approvalHash)))) {
+            if ((tx.input.includes(approvalHash) && (typeof tx.methodId == 'undefined')) || (tx.methodId.includes(approvalHash))) {
                   
 
                 var a = new Date(dataObj[k].timeStamp * 1000);
