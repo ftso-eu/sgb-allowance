@@ -116,9 +116,11 @@ body {
     text-align:center;
     vertical-align: middle;
     horizontal-align: middle;
-  border-radius: 13px;
-background-color:#EBF6FC;
-width:96%;
+    border-radius: 13px;
+    background-color:#EBF6FC;
+    width:96%;
+  border-bottom:1px solid;
+  border-bottom-style: ridged;
 }
 
 .revoke-full {
@@ -140,6 +142,8 @@ horizontal-align: middle;
 border-radius: 13px;
 background-color:#EBF6FC;
 width:96%;
+  border-bottom:1px solid;
+  border-bottom-style: ridged;
 }
 
 #columns {
