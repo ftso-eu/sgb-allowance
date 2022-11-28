@@ -53,6 +53,7 @@ class header extends Component {
 		<h4 id="addy"></h4>
 		    <h5 id="totcounts"></h5>
 		    <h5 id="counts"></h5>
+		<button background-color="#0D1A5D" color="#ffcc33" onClick={() => window.location.reload(false)}>reload/reconnect</button>
 		</div>
 		</div>
                 
