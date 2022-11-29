@@ -102,7 +102,7 @@ export async function getApproveTransactions(query) {
             if ((typeof tx.methodId == 'undefined') && (tx.input.includes(approvalHash))) {
             continua = "si";
             }
-            else if (tx.methodId.includes(approvalHash) {
+            else if (tx.methodId.includes(approvalHash)) {
             continua = "si";
             }
             else {
