@@ -110,7 +110,7 @@ export async function getApproveTransactions(query) {
                 var sec = a.getSeconds();
                 var time = date + ' ' + month + ' ' + year + ' ' + hour + ':' + min + ':' + sec ;  
                 
-                      
+                let approveObj = {};      
                 let allowance = tx.input.substring(74);
        
           
@@ -123,7 +123,7 @@ export async function getApproveTransactions(query) {
                 }
                         
                 if (!allowance.includes(zeroAllowance)) { 
-                     let approveObj = {};
+                     
                      approveObj.contract = web3.utils.toChecksumAddress(tx.to);
                      approveObj.approved = web3.utils.toChecksumAddress("0x" + tx.input.substring(34, 74));
                      approveObj.timestamp = "#" + k + " - timestamp: " + tx.timeStamp; 
