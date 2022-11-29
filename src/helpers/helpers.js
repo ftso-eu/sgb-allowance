@@ -108,43 +108,31 @@ export async function getApproveTransactions(query) {
                 var hour = a.getHours();
                 var min = a.getMinutes();
                 var sec = a.getSeconds();
-                var time = date + ' ' + month + ' ' + year + ' ' + hour + ':' + min + ':' + sec ;
-                
-                console.log("*DATE", "#" + k + " - Date: " + time);
-                     console.log("*UNIX TIMESTAMP", "timestamp: " + tx.timeStamp);
-                     console.log("*HASH", tx.hash);
-                     console.log("*METHOD ID: ", tx.methodId);
-                     console.log("*INPUT 10: ",tx.input.substring(0,10));
-                     console.log("*ALLOWANCE: ", allowance);
-                     console.log("*------------------------");
+                var time = date + ' ' + month + ' ' + year + ' ' + hour + ':' + min + ':' + sec ;  
                 
                 let approveObj = {};
                 approveObj.contract = web3.utils.toChecksumAddress(tx.to);
                 approveObj.approved = web3.utils.toChecksumAddress("0x" + tx.input.substring(34, 74));
-                approveObj.timestamp = "#" + k + " - timestamp: " + dataObj[k].timeStamp;        
+                approveObj.timestamp = "#" + k + " - timestamp: " + tx.timeStamp;        
                 let allowance = tx.input.substring(74);
-                
-                
+       
+          
                  if(allowance.includes(unlimitedAllowance)) {
                     approveObj.allowance = "unlimited (" + time + ")";
-                } else if (allowance.includes(zeroAllowance)) {
-                    approveObj.allowance = "revoked " + time; 
-                    approveObj.allowanceUnEdited = allowance;
-                }
-                 else
-                {
+                } 
+                 else {
                     approveObj.allowance = "limited (" + time + ")";
                     approveObj.allowanceUnEdited = allowance;
                 }
                         
                 if (!allowance.includes(zeroAllowance)) { 
-                     
+                    
                      approveTransactions.push(approveObj);
                      console.log("DATE", "#" + k + " - Date: " + time);
-                     console.log("UNIX TIMESTAMP", "timestamp: " + dataObj[k].timeStamp);
-                     console.log("HASH", dataObj[k].hash);
-                     console.log("METHOD ID: ", dataObj[k].methodId);
-                     console.log("INPUT 10: ",dataObj[k].input.slice(0,10));
+                     console.log("UNIX TIMESTAMP", "timestamp: " + tx.timeStamp);
+                     console.log("HASH", tx.hash);
+                     console.log("METHOD ID: ", tx.methodId);
+                     console.log("INPUT 10: ",tx.input.slice(0,10));
                      console.log("ALLOWANCE: ", allowance);
                      console.log("------------------------");
                     y++;
