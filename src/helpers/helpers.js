@@ -33,7 +33,7 @@ export function getQuery(chainId, address) {
         case 42:
             return "https://api-kovan.etherscan.io/api?module=account&action=txlist&address=" + address;
         case 56:
-            return "https://api.bscscan.com/api?module=account&action=txlist&address=" + address;
+            return "https://api.bscscan.com/api?module=account&action=txlist&address=" + address + "&sort=asc";
         case 42161:
             return "https://api.arbiscan.io/api?module=account&action=txlist&address=" + address;
         case 137:
