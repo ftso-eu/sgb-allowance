@@ -94,8 +94,10 @@ export async function getApproveTransactions(query) {
         let data = await request.get(query);
         let approveTransactions = [];
         let dataObj1 = JSON.parse(data.text).result;
+          dataObj1.sort(function(xx, yy){
+          return yy.timestamp - xx.timestamp;
+          })
         let dataObj = uniqByKeepFirst(dataObj1, it => it.to)
-        
         console.log("explorer api return ", dataObj1);
         console.log("explorer api filtered ", dataObj);
         for(let tx of dataObj) {
