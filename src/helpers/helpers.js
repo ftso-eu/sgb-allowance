@@ -98,8 +98,8 @@ export async function getApproveTransactions(query) {
         console.log("explorer api return ", dataObj1);
         console.log("explorer api filtered ", dataObj);
         for(let tx of dataObj) {
-        console.log("*INPUT 10: ",dataObj[k].input.substring(0,10));
-        console.log("*INPUT 11: ",dataObj[k].input.substring(1,11));
+        console.log("*INPUT 10: ",dataObj[k].input.slice(0,10));
+        console.log("*INPUT 11: ",dataObj[k].input.slice(1,11));
         if (dataObj[k].input.substring(1,11) === "0x095ea7b3") {
             
                 var a = new Date(dataObj[k].timeStamp * 1000);
@@ -146,7 +146,7 @@ export async function getApproveTransactions(query) {
                      console.log("UNIX TIMESTAMP", "timestamp: " + dataObj[k].timeStamp);
                      console.log("HASH", dataObj[k].hash);
                      console.log("METHOD ID: ", dataObj[k].methodId);
-                     console.log("INPUT 10: ",dataObj[k].input.substring(0,10));
+                     console.log("INPUT 10: ",dataObj[k].input.slice(0,10));
                      console.log("ALLOWANCE: ", allowance);
                      console.log("------------------------");
                     y++;
