@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { getQuery, getApproveTransactions, getName, getEtherScanPage, getEtherTxPage } from "../helpers/helpers";
+import { getQuery, getApproveTransactions, getName, getRouter, getEtherScanPage, getEtherTxPage } from "../helpers/helpers";
 import Allowance from "./allowance";
 
 class allowances extends Component {
@@ -55,6 +55,7 @@ class allowances extends Component {
         for(const index in txs) {
             txs[index].contractName = await getName(txs[index].contract);
             txs[index].approvedName = await getName(txs[index].approved);
+            txs[index].RouterName = await getRouter(txs[index].Router);
         }
         return {
             txs: txs,
