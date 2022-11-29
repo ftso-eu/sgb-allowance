@@ -23,23 +23,23 @@ export function getQuery(chainId, address) {
         case 19:        
             return "https://songbird-explorer.flare.network/api?module=account&action=txlist&address=" + address;          
         case 1:
-            return "https://api.etherscan.io/api?module=account&action=txlist&address=" + address;
+            return "https://api.etherscan.io/api?module=account&action=txlist&address=" + address + "&sort=desc";
         case 3:
-            return "https://api-ropsten.etherscan.io/api?module=account&action=txlist&address=" + address;
+            return "https://api-ropsten.etherscan.io/api?module=account&action=txlist&address=" + address + "&sort=desc";
         case 4:
-            return "https://api-rinkeby.etherscan.io/api?module=account&action=txlist&address=" + address;
+            return "https://api-rinkeby.etherscan.io/api?module=account&action=txlist&address=" + address + "&sort=desc";
         case 10:
-            return "https://api-optimistic.etherscan.io/api?module=account&action=txlist&address=" + address;
+            return "https://api-optimistic.etherscan.io/api?module=account&action=txlist&address=" + address + "&sort=desc";
         case 42:
-            return "https://api-kovan.etherscan.io/api?module=account&action=txlist&address=" + address;
+            return "https://api-kovan.etherscan.io/api?module=account&action=txlist&address=" + address + "&sort=desc";
         case 56:
             return "https://api.bscscan.com/api?module=account&action=txlist&address=" + address + "&sort=desc";
         case 42161:
-            return "https://api.arbiscan.io/api?module=account&action=txlist&address=" + address;
+            return "https://api.arbiscan.io/api?module=account&action=txlist&address=" + address + "&sort=desc";
         case 137:
-            return "https://api.polygonscan.com/api?module=account&action=txlist&address=" + address;
+            return "https://api.polygonscan.com/api?module=account&action=txlist&address=" + address + "&sort=desc";
         case 250:          
-           return "https://api.ftmscan.com/api?module=account&action=txlist&address=" + address;
+           return "https://api.ftmscan.com/api?module=account&action=txlist&address=" + address + "&sort=desc";
         default:
             return "";           
     }
