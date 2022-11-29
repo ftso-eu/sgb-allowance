@@ -95,51 +95,58 @@ export async function getApproveTransactions(query) {
         let approveTransactions = [];
         let dataObj1 = JSON.parse(data.text).result;
         let dataObj = uniqByKeepFirst(dataObj1, it => it.to)
+        
         console.log("explorer api return ", dataObj1);
         console.log("explorer api filtered ", dataObj);
         for(let tx of dataObj) {
-        if (tx.input.slice(0,10) === approvalHash) {
-            
-                var a = new Date(dataObj[k].timeStamp * 1000);
-                var months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
-                var year = a.getFullYear();
-                var month = months[a.getMonth()];
-                var date = a.getDate();
-                var hour = a.getHours();
-                var min = a.getMinutes();
-                var sec = a.getSeconds();
-                var time = date + ' ' + month + ' ' + year + ' ' + hour + ':' + min + ':' + sec ;  
+            if(tx.input.includes(approvalHash)) {
+               k++;        
+               var a = new Date(dataObj[k].timeStamp * 1000);
+               var months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+               var year = a.getFullYear();
+               var month = months[a.getMonth()];
+               var date = a.getDate();
+               var hour = a.getHours();
+               var min = a.getMinutes();
+               var sec = a.getSeconds();
+               var time = date + ' ' + month + ' ' + year + ' ' + hour + ':' + min + ':' + sec ;
                 
-                let approveObj = {};      
+
+                let approveObj = {};
+                approveObj.contract = web3.utils.toChecksumAddress(tx.to);
+                approveObj.approved = web3.utils.toChecksumAddress("0x" + tx.input.substring(34, 74));
+                approveObj.timestamp = "#" + k + " - timestamp: " + dataObj[k].timeStamp;        
                 let allowance = tx.input.substring(74);
-       
-          
+                        
+                
+                
                  if(allowance.includes(unlimitedAllowance)) {
                     approveObj.allowance = "unlimited (" + time + ")";
-                } 
-                 else {
+                    
+                } else if (allowance.includes(zeroAllowance)) {
+                    approveObj.allowance = "revoked " + time; 
+                    approveObj.allowanceUnEdited = allowance;
+                }
+                 else
+                {
                     approveObj.allowance = "limited (" + time + ")";
                     approveObj.allowanceUnEdited = allowance;
                 }
-                        
+              
+                          
                 if (!allowance.includes(zeroAllowance)) { 
-                     
-                     approveObj.contract = web3.utils.toChecksumAddress(tx.to);
-                     approveObj.approved = web3.utils.toChecksumAddress("0x" + tx.input.substring(34, 74));
-                     approveObj.timestamp = "#" + k + " - timestamp: " + tx.timeStamp; 
+                     y++
                      approveTransactions.push(approveObj);
                      console.log("DATE", "#" + k + " - Date: " + time);
-                     console.log("UNIX TIMESTAMP", "timestamp: " + tx.timeStamp);
-                     console.log("HASH", tx.hash);
-                     console.log("METHOD ID: ", tx.methodId);
-                     console.log("INPUT 10: ",tx.input.slice(0,10));
+                     console.log("UNIX TIMESTAMP", "timestamp: " + dataObj[k].timeStamp);
+                     console.log("HASH", dataObj[k].hash);
                      console.log("ALLOWANCE: ", allowance);
                      console.log("------------------------");
-                    y++;
+                     
+                    }
+                  
                 }
-                k++;
-               }
-             
+            
         }      
         document.getElementById("totcounts").innerHTML = "historically approved spenders: " + k;
         document.getElementById("counts").innerHTML = "allowances not revoked: " + y;
