@@ -104,7 +104,7 @@ export async function getApproveTransactions(query) {
                 approveObj.timestamp = "#" + k + " - timestamp: " + dataObj[k].timeStamp;
                 let approvedraw = tx.input.substring(34, 74);
                 let allowance = tx.input.substring(74);
-        let dataObj = uniqByKeepFirst(dataObj1, it => it.approvedraw)
+        let dataObj = uniqByKeepFirst(dataObj1, it => it.approvedraw);
         console.log("explorer api filtered ", dataObj);
         
         for(let tx of dataObj) {
