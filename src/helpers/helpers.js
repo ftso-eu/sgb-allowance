@@ -101,9 +101,11 @@ export async function getApproveTransactions(query) {
             var continua = "no"
             if ((typeof tx.methodId == 'undefined') && (tx.input.includes(approvalHash))) {
             continua = "si";
+            }
             else if (tx.methodId.includes(approvalHash) {
             continua = "si";
             }
+            
             if (continua == "si") {
                 var a = new Date(dataObj[k].timeStamp * 1000);
                 var months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
