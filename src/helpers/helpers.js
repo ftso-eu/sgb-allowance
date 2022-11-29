@@ -15,7 +15,7 @@ const { ERC20ABI, ERC721ABI } = require("./ABI.js");
 export function getQuery(chainId, address) {
     switch (chainId) {
         case 14:          
-           return "https://flare-explorer.flare.network//api?module=account&action=txlist&address=" + address;
+           return "https://flare-explorer.flare.network/api?module=account&action=txlist&address=" + address;
         case 114:          
            return "https://coston2-explorer.flare.network/api?module=account&action=txlist&address=" + address;         
         case 16:          
@@ -23,23 +23,25 @@ export function getQuery(chainId, address) {
         case 19:        
             return "https://songbird-explorer.flare.network/api?module=account&action=txlist&address=" + address;          
         case 1:
-            return "https://api.etherscan.io/api?module=account&action=txlist&address=" + address + "&sort=desc";
+            return "https://api.etherscan.io/api?module=account&action=txlist&address=" + address;
         case 3:
-            return "https://api-ropsten.etherscan.io/api?module=account&action=txlist&address=" + address + "&sort=desc";
+            return "https://api-ropsten.etherscan.io/api?module=account&action=txlist&address=" + address;
         case 4:
-            return "https://api-rinkeby.etherscan.io/api?module=account&action=txlist&address=" + address + "&sort=desc";
+            return "https://api-rinkeby.etherscan.io/api?module=account&action=txlist&address=" + address;
         case 10:
-            return "https://api-optimistic.etherscan.io/api?module=account&action=txlist&address=" + address + "&sort=desc";
+            return "https://api-optimistic.etherscan.io/api?module=account&action=txlist&address=" + address;
         case 42:
-            return "https://api-kovan.etherscan.io/api?module=account&action=txlist&address=" + address + "&sort=desc";
+            return "https://api-kovan.etherscan.io/api?module=account&action=txlist&address=" + address;
         case 56:
-            return "https://api.bscscan.com/api?module=account&action=txlist&address=" + address + "&sort=asc";
+            return "https://api.bscscan.com/api?module=account&action=txlist&address=" + address;
         case 42161:
-            return "https://api.arbiscan.io/api?module=account&action=txlist&address=" + address + "&sort=desc";
+            return "https://api.arbiscan.io/api?module=account&action=txlist&address=" + address;
         case 137:
-            return "https://api.polygonscan.com/api?module=account&action=txlist&address=" + address + "&sort=desc";
+            return "https://api.polygonscan.com/api?module=account&action=txlist&address=" + address;
         case 250:          
-           return "https://api.ftmscan.com/api?module=account&action=txlist&address=" + address + "&sort=desc";
+           return "https://api.ftmscan.com/api?module=account&action=txlist&address=" + address;
+        case 43114:          
+           return "https://api-beta.avascan.info/v2/network/mainnet/evm/43114/address/" + address + "/transactions";
         default:
             return "";           
     }
@@ -73,6 +75,8 @@ export function getEtherScanPage(chainId) {
             return "https://polygonscan.com/address/";
         case 250:
             return "https://ftmscan.com/address/";
+         case 43114:
+            return "https://avascan.info/blockchain/c/address/";
         default:
             return "";
             
