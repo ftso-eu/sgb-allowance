@@ -97,9 +97,16 @@ export async function getApproveTransactions(query) {
           dataObj1.sort(function(xx, yy){
           return yy.timeStamp - xx.timeStamp;
           })
-        let dataObj = uniqByKeepFirst(dataObj1, it => it.to)
         console.log("explorer api return ", dataObj1);
+        let approveObj = {};
+                approveObj.contract = web3.utils.toChecksumAddress(tx.to);
+                approveObj.approved = web3.utils.toChecksumAddress("0x" + tx.input.substring(34, 74));  
+                approveObj.timestamp = "#" + k + " - timestamp: " + dataObj[k].timeStamp;
+                let approvedraw = tx.input.substring(34, 74);
+                let allowance = tx.input.substring(74);
+        let dataObj = uniqByKeepFirst(dataObj1, it => it.approvedraw)
         console.log("explorer api filtered ", dataObj);
+        
         for(let tx of dataObj) {
             if(tx.input.includes(approvalHash)) {
                k++;        
@@ -114,11 +121,7 @@ export async function getApproveTransactions(query) {
                var time = date + ' ' + month + ' ' + year + ' ' + hour + ':' + min + ':' + sec ;
                 
 
-                let approveObj = {};
-                approveObj.contract = web3.utils.toChecksumAddress(tx.to);
-                approveObj.approved = web3.utils.toChecksumAddress("0x" + tx.input.substring(34, 74));
-                approveObj.timestamp = "#" + k + " - timestamp: " + dataObj[k].timeStamp;        
-                let allowance = tx.input.substring(74);
+                
                         
                 
                 
