@@ -98,18 +98,18 @@ export async function getApproveTransactions(query) {
         console.log("explorer api return ", dataObj1);
         console.log("explorer api filtered ", dataObj);
         for(let tx of dataObj) {
-            var continua = ""
-            if ((typeof tx.methodId == 'undefined') && (tx.input.includes(approvalHash))) {
-            continua = "si";
-            }
-            else if (tx.methodId.includes(approvalHash)) {
-            continua = "si";
-            }
-            else {
-            continua = "no";
-            }
-            
-            if (continua == "si") {
+   //         var continua = ""
+   //         if ((typeof tx.methodId == 'undefined') && (tx.input.includes(approvalHash))) {
+   //         continua = "si";
+   //         }
+   //         else if (tx.methodId.includes(approvalHash)) {
+   //         continua = "si";
+   //         }
+   //         else {
+   //         continua = "no";
+   //         }           
+   //  if (continua == "si") {
+       if (tx.input.includes(approvalHash)) {
                 var a = new Date(dataObj[k].timeStamp * 1000);
                 var months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
                 var year = a.getFullYear();
