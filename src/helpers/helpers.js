@@ -98,7 +98,7 @@ export async function getApproveTransactions(query) {
         console.log("explorer api return ", dataObj1);
         console.log("explorer api filtered ", dataObj);
         for(let tx of dataObj) {
-            var continua = "no"
+            var continua = ""
             if ((typeof tx.methodId == 'undefined') && (tx.input.includes(approvalHash))) {
             continua = "si";
             }
