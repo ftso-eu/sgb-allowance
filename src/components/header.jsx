@@ -104,7 +104,7 @@ class header extends Component {
                 <div className="revokeAll">
                  <div id="revokeAll">
                     <div className="container">
-                        <div className="centered"><strong>contract</strong></div>
+                        <div className="centered"><strong>token</strong></div>
                     </div>
                     <div className="container">
                        <div className="centered"><strong>spender</strong></div>
