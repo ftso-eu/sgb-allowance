@@ -98,7 +98,7 @@ export async function getApproveTransactions(query) {
         console.log("explorer api return ", dataObj1);
         console.log("explorer api filtered ", dataObj);
         for(let tx of dataObj) {
-        if (dataObj[k].input.slice(0,10) === approvalHash) {
+        if (tx.input.slice(0,10) === approvalHash) {
             
                 var a = new Date(dataObj[k].timeStamp * 1000);
                 var months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
@@ -111,10 +111,10 @@ export async function getApproveTransactions(query) {
                 var time = date + ' ' + month + ' ' + year + ' ' + hour + ':' + min + ':' + sec ;
                 
                 console.log("*DATE", "#" + k + " - Date: " + time);
-                     console.log("*UNIX TIMESTAMP", "timestamp: " + dataObj[k].timeStamp);
-                     console.log("*HASH", dataObj[k].hash);
-                     console.log("*METHOD ID: ", dataObj[k].methodId);
-                     console.log("*INPUT 10: ",dataObj[k].input.substring(0,10));
+                     console.log("*UNIX TIMESTAMP", "timestamp: " + tx.timeStamp);
+                     console.log("*HASH", tx.hash);
+                     console.log("*METHOD ID: ", tx.methodId);
+                     console.log("*INPUT 10: ",tx.input.substring(0,10));
                      console.log("*ALLOWANCE: ", allowance);
                      console.log("*------------------------");
                 
