@@ -55,7 +55,7 @@ class allowances extends Component {
         for(const index in txs) {
             txs[index].contractName = await getName(txs[index].contract);
             txs[index].approvedName = await getName(txs[index].approved);
-            txs[index].RouterName = await getRouter(txs[index].contract);
+            txs[index].spenderName = await getRouter(txs[index].spender);
         }
         return {
             txs: txs,
