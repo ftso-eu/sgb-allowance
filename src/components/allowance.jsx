@@ -89,7 +89,7 @@ class allowance extends Component {
                     </div>
 
                     <div className="container">
-                        <div className="centered"><a href={this.props.etherscanURL + this.props.tx.approved}>{this.truncateName(this.props.tx.approvedName) + "\r\n(" + this.props.tx.RouterName + ")"}</a></div>
+                        <div className="centered"><a href={this.props.etherscanURL + this.props.tx.approved}>{this.truncateName(this.props.tx.approvedName) + "(" + this.props.tx.spenderName + ")"}</a></div>
                     </div>
 
                     <div className="container">
