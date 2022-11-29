@@ -74,7 +74,7 @@ class allowance extends Component {
 
     truncateName(name) {
         if(name.length > 20) {
-            return name.substring(0, 9) + '...'
+            return name.substring(0, 5) + '...' + name.substring(name.length, - 5);
         }
 
         return name;
@@ -85,11 +85,11 @@ class allowance extends Component {
             <div>
                 <div className="allowance">
                     <div className="container">
-                        <div className="centered"><a href={this.props.etherscanURL + this.props.tx.contract}>{this.truncateName(this.props.tx.contractName) + " on " + this.props.tx.RouterName}</a></div>
+                        <div className="centered"><a href={this.props.etherscanURL + this.props.tx.contract}>{this.truncateName(this.props.tx.contractName)}</a></div>
                     </div>
 
                     <div className="container">
-                        <div className="centered"><a href={this.props.etherscanURL + this.props.tx.approved}>{this.truncateName(this.props.tx.approvedName)}</a></div>
+                        <div className="centered"><a href={this.props.etherscanURL + this.props.tx.approved}>{this.truncateName(this.props.tx.approvedName) + "(" + this.props.tx.RouterName + ")"}</a></div>
                     </div>
 
                     <div className="container">
