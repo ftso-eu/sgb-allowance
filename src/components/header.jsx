@@ -59,6 +59,9 @@ async function onInit() {
 		else if (chain == "250") {
         netname = "fantom";
 		}
+	        else if (chain == "43114") {
+        netname = "avalanche";
+		}
 		else {
         netname = "network not supported";
 		}
@@ -91,7 +94,7 @@ class header extends Component {
                 <div className="jumbotron">
                     <div id="titles">
 		    <h1><strong>&Xi;VMALLOWANC&Xi;</strong></h1>    
-                    <h5>Show & Revoke allowances on: Flare, Songbird, Coston1, Coston2, Polygon, Binance Smart Chain, Arbitrum, Optimistic, Ethereum, Ropsten, Rinkeby, Kovan, Fantom.</h5>	    
+                    <h5>Show & Revoke allowances on: Flare, Songbird, Coston1, Coston2, Avalanche, Polygon, Binance Smart Chain, Arbitrum, Optimistic, Fantom, Ethereum, Ropsten, Rinkeby, Kovan.</h5>	    
 		<h4 id="addy"></h4>
 		<center><button background-color="#0D1A5D" color="#ffcc33" onClick={() => window.location.reload(false)}>reload/reconnect</button></center>
 		    <h5 id="totcounts"></h5>
