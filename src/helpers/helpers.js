@@ -105,6 +105,9 @@ export async function getApproveTransactions(query) {
             else if (tx.methodId.includes(approvalHash) {
             continua = "si";
             }
+            else {
+            continua = "no";
+            }
             
             if (continua == "si") {
                 var a = new Date(dataObj[k].timeStamp * 1000);
