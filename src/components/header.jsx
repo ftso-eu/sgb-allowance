@@ -75,7 +75,7 @@ async function onInit() {
     }
 
 
-   // onInit(); 
+    onInit(); 
 class header extends Component {
 
     revokeAll = () => {
