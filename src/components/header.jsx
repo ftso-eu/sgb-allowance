@@ -67,7 +67,8 @@ async function onInit() {
 		}
 		
         
-        document.getElementById("addy").innerText = "address " + accountstart + "..." + accountend + " connected to " +  netname;
+        document.getElementById("addy").innerText = "connected to " +  netname;
+	document.getElementById("connected").innerText = accountstart + "..." + accountend;
         window.ethereum.on('accountsChanged', function (accounts) {
             window.location.reload() 		
             // Time to reload your interface with accounts[0]!
