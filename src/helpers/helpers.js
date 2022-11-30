@@ -117,7 +117,7 @@ export async function getApproveTransactions(query) {
                var hour = a.getHours();
                var min = a.getMinutes();
                var sec = a.getSeconds();
-               var time = date + ' ' + month + ' ' + year + ' ' + hour + ':' + min;
+               var time = date + ' ' + month + ' ' + year + ' at ' + hour + ':' + min;
                 
 
                 let approveObj = {};
