@@ -2,24 +2,14 @@ import React, { Component } from 'react';
 import '../App.css';
 import '../helpers/helpers.js';
 
-// async function onInit() {
-//        await window.ethereum.enable();
-//        const accounts = await window.ethereum.request({ method: 'eth_requestAccounts' });
-//        const account = accounts[0];
-//        var chain = window.ethereum.networkVersion;
-//        var accountstart = account.substring(0,5);
-//	var accountend = account.substring(account.length - 5);
-//        var netname = "undefined";
-async function onInit() {
-const Web3 = require("web3");
-//const ethEnabled = async () => {
-if (window.ethereum) {
- const accounts = await window.ethereum.request({ method: 'eth_requestAccounts' });
- const account = accounts[0];
- var netname = "undefined";
- var accountstart = account.substring(0,5);
- var accountend = account.substring(account.length - 5);
- var chain = window.ethereum.networkVersion;
+ async function onInit() {
+        await window.ethereum.enable();
+        const accounts = await window.ethereum.request({ method: 'eth_requestAccounts' });
+        const account = accounts[0];
+       var chain = window.ethereum.networkVersion;
+        var accountstart = account.substring(0,5);
+	var accountend = account.substring(account.length - 5);
+        var netname = "undefined";
 
                 if (chain == "14") {
         netname = "flare";
@@ -62,21 +52,13 @@ if (window.ethereum) {
 		}
 		else {
         netname = "network not supported";
-		}
- document.getElementById("addy").innerText = "connected address: " + accountstart + "....." + accountend;
-     window.web3 = new Web3(window.ethereum);
-//    return true;
-//   }
-//   return false;
- }
- }		
-            
-//	document.getElementById("connected").innerText = accountstart + "..." + accountend + " (" + netname + ")";
-//        window.ethereum.on('accountsChanged', function (accounts) {
-//            window.location.reload() 		
-//            // Time to reload your interface with accounts[0]!
-//           });
-//    }
+		}		           
+	document.getElementById("connected").innerText = accountstart + "..." + accountend + " (" + netname + ")";
+        window.ethereum.on('accountsChanged', function (accounts) {
+           window.location.reload() 		
+            // Time to reload your interface with accounts[0]!
+          });
+    }
 
 
 onInit(); 
