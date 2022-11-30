@@ -116,7 +116,7 @@ class header extends Component {
                         <div className="centered"><strong>allowance</strong></div>
                     </div>
                     <div className="container" onClick={this.revokeAll}>
-                        <div className="centered"><button class="buttonstyled" type="button">revoke</button></div>
+                        <div className="centered"><strong></strong></div>
                     </div>
                   </div>
                 </div>
