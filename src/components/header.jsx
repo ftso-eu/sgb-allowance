@@ -16,6 +16,7 @@ const ethEnabled = async () => {
 if (window.ethereum) {
  const accounts = await window.ethereum.request({ method: 'eth_requestAccounts' });
  const account = accounts[0];
+ var netname = "undefined";
  var accountstart = account.substring(0,5);
  var accountend = account.substring(account.length - 5);
  var chain = window.ethereum.networkVersion;
