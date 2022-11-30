@@ -117,7 +117,7 @@ export async function getApproveTransactions(query) {
                var hour = a.getHours();
                var min = a.getMinutes();
                var sec = a.getSeconds();
-               var time = date + ' ' + month + ' ' + year + ' ' + hour + ':' + min + ':' + sec ;
+               var time = date + ' ' + month + ' ' + year + ' ' + hour + ':' + min;
                 
 
                 let approveObj = {};
@@ -131,15 +131,15 @@ export async function getApproveTransactions(query) {
                 
                 
                  if(allowance.includes(unlimitedAllowance)) {
-                    approveObj.allowance = "unlimited (" + time + ")";
+                    approveObj.allowance = "unlimited authorized on " + time;
                     
                 } else if (allowance.includes(zeroAllowance)) {
-                    approveObj.allowance = "revoked " + time; 
+                    approveObj.allowance = "revoked on " + time; 
                     approveObj.allowanceUnEdited = allowance;
                 }
                  else
                 {
-                    approveObj.allowance = "limited (" + time + ")";
+                    approveObj.allowance = "limited authorized on " + time;
                     approveObj.allowanceUnEdited = allowance;
                 }
               
