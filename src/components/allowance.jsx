@@ -97,7 +97,7 @@ class allowance extends Component {
                     </div>
 
                     <div className="container">
-                        <div className="centered-white"><button class="buttonstyled" type="button" onClick={this.setRevokeClick}>revoke this</button></div>
+                        <div className="centered-white"><button class="buttonstyled" type="button" onClick={this.setRevokeClick}>REVOKE</button></div>
                     </div>
                 </div>
 <br></br>
