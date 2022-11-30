@@ -12,7 +12,7 @@ import '../helpers/helpers.js';
 //        var netname = "undefined";
 async function onInit() {
 const Web3 = require("web3");
-const ethEnabled = async () => {
+//const ethEnabled = async () => {
 if (window.ethereum) {
  const accounts = await window.ethereum.request({ method: 'eth_requestAccounts' });
  const account = accounts[0];
@@ -65,9 +65,9 @@ if (window.ethereum) {
 		}
  document.getElementById("addy").innerText = "connected address: " + accountstart + "....." + accountend;
      window.web3 = new Web3(window.ethereum);
-    return true;
-   }
-   return false;
+//    return true;
+//   }
+//   return false;
  }
  }		
             
