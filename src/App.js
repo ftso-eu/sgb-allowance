@@ -21,9 +21,8 @@ let web3 = new Web3(Web3.givenProvider);
 function App() {
     return (
         <div>
-            <Header />
-            if (onInit() === true) {
-            <Allowances web3={web3}/> }
+            <Header />            
+            <Allowances web3={web3}/> 
             <center>
             <div class="jumbotron">
             <br></br>
