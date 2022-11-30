@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { getQuery, getApproveTransactions, getName, getRouter, getEtherScanPage, getEtherTxPage } from "../helpers/helpers";
+import { getQuery, getApproveTransactions, getName, getEtherScanPage, getEtherTxPage } from "../helpers/helpers";
 import Allowance from "./allowance";
 
 class allowances extends Component {
