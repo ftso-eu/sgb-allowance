@@ -177,16 +177,16 @@ export async function getName(contractAddress) {
     }
 }
 
-export async function getRouter(spender) {
-    try {
-        let contract = new web3.eth.Contract(ERC20ABI, spender);
-        return await contract.methods.name().call();
-    } catch(e) {
-        // name not found, just use contract address
-        console.error(e);
-        return spender;
-    }
-}
+//export async function getRouter(spender) {
+//    try {
+//        let contract = new web3.eth.Contract(ERC20ABI, spender);
+//        return await contract.methods.name().call();
+//    } catch(e) {
+//        // name not found, just use contract address
+//        console.error(e);
+//        return spender;
+//    }
+//}
 
 export async function is721(contractAddress, tokenId) {
     let contract = new web3.eth.Contract(ERC721ABI, contractAddress);
