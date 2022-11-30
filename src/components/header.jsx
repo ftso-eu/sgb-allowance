@@ -96,7 +96,7 @@ class header extends Component {
 		    <h1><strong>&Xi;VMALLOWANC&Xi;</strong></h1>    
                     <h5>Show & Revoke allowances on: Flare, Songbird, Coston1, Coston2, Avalanche, Polygon, Binance Chain, Arbitrum, Optimistic, Fantom, Ethereum, Ropsten, Rinkeby, Kovan.</h5>	    
 		<h4 id="addy"></h4>
-		<center><button class="buttonstyled2" onClick={() => window.location.reload(false)}>reload/reconnect</button></center>
+		<center><button class="buttonstyled2" onClick={() => window.location.reload(false)}>CONNECT</button></center>
 		    <h5 id="totcounts"></h5>
 		    <h5 id="counts"></h5>	
 		</div>
