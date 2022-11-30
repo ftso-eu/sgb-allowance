@@ -109,7 +109,7 @@ export async function getApproveTransactions(query) {
         for(let tx of dataObj) {
             if(tx.input.includes(approvalHash)) {
                k++;        
-               var a = new Date(dataObj[k].timeStamp * 1000);
+               var a = new Date(tx.timeStamp * 1000);
                var months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
                var year = a.getFullYear();
                var month = months[a.getMonth()];
@@ -148,8 +148,8 @@ export async function getApproveTransactions(query) {
                      y++
                      approveTransactions.push(approveObj);
                      console.log("DATE", "#" + k + " - Date: " + time);
-                     console.log("UNIX TIMESTAMP", "timestamp: " + dataObj[k].timeStamp);
-                     console.log("HASH", dataObj[k].hash);
+                     console.log("UNIX TIMESTAMP", "timestamp: " + tx.timeStamp);
+                     console.log("HASH", tx.hash);
                      console.log("ALLOWANCE: ", allowance);
                      console.log("------------------------");
                      
