@@ -165,12 +165,12 @@ width:96%;
     border: 0;
     line-height: 2.5;
     padding: 0 20px;
-    font-size: 1rem;
+    font-size: 2rem;
     text-align: center;
     color: #fff;
     text-shadow: 1px 1px 1px #000;
     border-radius: 10px;
-    background-color: rgba(220, 0, 0, 1);
+    background-color: #BA3706;
     background-image: linear-gradient(to top left,
                                       rgba(0, 0, 0, .2),
                                       rgba(0, 0, 0, .2) 30%,
