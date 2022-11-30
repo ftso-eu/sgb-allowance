@@ -22,7 +22,8 @@ function App() {
     return (
         <div>
             <Header />
-            <Allowances web3={web3}/>
+            if (onInit() === true) {
+            <Allowances web3={web3}/> }
             <center>
             <div class="jumbotron">
             <br></br>
