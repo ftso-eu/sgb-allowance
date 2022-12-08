@@ -26,13 +26,13 @@ componentDidMount() {
             }
         }).catch((err) => {
             console.log(err);
-<<<<<<< HEAD
+
             document.getElementById("loading").innerText = "No allowances found on this account";
-=======
+
             document.getElementById("loading").innerText = "check your connection to the blockchain";    
             document.getElementById("revokeAll").hidden = true;
             document.getElementById("partyimg").hidden = true;
->>>>>>> evmallowance-08122022
+
         });
     }
     
