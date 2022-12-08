@@ -26,7 +26,13 @@ componentDidMount() {
             }
         }).catch((err) => {
             console.log(err);
+<<<<<<< HEAD
             document.getElementById("loading").innerText = "No allowances found on this account";
+=======
+            document.getElementById("loading").innerText = "check your connection to the blockchain";    
+            document.getElementById("revokeAll").hidden = true;
+            document.getElementById("partyimg").hidden = true;
+>>>>>>> evmallowance-08122022
         });
     }
     
@@ -70,6 +76,7 @@ componentDidMount() {
         for(const index in txs) {
             txs[index].contractName = await getName(txs[index].contract);
             txs[index].approvedName = await getName(txs[index].approved);
+            //txs[index].spenderName = await getRouter(txs[index].spender);
         }
         return {
             txs: txs,

@@ -74,7 +74,7 @@ class allowance extends Component {
 
     truncateName(name) {
         if(name.length > 20) {
-            return name.substring(0, 13) + '...'
+            return name.substring(0, 5) + '...' + name.substring(name.length - 5);
         }
 
         return name;
@@ -97,11 +97,11 @@ class allowance extends Component {
                     </div>
 
                     <div className="container">
-                        <div className="centered-white"><a name="revoke" id="revokeLink" onClick={this.setRevokeClick}>revoke this</a></div>
+                        <div className="centered"><button class="buttonstyled" type="button" onClick={this.setRevokeClick}>REVOKE</button></div>
                     </div>
                 </div>
-              <hr height="0.2em" border-width="0" color="gray" background-color="gray"></hr>
-            </div>
+<br></br>
+              </div>
         )
     }
 }

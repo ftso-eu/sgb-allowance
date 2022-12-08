@@ -1,11 +1,11 @@
-# sgb-allowance
+# evmallowance.com
 Show history and revoke allowances for the connected address on the connnected networks (you can pull request to support more):
 
-Flare, Songbird, Coston1, Coston2, Polygon, Binance Smart Chain, Arbitrium, Optimistic, Ethereum, Ropsten, Rinkeby, Kovan.
+Flare, Songbird, Coston1, Coston2, Polygon, Binance Smart Chain, Fantom, Avalanche, Arbitrum, Optimistic, Ethereum, Ropsten, Rinkeby, Kovan.
 
 Tested with Metamask, Bifrost, D'Cent.
 
-Web Dapp: https://sgb-allowance.ftso.eu 
+Web Dapp: https://evmallowance.com 
 
 ## how it works
 This tool works by searching all "approve transactions" for the address in the connected network explorer;

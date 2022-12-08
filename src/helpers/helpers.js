@@ -12,23 +12,10 @@ const zeroAllowance = "000000000000000000000000000000000000000000000000000000000
 const { ERC20ABI, ERC721ABI } = require("./ABI.js");
 
 
-// export function getNetName(chainId) {
-//    switch (chainId) {
-//        case 114:
-//            return "coston2";        
-//        case 16:
-//            return "coston";         
-//        case 19:
-//            return "Songbird";         
-//        default:
-//            return "Songbird";         
-//    }
-//}
-
 export function getQuery(chainId, address) {
     switch (chainId) {
         case 14:          
-           return "https://flare-explorer.flare.network//api?module=account&action=txlist&address=" + address;
+           return "https://flare-explorer.flare.network/api?module=account&action=txlist&address=" + address;
         case 114:          
            return "https://coston2-explorer.flare.network/api?module=account&action=txlist&address=" + address;         
         case 16:          
@@ -51,6 +38,10 @@ export function getQuery(chainId, address) {
             return "https://api.arbiscan.io/api?module=account&action=txlist&address=" + address;
         case 137:
             return "https://api.polygonscan.com/api?module=account&action=txlist&address=" + address;
+        case 250:          
+           return "https://api.ftmscan.com/api?module=account&action=txlist&address=" + address;
+        case 43114:          
+           return "https://api-beta.avascan.info/v2/network/mainnet/evm/43114/address/" + address + "/transactions";
         default:
             return "";           
     }
@@ -82,24 +73,16 @@ export function getEtherScanPage(chainId) {
             return "https://arbiscan.io/address/";
         case 137:
             return "https://polygonscan.com/address/";
+        case 250:
+            return "https://ftmscan.com/address/";
+         case 43114:
+            return "https://avascan.info/blockchain/c/address/";
         default:
             return "";
             
     }
 }
 
-// export function getEtherTxPage(chainId) {
-//     switch (chainId) {
-//         case 114:
-//             return "https://coston2-explorer.flare.network/tx/";
-//         case 16:
-//             return "https://coston-explorer.flare.network/tx/";
-//         case 19:
-//             return "https://songbird-explorer.flare.network/tx/";
-//         default:
-//             return "https://songbird-explorer.flare.network/tx/";
-//     }
-// }
 
 export function uniqByKeepFirst(a, key) {
     let seen = new Set();
@@ -115,14 +98,18 @@ export async function getApproveTransactions(query) {
         let data = await request.get(query);
         let approveTransactions = [];
         let dataObj1 = JSON.parse(data.text).result;
-        let dataObj = uniqByKeepFirst(dataObj1, it => it.to)
+          dataObj1.sort(function(xx, yy){
+          return yy.timeStamp - xx.timeStamp;
+          })
+        console.log("explorer api return ", dataObj1);     
         
-        console.log("explorer api return ", dataObj1);
+        let dataObj = uniqByKeepFirst(dataObj1, it => it.input.substring(34, 74));
         console.log("explorer api filtered ", dataObj);
+
         for(let tx of dataObj) {
             if(tx.input.includes(approvalHash)) {
                k++;        
-               var a = new Date(dataObj[k].timeStamp * 1000);
+               var a = new Date(tx.timeStamp * 1000);
                var months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
                var year = a.getFullYear();
                var month = months[a.getMonth()];
@@ -130,26 +117,29 @@ export async function getApproveTransactions(query) {
                var hour = a.getHours();
                var min = a.getMinutes();
                var sec = a.getSeconds();
-               var time = date + ' ' + month + ' ' + year + ' ' + hour + ':' + min + ':' + sec ;
+               var time = date + ' ' + month + ' ' + year + ' at ' + hour + ':' + min;
                 
 
                 let approveObj = {};
                 approveObj.contract = web3.utils.toChecksumAddress(tx.to);
-                approveObj.approved = web3.utils.toChecksumAddress("0x" + tx.input.substring(34, 74));
-                approveObj.timestamp = "#" + k + " - timestamp: " + dataObj[k].timeStamp;        
+                approveObj.approved = web3.utils.toChecksumAddress("0x" + tx.input.substring(34, 74));  
+                approveObj.timestamp = "#" + k + " - timestamp: " + dataObj[k].timeStamp;
                 let allowance = tx.input.substring(74);
+                
+        
                         
                 
                 
                  if(allowance.includes(unlimitedAllowance)) {
-                    approveObj.allowance = "unlimited (" + time + ")";
+                    approveObj.allowance = "unlimited authorized on " + time;
+                    
                 } else if (allowance.includes(zeroAllowance)) {
-                    approveObj.allowance = "revoked " + time; 
+                    approveObj.allowance = "revoked on " + time; 
                     approveObj.allowanceUnEdited = allowance;
                 }
                  else
                 {
-                    approveObj.allowance = "limited (" + time + ")";
+                    approveObj.allowance = "limited authorized on " + time;
                     approveObj.allowanceUnEdited = allowance;
                 }
               
@@ -158,8 +148,8 @@ export async function getApproveTransactions(query) {
                      y++
                      approveTransactions.push(approveObj);
                      console.log("DATE", "#" + k + " - Date: " + time);
-                     console.log("UNIX TIMESTAMP", "timestamp: " + dataObj[k].timeStamp);
-                     console.log("HASH", dataObj[k].hash);
+                     console.log("UNIX TIMESTAMP", "timestamp: " + tx.timeStamp);
+                     console.log("HASH", tx.hash);
                      console.log("ALLOWANCE: ", allowance);
                      console.log("------------------------");
                      
@@ -186,6 +176,17 @@ export async function getName(contractAddress) {
         return contractAddress;
     }
 }
+
+//export async function getRouter(spender) {
+//    try {
+//        let contract = new web3.eth.Contract(ERC20ABI, spender);
+//        return await contract.methods.name().call();
+//    } catch(e) {
+//        // name not found, just use contract address
+//        console.error(e);
+//        return spender;
+//    }
+//}
 
 export async function is721(contractAddress, tokenId) {
     let contract = new web3.eth.Contract(ERC721ABI, contractAddress);

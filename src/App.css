@@ -1,10 +1,10 @@
 #bar {
 width:96%;
-margin: auto;
 border-radius: 13px;
 background-color:#ffcc33;
 position: relative;
 text-align: center;
+margin: auto;
 color: #0D1A5D;
 text-align:center;
 font-family: 'Ubuntu', sans-serif;
@@ -12,55 +12,49 @@ font-size: 1em;
 }
 
 #titles {
+  width:96%;
   text-align: center;
   margin: auto;
   position: relative;
   color: #0D1A5D;
   font-family: 'Ubuntu', sans-serif;
-/*  font-size: 0.5em; */
   img {
     vertical-align: middle;
    }
  }
- 
 
-  /* @media only screen and (min-width: 500px) {  */
-  /* For PC and Tablet */
   .centered {
     width:96%;
-  /*  aspect-ratio: 100 / 29; */
-    position: relative;
-    margin: auto;
-    text-align: center;
-    color: #0D1A5D;
-  /*  font-size: 0.5em; */
-    font-family: 'Ubuntu', sans-serif;
-  }
-
-  /* For Mobile and Small Tablet: */
- /* @media only screen and (max-width:499px)  */
-  .centered-white {
-    width:96%;
-   /* aspect-ratio: 100 / 29; */
     position: relative;
     margin: auto;
     text-align:center;
+    vertical-align: middle;
+    horizontal-align: middle;
     color: #0D1A5D;
- /*   font-size: 0.5em; */
+    font-family: 'Ubuntu', sans-serif;
+  }
+
+  .centered-white {
+    width:96%;
+    position: relative;
+    margin: auto;
+    text-align:center;
+    vertical-align: middle;
+    horizontal-align: middle;
+    color: #0D1A5D;
     font-family: 'Ubuntu', sans-serif;   
   }
 
 
-/* }  */
-
 /* Container holding the image and the text */
 .container {
-  position: relative;
- /* aspect-ratio: 100 / 29; */
-  text-align: center;
-  margin: auto;
-  color: #0D1A5D;
-  display: table-cell;
+/* position: relative; */
+ margin: auto;
+ text-align:center;
+ vertical-align: middle;
+ horizontal-align: middle;
+ color: #0D1A5D;
+ display: table-cell;
 }
 
 #footerImage {
@@ -89,8 +83,6 @@ background-color:#ffcc33;
 
 .grid-container {
   display: grid;
-  
-  
   text-align: center;
   margin: auto;
   grid-template-columns: auto auto auto auto;
@@ -102,22 +94,58 @@ body {
 }
 
 .jumbotron{
+  padding-top: 0px;
+  padding-bottom: 3px;
   background: #EDEFF1;
   margin: auto;
   width:96%;
   border-radius: 13px;
 }
 
+#revokeAll {
+  overflow: auto;
+  margin: auto;
+    text-align:center;
+    vertical-align: middle;
+    horizontal-align: middle;
+}
+
+.revokeAll {
+  overflow: auto;
+  margin: auto;
+    text-align:center;
+    vertical-align: middle;
+    horizontal-align: middle;
+    border-radius: 13px;
+    background-color:#EBF6FC;
+    width:96%;
+  border-bottom:1px solid;
+  border-bottom-style: ridged;
+  border-bottom-color: grey;
+}
+
 .revoke-full {
+  overflow: auto;
  color: #0D1A5D;
 }
 
 .revoke-small {
+  overflow: auto;
  color: #0D1A5D;
 }
 
 .allowance {
-  overflow: hidden;
+overflow: auto;
+margin: auto;
+text-align:center;
+vertical-align: middle;
+horizontal-align: middle;
+border-radius: 13px;
+background-color:#EBF6FC;
+width:96%;
+  border-bottom:1px solid;
+  border-bottom-style: ridged;
+   border-bottom-color: grey;
 }
 
 #columns {
@@ -131,5 +159,62 @@ body {
 }
 
 #revokeLink {
-  color: #e60000;
+  color: #BA3706;
+}
+.buttonstyled {
+  margin: auto;
+ text-align:center;
+ vertical-align: middle;
+ horizontal-align: middle;
+    border: 0;
+    line-height: 2.5;
+    padding: 0 10px;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: #BA3706;
+    background-image: linear-gradient(to top left,
+                                      rgba(0, 0, 0, .2),
+                                      rgba(0, 0, 0, .2) 30%,
+                                      rgba(0, 0, 0, 0));
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+                inset -2px -2px 3px rgba(0, 0, 0, .6);
+}
+
+.buttonstyled:hover {
+    background-color: rgba(255, 0, 0, 1);
+}
+
+.buttonstyled:active {
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+                inset 2px 2px 3px rgba(0, 0, 0, .6);
+}
+
+.buttonstyled2 {
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: #0D1A5D;
+    background-image: linear-gradient(to top left,
+                                      rgba(0, 0, 0, .2),
+                                      rgba(0, 0, 0, .2) 30%,
+                                      rgba(0, 0, 0, 0));
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+                inset -2px -2px 3px rgba(0, 0, 0, .6);
+}
+
+.buttonstyled2:hover {
+    background-color: rgba(255, 0, 0, 1);
+}
+
+.buttonstyled2:active {
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+                inset 2px 2px 3px rgba(0, 0, 0, .6);
 }
