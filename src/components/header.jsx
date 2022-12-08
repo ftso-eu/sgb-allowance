@@ -89,7 +89,7 @@ class header extends Component {
 		</div>
 
 		</div>
-                <h3 id="loading" hidden>Loading, please wait...</h3>
+                <i><h4 id="loading" hidden><br></br>waiting for confirmation <img src="../images/loading.gif" width="30px"></img></h4></i>
 		
 		<script> window.reload(); </script>
                 <div id="revokeAll">
