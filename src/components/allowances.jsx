@@ -29,7 +29,7 @@ componentDidMount() {
 
             document.getElementById("loading").innerText = "No allowances found on this account";
 
-            document.getElementById("loading").innerText = "check your connection to the blockchain";    
+            document.getElementById("loading").innerText = "check your connection to the blockchain or try to reload";    
             document.getElementById("revokeAll").hidden = true;
             document.getElementById("partyimg").hidden = true;
 
