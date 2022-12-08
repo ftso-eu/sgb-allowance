@@ -131,7 +131,7 @@ export async function getApproveTransactions(query) {
                 
                 
                  if(allowance.includes(unlimitedAllowance)) {
-                    approveObj.allowance = "unlimited authorized on " + time;
+                    approveObj.allowance = "unlimited, approved on " + time;
                     
                 } else if (allowance.includes(zeroAllowance)) {
                     approveObj.allowance = "revoked on " + time; 
@@ -139,7 +139,7 @@ export async function getApproveTransactions(query) {
                 }
                  else
                 {
-                    approveObj.allowance = "limited authorized on " + time;
+                    approveObj.allowance = "limited, approved on " + time;
                     approveObj.allowanceUnEdited = allowance;
                 }
               
