@@ -31,7 +31,7 @@ class allowances extends Component {
             }
         }).catch((err) => {
             console.log(err);
-            document.getElementById("loading").innerText = "Please connect to web3.";    
+            document.getElementById("loading").innerText = "check your connection to the blockchain";    
             document.getElementById("revokeAll").hidden = true;
             document.getElementById("partyimg").hidden = true;
         });
