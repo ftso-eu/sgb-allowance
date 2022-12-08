@@ -87,20 +87,20 @@ class header extends Component {
 		    <h5 id="totcounts"></h5>
 		    <h5 id="counts"></h5>	
 		</div>
-<<<<<<< HEAD
+
 		</div>
                 <h3 id="loading" hidden>Loading, please wait...</h3>
 		
 		<script> window.reload(); </script>
                 <div id="revokeAll">
-=======
+
                 </div>
                 <br></br>
                 <i><h4 id="loading" hidden><br></br>waiting for confirmation <img src="../images/loading.gif" width="30px"></img></h4></i>
                 <h6 id="partyimg" hidden></h6>
                 <div className="revokeAll">
                  <div id="revokeAll">
->>>>>>> evmallowance-08122022
+
                     <div className="container">
                         <div className="centered"><strong>token</strong></div>
                     </div>
