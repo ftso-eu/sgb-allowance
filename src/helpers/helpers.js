@@ -101,10 +101,10 @@ export async function getApproveTransactions(query) {
           dataObj1.sort(function(xx, yy){
           return yy.timeStamp - xx.timeStamp;
           })
-        console.log("explorer api return ", dataObj1);     
+    //    console.log("explorer api return ", dataObj1);     
         
         let dataObj = uniqByKeepFirst(dataObj1, it => it.input.substring(34, 74));
-        console.log("explorer api filtered ", dataObj);
+    //    console.log("explorer api filtered ", dataObj);
 
         for(let tx of dataObj) {
             if(tx.input.includes(approvalHash)) {
