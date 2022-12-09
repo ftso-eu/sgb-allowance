@@ -28,11 +28,6 @@ function App() {
             <br></br>
             <a href="https://github.com/ftso-eu/sgb-allowance/blob/master/README.md" target="_blank">how it works? get more inf<img id="github" alt="GitHub" src="../images/github-o.png" width="10px"></img></a>
             <br></br>
-            Git Branch:{' '}
-            <code>{generatedGitInfo.gitBranch}</code>
-            <br></br>
-            Git Commit Hash:{' '}
-            <code>{generatedGitInfo.gitCommitHash}</code>
             <br></br>
             <iframe src="https://widgets.flaremetrics.io/data-provider-metrics/?address=0x010a16c53f33e4d93892f00897965578b55a8cfc&network=songbird&header=true&dark=true&transparent=false" frameborder="0" scrolling="no"  height="450px" width="96%"> </iframe>
             </div>
