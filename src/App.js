@@ -30,9 +30,8 @@ function App() {
             <br></br>
             <br></br>
             branch:{' '}
-            <code>{generatedGitInfo.gitBranch}</code>
-            
-             | Commit Hash:{' '}
+            <code>{generatedGitInfo.gitBranch}</code>           
+             commit:{' '}
             <code>{generatedGitInfo.gitCommitHash}</code>
             <br></br>
             <br></br>
