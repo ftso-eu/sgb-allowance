@@ -14,6 +14,9 @@ import '../helpers/helpers.js';
                 if (chain === "14") {
         netname = "flare";
 		}
+                else if (chain === "1440001") {
+        netname = "xrpl evm dev";
+		}
 		else if (chain === "114") {
         netname = "coston2";
 		}
