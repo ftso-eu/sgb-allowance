@@ -84,7 +84,7 @@ class header extends Component {
                 <div className="jumbotron">
                     <div id="titles">
 		    <h1><strong>&Xi;VMALLOWANC&Xi;</strong></h1>    
-                    <h5>Show & Revoke allowances on: Flare, Songbird, Coston1, Coston2, Avalanche, Polygon, Binance Chain, Arbitrum, Optimistic, Fantom, Ethereum, Ropsten, Rinkeby, Kovan.</h5>	    
+                    <h5>Show & Revoke allowances on: Flare, Songbird, Coston1, Coston2, XRPL EVM DEV, Avalanche, Polygon, Binance Chain, Arbitrum, Optimistic, Fantom, Ethereum, Ropsten, Rinkeby, Kovan.</h5>	    
 		
 		<center><button id="connected" class="buttonstyled2" onClick={() => window.location.reload(false)}>CONNECT</button></center>
 		    <h5 id="totcounts"></h5>
