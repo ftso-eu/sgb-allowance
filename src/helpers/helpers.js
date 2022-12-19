@@ -116,7 +116,7 @@ export async function getApproveTransactions(query) {
           dataObj1.sort(function(xx, yy){
           return yy.timeStamp - xx.timeStamp;
           })
-          console.log("chainId: ", getEtherScanPage(chainId));
+    //      console.log("chainId: ", getEtherScanPage(chainId));
     //    console.log("explorer api return ", dataObj1);     
         
         let dataObj = uniqByKeepFirst(dataObj1, it => it.input.substring(34, 74));
