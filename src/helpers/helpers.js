@@ -107,15 +107,16 @@ export async function getApproveTransactions(query) {
     try {
         let data = await request.get(query);
         let approveTransactions = [];
-          if (chain === "50") {
-            let dataObj1 = JSON.parse(data.text).items;
-            }
-            else {
+      //    if (chain === "50") {
+      //      let dataObj1 = JSON.parse(data.text).items;
+      //      }
+      //      else {
             let dataObj1 = JSON.parse(data.text).result;
-            }
+      //      }
           dataObj1.sort(function(xx, yy){
           return yy.timeStamp - xx.timeStamp;
           })
+          console.log("chainId: ", getEtherScanPage(chainId));
     //    console.log("explorer api return ", dataObj1);     
         
         let dataObj = uniqByKeepFirst(dataObj1, it => it.input.substring(34, 74));
