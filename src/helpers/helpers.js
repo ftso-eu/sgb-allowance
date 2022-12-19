@@ -105,7 +105,12 @@ export async function getApproveTransactions(query) {
     try {
         let data = await request.get(query);
         let approveTransactions = [];
-        let dataObj1 = JSON.parse(data.text).result;
+          if (chainId === "50") {
+            let dataObj1 = JSON.parse(data.text).items;
+            }
+            else {
+            let dataObj1 = JSON.parse(data.text).result;
+            }
           dataObj1.sort(function(xx, yy){
           return yy.timeStamp - xx.timeStamp;
           })
