@@ -50,9 +50,12 @@ import '../helpers/helpers.js';
 		else if (chain === "250") {
         netname = "fantom";
 		}
-	        else if (chain === "43114") {
+	    else if (chain === "43114") {
         netname = "avalanche";
 		}
+        else if (chain === "50") {
+            netname = "xdc net";
+            }
 		else {
         netname = "network not supported";
 		}		           
@@ -84,7 +87,7 @@ class header extends Component {
                 <div className="jumbotron">
                     <div id="titles">
 		    <h1><strong>&Xi;VMALLOWANC&Xi;</strong></h1>    
-                    <h5>Show & Revoke allowances on: Flare, Songbird, Coston1, Coston2, Xrpldev sidechain, Avalanche, Polygon, Binance Chain, Arbitrum, Optimistic, Fantom, Ethereum, Ropsten, Rinkeby, Kovan.</h5>	    
+                    <h5>Show & Revoke allowances on: Flare, Songbird, Coston1, Coston2, Xrpldev sidechain, XDC net, Avalanche, Polygon, Binance Chain, Arbitrum, Optimistic, Fantom, Ethereum, Ropsten, Rinkeby, Kovan.</h5>	    
 		
 		<center><button id="connected" class="buttonstyled2" onClick={() => window.location.reload(false)}>CONNECT</button></center>
 		    <h5 id="totcounts"></h5>

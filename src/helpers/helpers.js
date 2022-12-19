@@ -44,6 +44,8 @@ export function getQuery(chainId, address) {
            return "https://api.ftmscan.com/api?module=account&action=txlist&address=" + address;
         case 43114:          
            return "https://api-beta.avascan.info/v2/network/mainnet/evm/43114/address/" + address + "/transactions";
+        case 50:          
+           return "https://xdc.blocksscan.io/api/txs/listByAccount/" + address;
         default:
             return "";           
     }
@@ -79,8 +81,10 @@ export function getEtherScanPage(chainId) {
             return "https://polygonscan.com/address/";
         case 250:
             return "https://ftmscan.com/address/";
-         case 43114:
+        case 43114:
             return "https://avascan.info/blockchain/c/address/";
+        case 50:
+            return "https://xdc.blocksscan.io/address/";
         default:
             return "";
             
