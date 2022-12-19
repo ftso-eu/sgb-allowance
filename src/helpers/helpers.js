@@ -1,3 +1,5 @@
+
+import { onInit } from "../components/header";
 let Web3 = require('web3');
 
 let web3 = new Web3(Web3.givenProvider);
@@ -105,7 +107,7 @@ export async function getApproveTransactions(query) {
     try {
         let data = await request.get(query);
         let approveTransactions = [];
-          if (chainId === "50") {
+          if (chain === "50") {
             let dataObj1 = JSON.parse(data.text).items;
             }
             else {
