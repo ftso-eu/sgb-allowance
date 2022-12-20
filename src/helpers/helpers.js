@@ -108,8 +108,9 @@ export async function getApproveTransactions(query) {
         var dataObj1 = "";
         let data = await request.get(query);
         let approveTransactions = [];
-        console.log('items' in data);
-          if ('items' in data) {
+        let checkdata = JSON.parse(data.text);
+        console.log('items' in checkdata);
+          if ('items' in checkdata) {
           dataObj1 = JSON.parse(data.text).items;
           } else {
           dataObj1 = JSON.parse(data.text).result;
