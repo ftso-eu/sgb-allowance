@@ -105,13 +105,13 @@ export function uniqByKeepFirst(a, key) {
 
 export async function getApproveTransactions(query) {
     try {
+        var dataObj1 = "";
         let data = await request.get(query);
         let approveTransactions = [];
         console.log('items' in data);
-          if (('items' in data) === true) {
+          if ('items' in data) {
           let dataObj1 = JSON.parse(data.text).items;
-          }
-          else {
+          } else {
           let dataObj1 = JSON.parse(data.text).result;
           }
           dataObj1.sort(function(xx, yy){
