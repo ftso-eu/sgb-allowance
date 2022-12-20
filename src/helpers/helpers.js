@@ -110,9 +110,9 @@ export async function getApproveTransactions(query) {
         let approveTransactions = [];
         console.log('items' in data);
           if ('items' in data) {
-          let dataObj1 = JSON.parse(data.text).items;
+          dataObj1 = JSON.parse(data.text).items;
           } else {
-          let dataObj1 = JSON.parse(data.text).result;
+          dataObj1 = JSON.parse(data.text).result;
           }
           dataObj1.sort(function(xx, yy){
           return yy.timeStamp - xx.timeStamp;
