@@ -86,7 +86,7 @@ export function getEtherScanPage(chainId) {
         case 43114:
             return "https://avascan.info/blockchain/c/address/";
         case 50:
-                return "https://xdc.blocksscan.io/address/";
+            return "https://xdc.blocksscan.io/address/";
         default:
             return "";
             
