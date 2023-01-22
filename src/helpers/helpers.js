@@ -19,13 +19,13 @@ export function getQuery(chainId, address) {
         case 1440001:          
            return "https://evm-sidechain.peersyst.tech/api?module=account&action=txlist&address=" + address;
         case 14:          
-           return "https://flare-explorer.flare.network/api?module=account&action=txlist&address=" + address + "&page=1&offset=100000";
+           return "https://flare-explorer.flare.network/api?module=account&action=txlist&address=" + address;
         case 114:          
-           return "https://coston2-explorer.flare.network/api?module=account&action=txlist&address=" + address + "&page=1&offset=100000";         
+           return "https://coston2-explorer.flare.network/api?module=account&action=txlist&address=" + address;         
         case 16:          
-            return "https://coston-explorer.flare.network/api?module=account&action=txlist&address=" + address + "&page=1&offset=100000";         
+            return "https://coston-explorer.flare.network/api?module=account&action=txlist&address=" + address;         
         case 19:        
-            return "https://songbird-explorer.flare.network/api?module=account&action=txlist&address=" + address + "&page=1&offset=100000";          
+            return "https://songbird-explorer.flare.network/api?module=account&action=txlist&address=" + address;          
         case 1:
             return "https://api.etherscan.io/api?module=account&action=txlist&address=" + address;
         case 3:
