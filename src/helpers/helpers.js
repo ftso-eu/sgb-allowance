@@ -120,9 +120,14 @@ export async function getApproveTransactions(query) {
           })
     //    console.log("chainId: ", getEtherScanPage(chainId));
     //    console.log("explorer api return ", dataObj1);     
-        
-        let dataObj = uniqByKeepFirst(dataObj1, it => it.input.substring(34, 74));
+        //PR Jonnern
+    //    let dataObj = uniqByKeepFirst(dataObj1, it => it.input.substring(34, 74));
     //    console.log("explorer api filtered ", dataObj);
+
+        let dataObj = uniqByKeepFirst(dataObj1, it => JSON.stringify({
+            spender: it.input.substring(34, 74),
+            token: it.to
+        }));
 
         for(let tx of dataObj) {
             if(tx.input.includes(approvalHash)) {
@@ -130,12 +135,20 @@ export async function getApproveTransactions(query) {
                var a = new Date(tx.timeStamp * 1000);
                var months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
                var year = a.getFullYear();
+              //PR Jonnern
+              // var month = months[a.getMonth()];
+              // var date = a.getDate();
+              // var hour = a.getHours();
+              // var min = a.getMinutes();
+              // var sec = a.getSeconds();
+              // var time = date + ' ' + month + ' ' + year + ' at ' + hour + ':' + min;
+
                var month = months[a.getMonth()];
                var date = a.getDate();
-               var hour = a.getHours();
-               var min = a.getMinutes();
-               var sec = a.getSeconds();
-               var time = date + ' ' + month + ' ' + year + ' at ' + hour + ':' + min;
+               var hour = a.getHours().toString().padStart(2, '0');
+	           var min = a.getMinutes().toString().padStart(2, '0');
+	           var sec = a.getSeconds().toString().padStart(2, '0');
+	           var time = `${date} ${month} ${year} at ${hour}:${min}`
                 
 
                 let approveObj = {};
