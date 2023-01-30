@@ -121,7 +121,10 @@ export async function getApproveTransactions(query) {
     //    console.log("chainId: ", getEtherScanPage(chainId));
     //    console.log("explorer api return ", dataObj1);     
         
-        let dataObj = uniqByKeepFirst(dataObj1, it => it.input.substring(34, 74));
+        let dataObj = uniqByKeepFirst(dataObj1, it => JSON.stringify({
+            spender: it.input.substring(34, 74),
+            token: it.to
+        }));
     //    console.log("explorer api filtered ", dataObj);
 
         for(let tx of dataObj) {
