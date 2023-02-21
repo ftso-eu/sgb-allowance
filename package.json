@@ -9,7 +9,7 @@
     "react-dom": "^17.0.1",
     "superagent": "^5.2.2",
     "web-vitals": "^0.2.4",
-    "web3": "^1.8.0",
+    "web3": "^1.8.2",
     "@metamask/providers": "^8.1.1",
     "web3-detect-network": "0.0.18"
   },
