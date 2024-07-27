@@ -4,7 +4,7 @@
   "private": false,
   "homepage": "https://evmallowance.com",
   "dependencies": {
-    "bootstrap": "^3.3.7",
+    "bootstrap": "^4.0.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "superagent": "^5.2.2",
