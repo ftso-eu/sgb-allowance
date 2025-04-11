@@ -55,8 +55,8 @@ export function getQuery(chainId, address) {
 
 export function getEtherScanPage(chainId) {
     switch (chainId) {
-        case 1440001:
-            return "https://evm-sidechain.xrpl.org/address/";
+        case 1449000:
+            return "https://explorer.testnet.xrplevm.org/address/";
         case 14:
             return "https://flare-explorer.flare.network/address/";
         case 114:
